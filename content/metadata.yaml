@@ -13,7 +13,7 @@ authors:
     twitter: johndoe
     email: andrewb7@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
+      - Department of Illinois, University of CEE
     funders:
       - Grant XXXXXXXX
   - github: janeroe
@@ -22,5 +22,5 @@ authors:
     orcid: XXXX-XXXX-XXXX-XXXX
     email: jane.roe@whatever.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Department of CEE, University Illinois
+      - Department of CEE, University of Illinois
