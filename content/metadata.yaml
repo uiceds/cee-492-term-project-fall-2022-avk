@@ -1,19 +1,19 @@
 ---
-title: " CEE 492 DATA SCIENCE PROJECT"
+title: "Construction Project AVK"
 keywords:
   - markdown
   - publishing
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: Kanchan Kulhalli
-    initials: JD
+  - github: AVK
+    name: Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge, Sathish Ravipati
+    initials: AB, KK, VG, SR
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: johndoe
-    email: john.doe@something.com
+    email: andrewb7@illinois.edu
     affiliations:
-      - Department of CEE, University of Whatever
+      - Department of Illinois, University of CEE
     funders:
       - Grant XXXXXXXX
   - github: janeroe
@@ -22,5 +22,5 @@ authors:
     orcid: XXXX-XXXX-XXXX-XXXX
     email: jane.roe@whatever.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Department of CEE, University Illinois
+      - Department of CEE, University of Illinois
