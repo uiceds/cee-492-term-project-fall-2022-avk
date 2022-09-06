@@ -1,5 +1,5 @@
 ---
-title: "Manuscript Title"
+title: " CEE 492 DATA SCIENCE PROJECT"
 keywords:
   - markdown
   - publishing
@@ -7,13 +7,13 @@ keywords:
 lang: en-US
 authors:
   - github: johndoe
-    name: John Doe
+    name: Kanchan Kulhalli
     initials: JD
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: johndoe
     email: john.doe@something.com
     affiliations:
-      - Department of Something, University of Whatever
+      - Department of CEE, University of Whatever
     funders:
       - Grant XXXXXXXX
   - github: janeroe
