@@ -30,7 +30,7 @@ header-includes: |-
   <meta name="citation_author" content="Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge, Sathish Ravipati" />
   <meta name="citation_author_institution" content="Department of Illinois, University of CEE" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
+  <meta name="twitter:creator" content="@CEE" />
   <meta name="citation_author" content="Jane Roe" />
   <meta name="citation_author_institution" content="Department of CEE, University Illinois" />
   <meta name="citation_author_institution" content="Department of CEE, University of Illinois" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f07f5d21b06d17600b8d5d88040bd9e8c6350498/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f07f5d21b06d17600b8d5d88040bd9e8c6350498/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f07f5d21b06d17600b8d5d88040bd9e8c6350498/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f03a7a77f203450a75c22b48a378a47ea42a89bf/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f03a7a77f203450a75c22b48a378a47ea42a89bf/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f03a7a77f203450a75c22b48a378a47ea42a89bf/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f07f5d21b06d17600b8d5d88040bd9e8c6350498/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f03a7a77f203450a75c22b48a378a47ea42a89bf/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@f07f5d2](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/f07f5d21b06d17600b8d5d88040bd9e8c6350498)
+from [uiceds/cee-492-term-project-fall-2022-avk@f03a7a7](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/f03a7a77f203450a75c22b48a378a47ea42a89bf)
 on September 6, 2022.
 </em></small>
 
@@ -81,7 +81,7 @@ on September 6, 2022.
     · ![GitHub icon](images/github.svg){.inline_icon}
     [AVK](https://github.com/AVK)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [johndoe](https://twitter.com/johndoe)<br>
+    [CEE](https://twitter.com/CEE)<br>
   <small>
      Department of Illinois, University of CEE
      · Funded by Grant XXXXXXXX
