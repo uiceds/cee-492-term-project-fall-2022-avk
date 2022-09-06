@@ -7,7 +7,7 @@ keywords:
 lang: en-US
 date-meta: '2022-09-06'
 author-meta:
-- John Doe
+- Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge, Sathish Ravipati
 - Jane Roe
 header-includes: |-
   <!--
@@ -27,13 +27,13 @@ header-includes: |-
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author" content="Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge, Sathish Ravipati" />
+  <meta name="citation_author_institution" content="Department of Illinois, University of CEE" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="twitter:creator" content="@johndoe" />
   <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
+  <meta name="citation_author_institution" content="Department of CEE, University Illinois" />
+  <meta name="citation_author_institution" content="Department of CEE, University of Illinois" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/50bca55e9e6918a2e6d0f23284c39d01fa0efab2/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/50bca55e9e6918a2e6d0f23284c39d01fa0efab2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/50bca55e9e6918a2e6d0f23284c39d01fa0efab2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/760bfc99f3e819e42da37f99c90b155e31d08278/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/760bfc99f3e819e42da37f99c90b155e31d08278/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/760bfc99f3e819e42da37f99c90b155e31d08278/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/50bca55e9e6918a2e6d0f23284c39d01fa0efab2/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/760bfc99f3e819e42da37f99c90b155e31d08278/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@50bca55](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/50bca55e9e6918a2e6d0f23284c39d01fa0efab2)
+from [uiceds/cee-492-term-project-fall-2022-avk@760bfc9](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/760bfc99f3e819e42da37f99c90b155e31d08278)
 on September 6, 2022.
 </em></small>
 
@@ -75,15 +75,15 @@ on September 6, 2022.
 
 
 
-+ **John Doe**<br>
++ **Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge, Sathish Ravipati**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [johndoe](https://github.com/johndoe)
+    [AVK](https://github.com/AVK)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
     [johndoe](https://twitter.com/johndoe)<br>
   <small>
-     Department of Something, University of Whatever
+     Department of Illinois, University of CEE
      · Funded by Grant XXXXXXXX
   </small>
 
@@ -93,7 +93,7 @@ on September 6, 2022.
     · ![GitHub icon](images/github.svg){.inline_icon}
     [janeroe](https://github.com/janeroe)<br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     Department of CEE, University Illinois; Department of CEE, University of Illinois
   </small>
 
 
