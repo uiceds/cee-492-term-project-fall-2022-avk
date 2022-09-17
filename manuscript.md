@@ -7,7 +7,7 @@ keywords:
 lang: en-US
 date-meta: '2022-09-17'
 author-meta:
-- Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge, Sathish Ravipati
+- Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge
 - Jane Roe
 header-includes: |-
   <!--
@@ -27,7 +27,7 @@ header-includes: |-
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge, Sathish Ravipati" />
+  <meta name="citation_author" content="Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge" />
   <meta name="citation_author_institution" content="Department of Illinois, University of CEE" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="twitter:creator" content="@CEE" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/ac28c64225c9d2ac8e17984cdc3c053ae81c9445/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/ac28c64225c9d2ac8e17984cdc3c053ae81c9445/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/ac28c64225c9d2ac8e17984cdc3c053ae81c9445/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/724bda63059637ce8ccfdef4e54737810392d2da/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/724bda63059637ce8ccfdef4e54737810392d2da/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/724bda63059637ce8ccfdef4e54737810392d2da/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/ac28c64225c9d2ac8e17984cdc3c053ae81c9445/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/724bda63059637ce8ccfdef4e54737810392d2da/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@ac28c64](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/ac28c64225c9d2ac8e17984cdc3c053ae81c9445)
+from [uiceds/cee-492-term-project-fall-2022-avk@724bda6](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/724bda63059637ce8ccfdef4e54737810392d2da)
 on September 17, 2022.
 </em></small>
 
@@ -75,7 +75,7 @@ on September 17, 2022.
 
 
 
-+ **Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge, Sathish Ravipati**<br>
++ **Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
