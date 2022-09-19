@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-09-17'
+date-meta: '2022-09-19'
 author-meta:
 - Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge
 - Jane Roe
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Construction Project AVK" />
   <meta property="og:title" content="Construction Project AVK" />
   <meta property="twitter:title" content="Construction Project AVK" />
-  <meta name="dc.date" content="2022-09-17" />
-  <meta name="citation_publication_date" content="2022-09-17" />
+  <meta name="dc.date" content="2022-09-19" />
+  <meta name="citation_publication_date" content="2022-09-19" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/724bda63059637ce8ccfdef4e54737810392d2da/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/724bda63059637ce8ccfdef4e54737810392d2da/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/724bda63059637ce8ccfdef4e54737810392d2da/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/06c48bb891b29a15195d8eaf2fd42146a62e7ba6/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/06c48bb891b29a15195d8eaf2fd42146a62e7ba6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/06c48bb891b29a15195d8eaf2fd42146a62e7ba6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/724bda63059637ce8ccfdef4e54737810392d2da/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/06c48bb891b29a15195d8eaf2fd42146a62e7ba6/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@724bda6](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/724bda63059637ce8ccfdef4e54737810392d2da)
-on September 17, 2022.
+from [uiceds/cee-492-term-project-fall-2022-avk@06c48bb](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/06c48bb891b29a15195d8eaf2fd42146a62e7ba6)
+on September 19, 2022.
 </em></small>
 
 ## Authors
@@ -99,7 +99,7 @@ on September 17, 2022.
 
 
 ## Abstract {.page_break_before}
-Using a data set covering the entirety of the United States
+Using a data set covering the entirety of the United States, we are going to use
 
 
 
