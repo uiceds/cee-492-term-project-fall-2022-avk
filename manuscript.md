@@ -1,9 +1,6 @@
 ---
 title: Construction Project Group AVK
-keywords:
-- markdown
-- publishing
-- manubot
+keywords: null
 lang: en-US
 date-meta: '2022-09-22'
 author-meta:
@@ -40,9 +37,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a4c13d7f5ccdd731b06fd86f8c699cf94e947156/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a4c13d7f5ccdd731b06fd86f8c699cf94e947156/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a4c13d7f5ccdd731b06fd86f8c699cf94e947156/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/ddbf849be8feece10d1d5033d7973baf83830ca1/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/ddbf849be8feece10d1d5033d7973baf83830ca1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/ddbf849be8feece10d1d5033d7973baf83830ca1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a4c13d7f5ccdd731b06fd86f8c699cf94e947156/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/ddbf849be8feece10d1d5033d7973baf83830ca1/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@a4c13d7](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/a4c13d7f5ccdd731b06fd86f8c699cf94e947156)
+from [uiceds/cee-492-term-project-fall-2022-avk@ddbf849](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/ddbf849be8feece10d1d5033d7973baf83830ca1)
 on September 22, 2022.
 </em></small>
 
