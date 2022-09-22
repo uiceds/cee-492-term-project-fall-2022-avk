@@ -1,5 +1,5 @@
 ---
-title: Construction Project AVK
+title: Construction Project Group AVK
 keywords:
 - markdown
 - publishing
@@ -15,10 +15,10 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Construction Project AVK" />
-  <meta name="citation_title" content="Construction Project AVK" />
-  <meta property="og:title" content="Construction Project AVK" />
-  <meta property="twitter:title" content="Construction Project AVK" />
+  <meta name="dc.title" content="Construction Project Group AVK" />
+  <meta name="citation_title" content="Construction Project Group AVK" />
+  <meta property="og:title" content="Construction Project Group AVK" />
+  <meta property="twitter:title" content="Construction Project Group AVK" />
   <meta name="dc.date" content="2022-09-22" />
   <meta name="citation_publication_date" content="2022-09-22" />
   <meta name="dc.language" content="en-US" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b66c2662bd9bcb7c509b8619379829b437c9a64d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b66c2662bd9bcb7c509b8619379829b437c9a64d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b66c2662bd9bcb7c509b8619379829b437c9a64d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b66c2662bd9bcb7c509b8619379829b437c9a64d/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@b66c266](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/b66c2662bd9bcb7c509b8619379829b437c9a64d)
+from [uiceds/cee-492-term-project-fall-2022-avk@3a4e36d](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c)
 on September 22, 2022.
 </em></small>
 
@@ -98,10 +98,10 @@ on September 22, 2022.
 
 
 
-## Abstract {Concrete Compressive Strength}
-Using a data set covering the entirety of the United States, we are going to use
+Using a data set covering the entirety of the United States in the subject of..., we are going to create a machine learning program that will be able to predict future trends of ... Using these future trends will we be able to reach certain conclusions on the future growth, size, value and needed improvements in certain areas that we will be able to present to individuals in this field and they can use these recommendations for future projects. We will be using the data sets of... to compile all our data into certain tables and use them to create future trends based on current and past trends. 
+Using these data sets we will be able to create a new data set that can be used to predict the future trends. We intend to create these new data sets by using Julia to take several variables to create a new variable. We will use roughly half of the data as the test sample size that will be used to create the new data set for the 
 
-
+Comparison between proportion of compents, which works well, which gives best strength, alter materials proportions, predict strength
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.
