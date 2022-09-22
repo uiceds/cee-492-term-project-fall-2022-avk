@@ -7,8 +7,9 @@ keywords:
 lang: en-US
 date-meta: '2022-09-22'
 author-meta:
-- Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge
-- Jane Roe
+- Andrew Bushnell
+- Kanchan Kulhalli
+- Vikram Gadge
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,23 +28,21 @@ header-includes: |-
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge" />
-  <meta name="citation_author_institution" content="Department of Illinois, University of CEE" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@CEE" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of CEE, University Illinois" />
+  <meta name="citation_author" content="Andrew Bushnell" />
   <meta name="citation_author_institution" content="Department of CEE, University of Illinois" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Kanchan Kulhalli" />
+  <meta name="citation_author_institution" content="Department of CEE, University of Illinois" />
+  <meta name="citation_author" content="Vikram Gadge" />
+  <meta name="citation_author_institution" content="Department of CEE, University of Illinois" />
   <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta property="twitter:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a4c13d7f5ccdd731b06fd86f8c699cf94e947156/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a4c13d7f5ccdd731b06fd86f8c699cf94e947156/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a4c13d7f5ccdd731b06fd86f8c699cf94e947156/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +64,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a4c13d7f5ccdd731b06fd86f8c699cf94e947156/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@3a4e36d](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c)
+from [uiceds/cee-492-term-project-fall-2022-avk@a4c13d7](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/a4c13d7f5ccdd731b06fd86f8c699cf94e947156)
 on September 22, 2022.
 </em></small>
 
@@ -75,25 +74,25 @@ on September 22, 2022.
 
 
 
-+ **Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
++ **Andrew Bushnell**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [AVK](https://github.com/AVK)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [CEE](https://twitter.com/CEE)<br>
+    [andrewb7777](https://github.com/andrewb7777)<br>
   <small>
-     Department of Illinois, University of CEE
-     · Funded by Grant XXXXXXXX
+     Department of CEE, University of Illinois
   </small>
 
-+ **Jane Roe**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
++ **Kanchan Kulhalli**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
+    [Kanchan-uiuc](https://github.com/Kanchan-uiuc)<br>
   <small>
-     Department of CEE, University Illinois; Department of CEE, University of Illinois
+     Department of CEE, University of Illinois
+  </small>
+
++ **Vikram Gadge**<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [vgadge2](https://github.com/vgadge2)<br>
+  <small>
+     Department of CEE, University of Illinois
   </small>
 
 

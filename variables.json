@@ -9,10 +9,11 @@
     "lang": "en-US",
     "date-meta": "2022-09-22",
     "author-meta": [
-      "Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge",
-      "Jane Roe"
+      "Andrew Bushnell",
+      "Kanchan Kulhalli",
+      "Vikram Gadge"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Construction Project Group AVK\" />\n<meta name=\"citation_title\" content=\"Construction Project Group AVK\" />\n<meta property=\"og:title\" content=\"Construction Project Group AVK\" />\n<meta property=\"twitter:title\" content=\"Construction Project Group AVK\" />\n<meta name=\"dc.date\" content=\"2022-09-22\" />\n<meta name=\"citation_publication_date\" content=\"2022-09-22\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge\" />\n<meta name=\"citation_author_institution\" content=\"Department of Illinois, University of CEE\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@CEE\" />\n<meta name=\"citation_author\" content=\"Jane Roe\" />\n<meta name=\"citation_author_institution\" content=\"Department of CEE, University Illinois\" />\n<meta name=\"citation_author_institution\" content=\"Department of CEE, University of Illinois\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/\" />\n<meta property=\"og:url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/\" />\n<meta property=\"twitter:url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/\" />\n<meta name=\"citation_pdf_url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Construction Project Group AVK\" />\n<meta name=\"citation_title\" content=\"Construction Project Group AVK\" />\n<meta property=\"og:title\" content=\"Construction Project Group AVK\" />\n<meta property=\"twitter:title\" content=\"Construction Project Group AVK\" />\n<meta name=\"dc.date\" content=\"2022-09-22\" />\n<meta name=\"citation_publication_date\" content=\"2022-09-22\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Andrew Bushnell\" />\n<meta name=\"citation_author_institution\" content=\"Department of CEE, University of Illinois\" />\n<meta name=\"citation_author\" content=\"Kanchan Kulhalli\" />\n<meta name=\"citation_author_institution\" content=\"Department of CEE, University of Illinois\" />\n<meta name=\"citation_author\" content=\"Vikram Gadge\" />\n<meta name=\"citation_author_institution\" content=\"Department of CEE, University of Illinois\" />\n<link rel=\"canonical\" href=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/\" />\n<meta property=\"og:url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/\" />\n<meta property=\"twitter:url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/\" />\n<meta name=\"citation_pdf_url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a4c13d7f5ccdd731b06fd86f8c699cf94e947156/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a4c13d7f5ccdd731b06fd86f8c699cf94e947156/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a4c13d7f5ccdd731b06fd86f8c699cf94e947156/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -25,50 +26,46 @@
     "date": "September 22, 2022",
     "authors": [
       {
-        "github": "AVK",
-        "name": "Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge",
-        "initials": "AB, KK, VG",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
-        "twitter": "CEE",
+        "github": "andrewb7777",
+        "name": "Andrew Bushnell",
+        "initials": "AB",
         "email": "andrewb7@illinois.edu",
         "affiliations": [
-          "Department of Illinois, University of CEE"
-        ],
-        "funders": [
-          "Grant XXXXXXXX"
+          "Department of CEE, University of Illinois"
         ],
         "affiliation_numbers": [
           1
         ]
       },
       {
-        "github": "janeroe",
-        "name": "Jane Roe",
-        "initials": "JR",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
-        "email": "jane.roe@whatever.edu",
+        "github": "Kanchan-uiuc",
+        "name": "Kanchan Kulhalli",
+        "initials": "KK",
+        "email": "kk76@illinois.edu",
         "affiliations": [
-          "Department of CEE, University Illinois",
           "Department of CEE, University of Illinois"
         ],
         "affiliation_numbers": [
-          2,
-          3
+          1
+        ]
+      },
+      {
+        "github": "vgadge2",
+        "name": "Vikram Gadge",
+        "initials": "VG",
+        "email": "vgadge2@illinois.edu",
+        "affiliations": [
+          "Department of CEE, University of Illinois"
+        ],
+        "affiliation_numbers": [
+          1
         ]
       }
     ],
     "affiliations": [
       {
-        "affiliation": "Department of Illinois, University of CEE",
-        "affiliation_number": 1
-      },
-      {
-        "affiliation": "Department of CEE, University Illinois",
-        "affiliation_number": 2
-      },
-      {
         "affiliation": "Department of CEE, University of Illinois",
-        "affiliation_number": 3
+        "affiliation_number": 1
       }
     ],
     "ci_source": {
@@ -76,15 +73,15 @@
       "repo_slug": "uiceds/cee-492-term-project-fall-2022-avk",
       "repo_owner": "uiceds",
       "repo_name": "cee-492-term-project-fall-2022-avk",
-      "commit": "3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c",
-      "triggering_commit": "3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c",
-      "build_url": "https://github.com/uiceds/cee-492-term-project-fall-2022-avk/commit/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c/checks",
+      "commit": "a4c13d7f5ccdd731b06fd86f8c699cf94e947156",
+      "triggering_commit": "a4c13d7f5ccdd731b06fd86f8c699cf94e947156",
+      "build_url": "https://github.com/uiceds/cee-492-term-project-fall-2022-avk/commit/a4c13d7f5ccdd731b06fd86f8c699cf94e947156/checks",
       "job_url": "https://github.com/uiceds/cee-492-term-project-fall-2022-avk/runs/__run_3"
     },
     "html_url": "https://uiceds.github.io/cee-492-term-project-fall-2022-avk/",
     "pdf_url": "https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf",
-    "html_url_versioned": "https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c/",
-    "pdf_url_versioned": "https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3a4e36dbb966dee3ccc71a8fe0e4cff0ebd8a89c/manuscript.pdf",
+    "html_url_versioned": "https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a4c13d7f5ccdd731b06fd86f8c699cf94e947156/",
+    "pdf_url_versioned": "https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a4c13d7f5ccdd731b06fd86f8c699cf94e947156/manuscript.pdf",
     "manubot_version": "0.5.1",
     "rootstock_commit": null,
     "manuscript_stats": {
