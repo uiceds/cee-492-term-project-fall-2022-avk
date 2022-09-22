@@ -53,7 +53,7 @@ content/02.delete-me.md:47:qui
 content/02.delete-me.md:47:sint
 content/02.delete-me.md:47:sunt
 content/02.delete-me.md:86:kaggle
-content/02.delete-me.md:101:Compressive
-content/02.delete-me.md:101:Kaggle
-content/02.delete-me.md:237:Pandoc's
-content/02.delete-me.md:247:Pandoc's
+content/02.delete-me.md:102:Compressive
+content/02.delete-me.md:102:Kaggle
+content/02.delete-me.md:238:Pandoc's
+content/02.delete-me.md:248:Pandoc's
