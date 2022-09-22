@@ -9,7 +9,7 @@ CEE
 certains
 cillum
 commodo
-compressive
+Compressive
 consectetur
 consequat
 culpa
