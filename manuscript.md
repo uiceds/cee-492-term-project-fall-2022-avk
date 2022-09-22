@@ -37,9 +37,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/ddbf849be8feece10d1d5033d7973baf83830ca1/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/ddbf849be8feece10d1d5033d7973baf83830ca1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/ddbf849be8feece10d1d5033d7973baf83830ca1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/103a870aedacc7990f68279215c1b43f37e17c94/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/103a870aedacc7990f68279215c1b43f37e17c94/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/103a870aedacc7990f68279215c1b43f37e17c94/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/ddbf849be8feece10d1d5033d7973baf83830ca1/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/103a870aedacc7990f68279215c1b43f37e17c94/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@ddbf849](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/ddbf849be8feece10d1d5033d7973baf83830ca1)
+from [uiceds/cee-492-term-project-fall-2022-avk@103a870](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/103a870aedacc7990f68279215c1b43f37e17c94)
 on September 22, 2022.
 </em></small>
 
@@ -94,10 +94,10 @@ on September 22, 2022.
 
 
 
-Using a data set covering the entirety of the United States in the subject of..., we are going to create a machine learning program that will be able to predict future trends of ... Using these future trends will we be able to reach certain conclusions on the future growth, size, value and needed improvements in certain areas that we will be able to present to individuals in this field and they can use these recommendations for future projects. We will be using the data sets of... to compile all our data into certain tables and use them to create future trends based on current and past trends. 
-Using these data sets we will be able to create a new data set that can be used to predict the future trends. We intend to create these new data sets by using Julia to take several variables to create a new variable. We will use roughly half of the data as the test sample size that will be used to create the new data set for the 
-
-Comparison between proportion of compents, which works well, which gives best strength, alter materials proportions, predict strength
+Using a data set covering the concrete compressive strength of a variety of different mixture components, we are going to create a machine learning program that will be able to predict when concrete failures will occur, which components and the combinations these components will work best based on strength requirements of certain structures, and predict maximum allowable loads that can be achieved based on the mixtures 
+Using these future trends we will we be able to reach certain conclusions on the future improvements, designs, and material that should be used in certains structures that we will be able to present to individuals in the field that use these structures. They then can use these recommendations in their future projects. We will be using the data set of "Concrete Compressive Strength" which was obtained using Kaggle.com. We will compile all of the data into specific tables and use them to create the future trends we stated above.
+We will be creating new tables and figures that will be of comparisons of: when the concrete fails vs the concrete material, strength of concrete vs water to cement ratio, concrete composition vs concrete strength, max allowable loads vs cocnrete material, max allowable loads vs concrete permutations.
+We intend to use Julia to compile these new tables using machine learning tools that can be used to predict permutations, concrete to water ratios, etc that are not specifically included within the data set so we can accurately predict these unknown values that can than be used to run theoretical tests in real life construction project scenarios.
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.
