@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-09-19'
+date-meta: '2022-09-22'
 author-meta:
 - Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge
 - Jane Roe
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Construction Project AVK" />
   <meta property="og:title" content="Construction Project AVK" />
   <meta property="twitter:title" content="Construction Project AVK" />
-  <meta name="dc.date" content="2022-09-19" />
-  <meta name="citation_publication_date" content="2022-09-19" />
+  <meta name="dc.date" content="2022-09-22" />
+  <meta name="citation_publication_date" content="2022-09-22" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/06c48bb891b29a15195d8eaf2fd42146a62e7ba6/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/06c48bb891b29a15195d8eaf2fd42146a62e7ba6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/06c48bb891b29a15195d8eaf2fd42146a62e7ba6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b66c2662bd9bcb7c509b8619379829b437c9a64d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b66c2662bd9bcb7c509b8619379829b437c9a64d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b66c2662bd9bcb7c509b8619379829b437c9a64d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/06c48bb891b29a15195d8eaf2fd42146a62e7ba6/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b66c2662bd9bcb7c509b8619379829b437c9a64d/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@06c48bb](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/06c48bb891b29a15195d8eaf2fd42146a62e7ba6)
-on September 19, 2022.
+from [uiceds/cee-492-term-project-fall-2022-avk@b66c266](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/b66c2662bd9bcb7c509b8619379829b437c9a64d)
+on September 22, 2022.
 </em></small>
 
 ## Authors
@@ -98,7 +98,7 @@ on September 19, 2022.
 
 
 
-## Abstract {.page_break_before}
+## Abstract {Concrete Compressive Strength}
 Using a data set covering the entirety of the United States, we are going to use
 
 
