@@ -6,21 +6,23 @@ keywords:
   - manubot
 lang: en-US
 authors:
-  - github: AVK
-    name: Andrew Bushnell, Kanchan Kulhalli, Vikram Gadge
-    initials: AB, KK, VG
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: CEE
+  - github: andrewb7777
+    name: Andrew Bushnell
+    initials: AB
     email: andrewb7@illinois.edu
     affiliations:
-      - Department of Illinois, University of CEE
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
-    affiliations:
-      - Department of CEE, University Illinois
       - Department of CEE, University of Illinois
+  - github: Kanchan-uiuc
+    name: Kanchan Kulhalli
+    initials: KK
+    email: kk76@illinois.edu
+    affiliations:
+      - Department of CEE, University of Illinois
+  - github: vgadge2
+    name: Vikram Gadge
+    initials: VG
+    email: vgadge2@illinois.edu
+    affiliations:
+      - Department of CEE, University of Illinois
+
+
