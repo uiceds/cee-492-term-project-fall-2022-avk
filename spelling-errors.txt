@@ -1,8 +1,6 @@
 andrewb
 CEE
-Compressive
-eba
-fccf
+compressive
 Gadge
 Kaggle
 Kanchan
