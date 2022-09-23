@@ -51,7 +51,6 @@ sed
 sint
 sunt
 tempor
-toatl
 uiuc
 ullamco
 velit
@@ -59,3 +58,4 @@ veniam
 vgadge
 Vikram
 voluptate
+Yeh
