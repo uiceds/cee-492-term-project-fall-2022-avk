@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/31494d165a54b7b86b77eba979fccf9ec3935bb6/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/31494d165a54b7b86b77eba979fccf9ec3935bb6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/31494d165a54b7b86b77eba979fccf9ec3935bb6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/577c02265a6073f20c011b942d68ec03fa9fd62b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/577c02265a6073f20c011b942d68ec03fa9fd62b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/577c02265a6073f20c011b942d68ec03fa9fd62b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -60,9 +60,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/31494d165a54b7b86b77eba979fccf9ec3935bb6/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/577c02265a6073f20c011b942d68ec03fa9fd62b/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@31494d1](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/31494d165a54b7b86b77eba979fccf9ec3935bb6)
+from [uiceds/cee-492-term-project-fall-2022-avk@577c022](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/577c02265a6073f20c011b942d68ec03fa9fd62b)
 on September 23, 2022.
 </em></small>
 
@@ -93,18 +93,24 @@ on September 23, 2022.
 
 
 
-Using a data set covering the concrete compressive strength of a variety of different mixture components, we are going to create a machine learning program that will be able to predict when concrete failures will occur, which components and the combinations of these components will work best based on strength requirements of certain structures, and predict maximum allowable loads that can be achieved based on the mixtures.
+Using a data set covering the concrete compressive strength of a variety of different mixture components, we are going to create a machine learning program that will be able to predict when concrete failures will occur, which components and the combinations of these components will work best based on strength requirements of certain structures, and predict maximum allowable loads that can be achieved based on the mixtures  
 
-Using these future trends we will we be able to reach certain conclusions on the future improvements, designs, and materials that should be used in certain structures that we will be able to present to individuals in the fields that use these structures. They then can use these recommendations in their future projects. We will be using the data set of "Concrete Compressive Strength" which was obtained using Kaggle.com [1]. We will compile all of the data into specific tables and use them to create the future trends we stated above. The Data set consists of 8 quantitative inputs and 1 quantitative output as columns and total 1030 instances that are presented as rows.    
+Using these future trends we will we be able to reach certain conclusions on the future improvements, designs, and materials that should be used in certain structures that we will be able to present to individuals in the fields that use these structures. They then can use these recommendations in their future projects. We will be using the data set of "Concrete Compressive Strength" which was obtained using Kaggle.com (1). We will compile all of the data into specific tables and use them to create the future trends we stated above.  
 
-We will be creating new tables and figures that will be of comparisons of when the concrete fails vs the concrete material, strength of concrete vs water to cement ratio, concrete composition vs concrete strength, max allowable loads vs concrete material, max allowable loads vs concrete permutations.  
+The data set is composed of nine columns of data that state the following information: Fly Ash component, Water component, Superplasticizer, Coarse Aggregate, Age, and Concrete Compressive Strength. These columns have the following units of measurements: kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, days, MPa megapascals.
 
+<<<<<<< HEAD
+We will be creating new tables and figures that will be of comparisons of: when the concrete fails vs the concrete material, strength of concrete vs water to cement ratio, concrete composition vs concrete strength, max allowable loads vs concrete material, max allowable loads vs concrete permutations.  
+
+We intend to use Julia to compile these new tables using machine learning tools that can be used to predict permutations, concrete to water ratios, etc that are not specifically included within the data set so we can accurately predict these unknown values that can than be used to run theoretical tests in real life construction project scenarios.
+=======
 We intend to use Julia to compile these new tables using machine learning tools that can be used to predict permutations and combinations, concrete to water ratios, etc that are not specifically included within the data set so we can accurately predict these unknown values that can then be used to run theoretical tests in real life construction project scenarios.
 
 ## Citations
 
 [@{https://www.kaggle.com/datasets/sinamhd9/concrete-comprehensive-strength}]
 
+>>>>>>> 31494d165a54b7b86b77eba979fccf9ec3935bb6
 
 
 ## References {.page_break_before}
