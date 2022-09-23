@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/fa7fcd996c4052d7e5233033d5bdcee85eb932cd/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/fa7fcd996c4052d7e5233033d5bdcee85eb932cd/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/fa7fcd996c4052d7e5233033d5bdcee85eb932cd/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/31494d165a54b7b86b77eba979fccf9ec3935bb6/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/31494d165a54b7b86b77eba979fccf9ec3935bb6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/31494d165a54b7b86b77eba979fccf9ec3935bb6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -60,9 +60,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/fa7fcd996c4052d7e5233033d5bdcee85eb932cd/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/31494d165a54b7b86b77eba979fccf9ec3935bb6/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@fa7fcd9](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/fa7fcd996c4052d7e5233033d5bdcee85eb932cd)
+from [uiceds/cee-492-term-project-fall-2022-avk@31494d1](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/31494d165a54b7b86b77eba979fccf9ec3935bb6)
 on September 23, 2022.
 </em></small>
 
@@ -103,7 +103,9 @@ We intend to use Julia to compile these new tables using machine learning tools 
 
 ## Citations
 
-Citation by URL [@{https://www.kaggle.com/datasets/sinamhd9/concrete-comprehensive-strength}]
+[@{https://www.kaggle.com/datasets/sinamhd9/concrete-comprehensive-strength}]
+
+
 
 ## References {.page_break_before}
 
