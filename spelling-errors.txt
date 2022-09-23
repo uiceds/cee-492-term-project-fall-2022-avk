@@ -8,7 +8,7 @@ aute
 CEE
 cillum
 commodo
-compressive
+Compressive
 consectetur
 consequat
 culpa
@@ -51,6 +51,7 @@ sed
 sint
 sunt
 tempor
+toatl
 uiuc
 ullamco
 velit
