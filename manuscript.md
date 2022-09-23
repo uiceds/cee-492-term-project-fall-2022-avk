@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/038ab5bdb32360105c5794a68482a644f2742afe/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/038ab5bdb32360105c5794a68482a644f2742afe/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/038ab5bdb32360105c5794a68482a644f2742afe/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1ff9abd19d712c5a485097795b322a775e40c2d4/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1ff9abd19d712c5a485097795b322a775e40c2d4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1ff9abd19d712c5a485097795b322a775e40c2d4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -60,9 +60,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/038ab5bdb32360105c5794a68482a644f2742afe/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1ff9abd19d712c5a485097795b322a775e40c2d4/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@038ab5b](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/038ab5bdb32360105c5794a68482a644f2742afe)
+from [uiceds/cee-492-term-project-fall-2022-avk@1ff9abd](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/1ff9abd19d712c5a485097795b322a775e40c2d4)
 on September 23, 2022.
 </em></small>
 
@@ -102,12 +102,6 @@ The data set is composed of nine columns of data that state the following inform
 We will be creating new tables and figures that will be of comparisons of: when the concrete fails vs the concrete material, strength of concrete vs water to cement ratio, concrete composition vs concrete strength, max allowable loads vs concrete material, max allowable loads vs concrete permutations.  
 
 We intend to use Julia to compile these new tables using machine learning tools that can be used to predict permutations, concrete to water ratios, etc that are not specifically included within the data set so we can accurately predict these unknown values that can than be used to run theoretical tests in real life construction project scenarios.
-
-
-## Citations
-
-[@{https://www.kaggle.com/datasets/sinamhd9/concrete-comprehensive-strength}]
-
 
 
 ## References {.page_break_before}
