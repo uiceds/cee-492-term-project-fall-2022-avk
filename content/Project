@@ -1,0 +1,24 @@
+begin
+
+                if "PRAIRIELEARN" ∈ keys(ENV)
+
+                                using Pkg; Pkg.activate("/jl")
+
+                end
+
+                using CSV
+
+                using DataFrames
+
+                using PlutoUI
+
+                using RDatasets
+
+                using Statistics
+
+                using StatsPlots
+
+                using StatsBase
+
+end
+df = CSV.read("/Users/STP-16HT003/Downloads/concrete_data.csv", DataFrame)
