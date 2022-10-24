@@ -1,11 +1,4 @@
 begin
-
-                if "PRAIRIELEARN" ∈ keys(ENV)
-
-                                using Pkg; Pkg.activate("/jl")
-
-                end
-
                 using CSV
 
                 using DataFrames
