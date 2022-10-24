@@ -1,7 +1,7 @@
 ---
 title: Predicting Compressive Strength of Concrete using Machine learning
 lang: en-US
-date-meta: '2022-10-13'
+date-meta: '2022-10-24'
 author-meta:
 - Andrew Bushnell
 - Kanchan Kulhalli
@@ -16,8 +16,8 @@ header-includes: |-
   <meta name="citation_title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="og:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="twitter:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
-  <meta name="dc.date" content="2022-10-13" />
-  <meta name="citation_publication_date" content="2022-10-13" />
+  <meta name="dc.date" content="2022-10-24" />
+  <meta name="citation_publication_date" content="2022-10-24" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/444f52d1fefa06397cd5bb5d5093bff43b1be78d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/444f52d1fefa06397cd5bb5d5093bff43b1be78d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/444f52d1fefa06397cd5bb5d5093bff43b1be78d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a7137cf7a7b60bb1252dd1cd423a11fb21089bad/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a7137cf7a7b60bb1252dd1cd423a11fb21089bad/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a7137cf7a7b60bb1252dd1cd423a11fb21089bad/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,10 +61,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/444f52d1fefa06397cd5bb5d5093bff43b1be78d/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a7137cf7a7b60bb1252dd1cd423a11fb21089bad/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@444f52d](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/444f52d1fefa06397cd5bb5d5093bff43b1be78d)
-on October 13, 2022.
+from [uiceds/cee-492-term-project-fall-2022-avk@a7137cf](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/a7137cf7a7b60bb1252dd1cd423a11fb21089bad)
+on October 24, 2022.
 </em></small>
 -->
 
