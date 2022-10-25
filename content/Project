@@ -2,10 +2,6 @@ begin
     using CSV
     using DataFrames
     using PlutoUI
-    using RDatasets
-    using Statistics
-    using StatsPlots
-    using StatsBase
 end
-#df = CSV.read("C:/Users/STP/Downloads/archive/concrete_data.csv", DataFrame)
+df = CSV.read("C:/Users/STP/Desktop/CopyofConcrete_Data.csv", DataFrame)
 println("Hello World")
