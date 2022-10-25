@@ -1,7 +1,0 @@
-begin
-    using CSV
-    using DataFrames
-    using PlutoUI
-end
-df = CSV.read("C:/Users/STP/Desktop/CopyofConcrete_Data.csv", DataFrame)
-println("Hello World")

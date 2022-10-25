@@ -1,0 +1,18 @@
+begin
+    using CSV
+    using DataFrames
+    using PlutoUI
+    using Plots
+end
+df = CSV.read("C:/Users/STP/Desktop/CopyofConcrete_Data.csv", DataFrame)
+describe(df)
+Cement = df[:,1] 
+BlastFurnaceSlag = df[:,2]
+FlyAsh = df[:,3]
+Water = df[:,4]
+Superplasticizer = df[:,5]
+CoarseAggregate = df[:,6]
+FineAggregate = df[:,7]
+Age = df[:,8]
+CementCompressiveStrength = df[:,9]
+plot(Age,Water)
