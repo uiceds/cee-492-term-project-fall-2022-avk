@@ -15,4 +15,4 @@ CoarseAggregate = df[:,6]
 FineAggregate = df[:,7]
 Age = df[:,8]
 CementCompressiveStrength = df[:,9]
-plot(Age,Water)
+plot(Age,CementCompressiveStrength)
