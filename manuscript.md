@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/16efd4cf5624c4827d909a5d63ba8dcfa9478052/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/16efd4cf5624c4827d909a5d63ba8dcfa9478052/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/16efd4cf5624c4827d909a5d63ba8dcfa9478052/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/24467e14b94a6b8ed86b136bcbb222b9802decb7/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/24467e14b94a6b8ed86b136bcbb222b9802decb7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/24467e14b94a6b8ed86b136bcbb222b9802decb7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/16efd4cf5624c4827d909a5d63ba8dcfa9478052/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/24467e14b94a6b8ed86b136bcbb222b9802decb7/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@16efd4c](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/16efd4cf5624c4827d909a5d63ba8dcfa9478052)
+from [uiceds/cee-492-term-project-fall-2022-avk@24467e1](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/24467e14b94a6b8ed86b136bcbb222b9802decb7)
 on October 25, 2022.
 </em></small>
 -->
