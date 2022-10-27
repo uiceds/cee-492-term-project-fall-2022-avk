@@ -3,6 +3,13 @@ begin
     using DataFrames
     using PlutoUI
     using Plots
+    using RDatasets
+    using Measures
+    using StatsPlots
+    using Statistics
+    using Distributions
+    using LinearAlgebra
+    using Random
 end
 df = CSV.read("C:/Users/STP/Desktop/CopyofConcrete_Data.csv", DataFrame)
 describe(df)
@@ -16,3 +23,7 @@ FineAggregate = df[:,7]
 Age = df[:,8]
 CementCompressiveStrength = df[:,9]
 plot(Age,CementCompressiveStrength)
+dff = insert!(df,1,transpose[1:1000],"Sample #")
+Tranpose(x)
+plot(Cement,CementCompressiveStrength)
+describe(df)
