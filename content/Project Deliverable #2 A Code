@@ -11,7 +11,7 @@ begin
     using LinearAlgebra
     using Random
 end
-df = CSV.read("C:/Users/STP/Desktop/CopyofConcrete_Data.csv", DataFrame)
+df = CSV.read("C:/Users/STP/Desktop/ConcreteProjectData.csv", DataFrame)
 describe(df)
 Cement = df[:,1] 
 BlastFurnaceSlag = df[:,2]
@@ -22,8 +22,11 @@ CoarseAggregate = df[:,6]
 FineAggregate = df[:,7]
 Age = df[:,8]
 CementCompressiveStrength = df[:,9]
-plot(Age,CementCompressiveStrength)
-dff = insert!(df,1,transpose[1:1000],"Sample #")
-Tranpose(x)
-plot(Cement,CementCompressiveStrength)
+Sample = df[:,10]
+#plot(Age,CementCompressiveStrength)
+#plot(Cement,CementCompressiveStrength)
 describe(df)
+print(df)
+#FA = select(df, [Cement (component 1)(kg in a m^3 mixture):, :Sample])
+df
+abs
