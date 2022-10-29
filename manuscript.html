@@ -68,9 +68,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b77265ae938342db6eedad7da5c9ea2d09f1a488/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b77265ae938342db6eedad7da5c9ea2d09f1a488/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b77265ae938342db6eedad7da5c9ea2d09f1a488/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/5b32076248adb7b8292247df404cddc95912311e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/5b32076248adb7b8292247df404cddc95912311e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/5b32076248adb7b8292247df404cddc95912311e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -86,9 +86,9 @@
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b77265ae938342db6eedad7da5c9ea2d09f1a488/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/5b32076248adb7b8292247df404cddc95912311e/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@b77265a](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/b77265ae938342db6eedad7da5c9ea2d09f1a488)
+from [uiceds/cee-492-term-project-fall-2022-avk@5b32076](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/5b32076248adb7b8292247df404cddc95912311e)
 on October 29, 2022.
 </em></small>
 -->
@@ -116,14 +116,109 @@ Department of CEE, University of Illinois
 <h1 id="abstract">Abstract</h1>
 <p>Using a data set covering the concrete compressive strength of a variety of different mixture components, we are going to create a machine learning program that will be able to predict when concrete failures will occur, which components and the combinations of these components will work best based on strength requirements of certain structures, and predict maximum allowable loads that can be achieved based on the mixtures</p>
 <p>Using these future trends, we will we be able to reach certain conclusions on the future improvements, designs, and materials that should be used in certain structures that we will be able to present to individuals in the fields that use these structures. They then can use these recommendations in their future projects. We will be using the data set of “Concrete Compressive Strength” which was obtained using Kaggle.com <span class="citation" data-cites="1EIcIBT03">[<a href="#ref-1EIcIBT03" role="doc-biblioref">1</a>]</span>. The data comes in the form of an excel file and We will compile all of the data into specific tables and use them to create the future trends we stated above.</p>
-<p>The data set is composed of nine columns of data that state the following information: Fly Ash component, Water component, Superplasticizer, Coarse Aggregate, Age, and Concrete Compressive Strength. These columns have the following units of measurements: kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, days, MPa megapascals. The excel data set has a total of 1030 rows of this data.</p>
 <p>We will be creating new tables and figures that will be of comparisons of when the concrete fails vs the concrete material, strength of concrete vs water to cement ratio, concrete composition vs concrete strength, max allowable loads vs concrete material, max allowable loads vs concrete permutations. In future we will be adding cost of components as new dimension and check out what’s the best and minimal combination to make it cost effective and compare the cost and strength graph.</p>
 <p>We intend to use Julia to compile these new tables using machine learning tools that can be used to predict permutations, concrete to water ratios etc, that are not specifically included within the data set so we can accurately predict these unknown values that can then be used to run theoretical tests in real life construction project scenarios.</p>
 <h1 id="exploratory-data-analysis">Exploratory Data Analysis</h1>
+<p>The data set is composed of nine columns of data that state the following information: Fly Ash component, Water component, Superplasticizer, Coarse Aggregate, Age, and Concrete Compressive Strength. These columns have the following units of measurements: kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, days, MPa megapascals. The excel data set has a total of 1030 rows of this data. We found a few discrepancies in the data set and we decided to clean the data before doing any exploratory analysis. The below section describes it in detail.</p>
 <h2 id="data-cleaning">Data Cleaning</h2>
 <p>The Dataset that we selected comprised of rows that were repeating multiple times. We could only learn about this when we began with asking questions and trying to code them out. So we go back and clean the data set by using “Unique” fuction, after which the rows reduced from 1030 to 1005.</p>
 <p>The second challenge we were faced with was that the values of ingredients in the concrete were same for multiple rows but only the Concrete compressive strengths were varying i.e the input columns with same values generated different output. So we took a mean of those values and combined them into a single row.</p>
 <h2 id="description-of-the-dataset">Description of the Dataset</h2>
+<p>Before we set out to ask questions, we generated the below table to get a deeper understanding of the columns in our dataset.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;">variable</th>
+<th style="text-align: center;">min</th>
+<th style="text-align: center;">mean</th>
+<th style="text-align: center;">median</th>
+<th>max</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Symbol</td>
+<td style="text-align: center;">Real</td>
+<td style="text-align: center;">Float64</td>
+<td style="text-align: center;">Float64</td>
+<td>Real</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">:cement(kg per m3)</td>
+<td style="text-align: center;">102.0</td>
+<td style="text-align: center;">276.873</td>
+<td style="text-align: center;">259.95</td>
+<td>540.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">:blast_furnace_slag(kg per m3)</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">73.0007</td>
+<td style="text-align: center;">20.0</td>
+<td>359.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">:fly_ash(kg per m3)</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">55.6028</td>
+<td style="text-align: center;">1.0</td>
+<td>200.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">:water(kg per m3)</td>
+<td style="text-align: center;">121.8</td>
+<td style="text-align: center;">182.368</td>
+<td style="text-align: center;">185.7</td>
+<td>247.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">:superplasticizer(kg per m3)</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">6.34415</td>
+<td style="text-align: center;">6.0</td>
+<td>32.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">:coarse_aggregate(kg per m3)</td>
+<td style="text-align: center;">801.0</td>
+<td style="text-align: center;">974.597</td>
+<td style="text-align: center;">968.0</td>
+<td>1145.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">:fine_aggregate(kg per m3)</td>
+<td style="text-align: center;">594.0</td>
+<td style="text-align: center;">773.081</td>
+<td style="text-align: center;">780.0</td>
+<td>992.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">:age(days)</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">46.1663</td>
+<td style="text-align: center;">28.0</td>
+<td>365</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">:concrete_compressive_strength(MPa)</td>
+<td style="text-align: center;">2.33</td>
+<td style="text-align: center;">35.119</td>
+<td style="text-align: center;">33.73</td>
+<td>82.6</td>
+</tr>
+</tbody>
+</table>
 <h1 id="predictive-modeling">Predictive Modeling</h1>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->

@@ -1,7 +1,7 @@
 andrewb
 CEE
-Compressive
-Dataset
+compressive
+dataset
 fuction
 Gadge
 Kaggle
@@ -9,7 +9,7 @@ Kanchan
 Kulhalli
 megapascals
 MPa
-Superplasticizer
+superplasticizer
 uiuc
 vgadge
 Vikram
