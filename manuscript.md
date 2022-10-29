@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bc0e08df9026890e07ce4b9d8d26721cbf9f52e3/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bc0e08df9026890e07ce4b9d8d26721cbf9f52e3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bc0e08df9026890e07ce4b9d8d26721cbf9f52e3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b77265ae938342db6eedad7da5c9ea2d09f1a488/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b77265ae938342db6eedad7da5c9ea2d09f1a488/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b77265ae938342db6eedad7da5c9ea2d09f1a488/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bc0e08df9026890e07ce4b9d8d26721cbf9f52e3/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b77265ae938342db6eedad7da5c9ea2d09f1a488/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@bc0e08d](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/bc0e08df9026890e07ce4b9d8d26721cbf9f52e3)
+from [uiceds/cee-492-term-project-fall-2022-avk@b77265a](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/b77265ae938342db6eedad7da5c9ea2d09f1a488)
 on October 29, 2022.
 </em></small>
 -->
@@ -110,6 +110,10 @@ We intend to use Julia to compile these new tables using machine learning tools 
 # Exploratory Data Analysis
 
 ## Data Cleaning
+The Dataset that we selected comprised of rows that were repeating multiple times. We could only learn about this when we began with asking questions and trying to code them out. So we go back and clean the data set by using "Unique" fuction, after which the rows reduced from 1030 to 1005.
+
+The second challenge we were faced with was that the values of ingredients in the concrete were same for multiple rows but only the Concrete compressive strengths were varying i.e the input columns with same values generated different output. So we took a mean of those values and combined them into a single row.
+
 
 ## Description of the Dataset
 
