@@ -1,3 +1,4 @@
+content/01.abstract.md:1:Delivarable
 content/01.abstract.md:2:compressive
 content/01.abstract.md:4:Compressive
 content/01.abstract.md:4:kaggle
@@ -25,3 +26,5 @@ content/01.abstract.md:47:df
 content/01.abstract.md:48:df
 content/01.abstract.md:56:Superplasticizer
 content/01.abstract.md:60:Compressive
+content/01.abstract.md:70:Compressive
+content/01.abstract.md:70:Mahan

@@ -1,7 +1,8 @@
 andrewb
 CEE
 compressive
-dataset
+Dataset
+Delivarable
 df
 fuction
 Gadge
@@ -9,10 +10,11 @@ independly
 Kaggle
 Kanchan
 Kulhalli
+Mahan
 megapascals
 MPa
 stregth
-superplasticizer
+Superplasticizer
 uiuc
 vgadge
 Vikram

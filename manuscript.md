@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3d8b7d3ac333231ef952b8b1bf7019950e41b402/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3d8b7d3ac333231ef952b8b1bf7019950e41b402/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3d8b7d3ac333231ef952b8b1bf7019950e41b402/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/d921c0d0e9b56c26f1acb223867eb5d75be3cffd/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/d921c0d0e9b56c26f1acb223867eb5d75be3cffd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/d921c0d0e9b56c26f1acb223867eb5d75be3cffd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/3d8b7d3ac333231ef952b8b1bf7019950e41b402/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/d921c0d0e9b56c26f1acb223867eb5d75be3cffd/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@3d8b7d3](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/3d8b7d3ac333231ef952b8b1bf7019950e41b402)
+from [uiceds/cee-492-term-project-fall-2022-avk@d921c0d](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/d921c0d0e9b56c26f1acb223867eb5d75be3cffd)
 on October 29, 2022.
 </em></small>
 -->
@@ -95,7 +95,7 @@ on October 29, 2022.
 
 
 
-                                            Deliverable #1
+# Delivarable #1
 Using a data set covering the concrete compressive strength of a variety of different mixture components, we are going to create a machine learning program that will be able to predict when concrete failures will occur, which components and the combinations of these components will work best based on strength requirements of certain structures, and predict maximum allowable loads that can be achieved based on the mixtures  
 
 Using these future trends, we will we be able to reach certain conclusions on the future improvements, designs, and materials that should be used in certain structures that we will be able to present to individuals in the fields that use these structures. They then can use these recommendations in their future projects. We will be using the data set of "Concrete Compressive Strength" which was obtained using Kaggle.com [@{https://www.kaggle.com/datasets/sinamhd9/concrete-comprehensive-strength}]. The data comes in the form of an excel file and We will compile all of the data into specific tables and use them to create the future trends we stated above.  
@@ -106,7 +106,7 @@ We intend to use Julia to compile these new tables using machine learning tools 
 
 # Exploratory Data Analysis
 
-The data set is composed of nine columns of data that state the following information: Fly Ash component, Water component, Superplasticizer, Coarse Aggregate, Age, and Concrete Compressive Strength. These columns have the following units of measurements: kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, days, MPa megapascals. The excel data set has a total of 1030 rows of this data. We found a few discrepancies in the data set and we decided to clean the data before doing any exploratory analysis. The below section describes it in detail.
+The data set was originally composed of nine columns of data that state the following information: Fly Ash component, Water component, Superplasticizer, Coarse Aggregate, Age, and Concrete Compressive Strength. These columns have the following units of measurements: kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, days, MPa megapascals. The excel data set has a total of 1030 rows of this data. We found a few discrepancies in the data set and we decided to clean the data before doing any exploratory analysis. The below section describes it in detail.
 
 ## Data Cleaning
 The Dataset that we selected comprised of rows that were repeating multiple times. We could only learn about this when we began with asking questions and trying to code them out. So we go back and clean the data set by using "Unique" fuction, after which the rows reduced from 1030 to 1005.
@@ -160,6 +160,11 @@ We are comparing the w/c ratio with the compressive strength of the concrete.
 
 
 # Predictive Modeling
+
+
+
+# Ref:
+Mahan Mark (2014), Statistical Analysis of Concrete Compressive Strengths for California Highway Bridges, https://doi.org/10.1061/(ASCE)CF.1943-5509.0000404,
 
 
 ## References {.page_break_before}
