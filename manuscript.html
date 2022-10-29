@@ -68,9 +68,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/5b32076248adb7b8292247df404cddc95912311e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/5b32076248adb7b8292247df404cddc95912311e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/5b32076248adb7b8292247df404cddc95912311e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfafaed8dbee19b882dfa9a6aad6de9f9d378104/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfafaed8dbee19b882dfa9a6aad6de9f9d378104/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfafaed8dbee19b882dfa9a6aad6de9f9d378104/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -86,9 +86,9 @@
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/5b32076248adb7b8292247df404cddc95912311e/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfafaed8dbee19b882dfa9a6aad6de9f9d378104/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@5b32076](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/5b32076248adb7b8292247df404cddc95912311e)
+from [uiceds/cee-492-term-project-fall-2022-avk@bfafaed](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/bfafaed8dbee19b882dfa9a6aad6de9f9d378104)
 on October 29, 2022.
 </em></small>
 -->
@@ -219,6 +219,20 @@ Department of CEE, University of Illinois
 </tr>
 </tbody>
 </table>
+<p>Several studies independly have shown that concrete stregth development is determined not only by the water cement ratio, but that it is also influenced by the content of other concrete ingredients as well. Hence we tried to look into effects of various other ingredients on the compressive strength of concrete.In the below sections, we describe our columns in details and ask pertinent questions on our dataset.</p>
+<h3 id="water-and-cement">Water and Cement</h3>
+<p>The Abrams’ water-to-cement ratio (w/c) pronouncement of 1918 has been described as the most useful and signiﬁcant advancement in the history of concrete technology. His most important formulation was the inverse proportionality between the w/c ratio and the strength of concrete. The generally accepted Abrams rule is a formulation of the observation that an increase in the w/c decreases</p>
+<p>To check whether the Abrams’ law holds true or false.
+We are comparing the w/c ratio with the compressive strength of the concrete.</p>
+<h4 id="wc_ratio-selectdf-cement-water-concrete_compressive_strength">wc_ratio = select(df, [“cement”, “water”, “concrete_compressive_strength”])</h4>
+<h4 id="df.wc_ratio-.-df.water-.-df.cement">df.wc_ratio .= df.water ./ df.cement</h4>
+<h4 id="wc_ratio2-selectdf-wc_ratio-water-cementconcrete_compressive_strength">wc_ratio2 = select(df, [“wc_ratio”, “water”, “cement”,“concrete_compressive_strength”])</h4>
+<h3 id="blast-furnace-slag">Blast Furnace Slag</h3>
+<h3 id="fly-ash">Fly Ash</h3>
+<h3 id="coarse-aggregate-and-fine-aggregate">Coarse Aggregate and Fine aggregate</h3>
+<h3 id="superplasticizer">Superplasticizer</h3>
+<h3 id="age">Age</h3>
+<h3 id="concrete-compressive-strength">Concrete Compressive Strength</h3>
 <h1 id="predictive-modeling">Predictive Modeling</h1>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->

@@ -13,3 +13,15 @@ content/01.abstract.md:21:Dataset
 content/01.abstract.md:23:dataset
 content/01.abstract.md:32:superplasticizer
 content/01.abstract.md:36:MPa
+content/01.abstract.md:39:compressive
+content/01.abstract.md:39:dataset
+content/01.abstract.md:39:independly
+content/01.abstract.md:39:stregth
+content/01.abstract.md:45:compressive
+content/01.abstract.md:47:df
+content/01.abstract.md:48:df
+content/01.abstract.md:48:df
+content/01.abstract.md:48:df
+content/01.abstract.md:49:df
+content/01.abstract.md:57:Superplasticizer
+content/01.abstract.md:61:Compressive

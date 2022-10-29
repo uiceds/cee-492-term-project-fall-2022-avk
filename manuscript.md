@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/5b32076248adb7b8292247df404cddc95912311e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/5b32076248adb7b8292247df404cddc95912311e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/5b32076248adb7b8292247df404cddc95912311e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfafaed8dbee19b882dfa9a6aad6de9f9d378104/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfafaed8dbee19b882dfa9a6aad6de9f9d378104/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfafaed8dbee19b882dfa9a6aad6de9f9d378104/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/5b32076248adb7b8292247df404cddc95912311e/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfafaed8dbee19b882dfa9a6aad6de9f9d378104/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@5b32076](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/5b32076248adb7b8292247df404cddc95912311e)
+from [uiceds/cee-492-term-project-fall-2022-avk@bfafaed](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/bfafaed8dbee19b882dfa9a6aad6de9f9d378104)
 on October 29, 2022.
 </em></small>
 -->
@@ -131,6 +131,32 @@ Before we set out to ask questions, we generated the below table to get a deeper
 | 7 | :fine_aggregate(kg per m3)          | 594.0 | 773.081 | 780.0   | 992.6  |
 | 8 | :age(days)                          | 1     | 46.1663 | 28.0    | 365    |
 | 9 | :concrete_compressive_strength(MPa) | 2.33  | 35.119  | 33.73   | 82.6   |
+
+
+Several studies independly have shown that concrete stregth development is determined not only by the water cement ratio, but that it is also influenced by the content of other concrete ingredients as well. Hence we tried to look into effects of various other ingredients on the compressive strength of concrete.In the below sections, we describe our columns in details and ask pertinent questions on our dataset.
+
+### Water and Cement
+The Abrams’ water-to-cement ratio (w/c) pronouncement of 1918 has been described as the most useful and signiﬁcant advancement in the history of concrete technology. His most important formulation was the inverse proportionality between the w/c ratio and the strength of concrete. The generally accepted Abrams rule is a formulation of the observation that an increase in the w/c decreases 
+
+To check whether the Abrams' law holds true or false.
+We are comparing the w/c ratio with the compressive strength of the concrete.
+
+#### wc_ratio = select(df, ["cement", "water", "concrete_compressive_strength"])
+#### df.wc_ratio .= df.water ./ df.cement 
+#### wc_ratio2 = select(df, ["wc_ratio", "water", "cement","concrete_compressive_strength"])
+
+### Blast Furnace Slag
+
+### Fly Ash
+
+### Coarse Aggregate and Fine aggregate
+
+### Superplasticizer
+
+### Age
+
+### Concrete Compressive Strength
+
 
 
 
