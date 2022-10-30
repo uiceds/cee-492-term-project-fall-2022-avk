@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/0ad60bf01f65ef16cb49b67bae16a2d419c9e5c6/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/0ad60bf01f65ef16cb49b67bae16a2d419c9e5c6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/0ad60bf01f65ef16cb49b67bae16a2d419c9e5c6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/4de2725abe26b8857474fdd3bf1ec30d59cd8fe1/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/4de2725abe26b8857474fdd3bf1ec30d59cd8fe1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/4de2725abe26b8857474fdd3bf1ec30d59cd8fe1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/0ad60bf01f65ef16cb49b67bae16a2d419c9e5c6/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/4de2725abe26b8857474fdd3bf1ec30d59cd8fe1/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@0ad60bf](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/0ad60bf01f65ef16cb49b67bae16a2d419c9e5c6)
+from [uiceds/cee-492-term-project-fall-2022-avk@4de2725](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/4de2725abe26b8857474fdd3bf1ec30d59cd8fe1)
 on October 30, 2022.
 </em></small>
 -->
@@ -148,6 +148,7 @@ We are comparing the w/c ratio with the compressive strength of the concrete.
 
 ### Fly Ash
 In recent years, fly ash has become an increasing common component used in concrete mixtures. Fly ash is used to increase the workability of plastic concretes along with increase the strength and durability of regular concretes (Ondova, 2012). Fly ash can also replace a portion of the amount of cement mixture needed which in return reduces the cost while not decreasing the strength. Using our data set
+![Getting Started](images/Compressive%20Strength%20vs%20Fly%20Ash.jpg)
 ### Coarse Aggregate and Fine aggregate
 
 ### Superplasticizer
