@@ -12,7 +12,7 @@ begin
     using Random
 end
 df = CSV.read("C:/Users/STP/Desktop/ConcreteProjectData2.csv", DataFrame)
-describe(df)
+#describe(df)
 Cement = df[:,1] 
 BlastFurnaceSlag = df[:,2]
 FlyAsh = df[:,3]
@@ -25,7 +25,7 @@ ConcreteCompressiveStrength = df[:,9]
 Sample = df[:,10]
 #plot(Age,CementCompressiveStrength)
 #plot(Cement,CementCompressiveStrength)
-describe(df)
+#describe(df)
 #print(df)
 #FA = select(df, [Cement (component 1)(kg in a m^3 mixture):, :Sample])
 #SvD = select(df, :Days,:Sample)
