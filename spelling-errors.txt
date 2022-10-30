@@ -2,7 +2,7 @@ andrewb
 CEE
 cocnstruction
 compressive
-dataset
+Dataset
 Eo
 Estokova
 fuction
@@ -17,7 +17,7 @@ MPa
 Ondova
 Stevulova
 stregth
-Superplasticizer
+superplasticizer
 uiuc
 vgadge
 Vikram
