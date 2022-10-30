@@ -3,6 +3,8 @@ content/01.abstract.md:5:Compressive
 content/01.abstract.md:5:kaggle
 content/01.abstract.md:5:Kaggle
 content/01.abstract.md:13:Compressive
+content/01.abstract.md:13:dataset
+content/01.abstract.md:13:dataset
 content/01.abstract.md:13:megapascals
 content/01.abstract.md:13:MPa
 content/01.abstract.md:13:Superplasticizer
@@ -19,4 +21,18 @@ content/01.abstract.md:39:independly
 content/01.abstract.md:39:stregth
 content/01.abstract.md:45:compressive
 content/01.abstract.md:54:Superplasticizer
+content/01.abstract.md:57:compressive
+content/01.abstract.md:57:compressive
+content/01.abstract.md:57:Compressive
 content/01.abstract.md:58:Compressive
+content/01.abstract.md:59:compressive
+content/01.abstract.md:59:dataset
+content/01.abstract.md:66:cocnstruction
+content/01.abstract.md:66:dataset
+content/01.abstract.md:66:dataset
+content/01.abstract.md:66:MPa
+content/01.abstract.md:69:kaggle
+content/01.abstract.md:71:Compressive
+content/01.abstract.md:71:Mahan
+content/01.abstract.md:73:Compressive
+content/01.abstract.md:73:Eo
