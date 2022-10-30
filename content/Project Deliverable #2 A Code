@@ -37,9 +37,12 @@ describe(df)
 #x = df.Days
 #y = df.ConcreteCompressiveStrength
 #str = [@sprintf("%.2f", yi) for yi in y]
-histogram(df.Days,df.ConcreteCompressiveStrength, xaxis = "Days", yaxis = "Compressive Strength (MPa)", title = "Compressive Strength vs Age", legend=false, xlims = (0,370), ylims = (0,150))
+histogram(df.Days,df.ConcreteCompressiveStrength, xaxis = "Days", yaxis = "Compressive Strength (MPa)", title = "Compressive Strength vs Age", legend=false, xlims = (0,100), ylims = (0,150))
 plot!(y, st=:scatter,marker_shape=:none,primary=false,series_annotations=x)
 #annotate!(x,y, str, :bottom)
 #histogram(df.Cement,df.ConcreteCompressiveStrength,xaxis = "Cement (kg)", yaxis = "Compressive Strength (MPa)", title = "Compressive Strength vs Cement mixture")
 #println(replace!(df.FlyAsh, 0 =>1))
-print(df)
+#print(df)
+xFS = unique(df, [:FlyAsh])
+#xFS = replace!(df.FlyAsh, 0 =>1)FlyAsh, df.ConcreteCompressiveStrength)
+histogram(xFS.FlyAsh,xFS.ConcreteCompressiveStrength,xaxis = "FlyAsh (kg)", yaxis = "Compressive Strength (MPa)", title = "Compressive Strength vs Fly Ash", legend=false, xlims = (0,100), ylims = (0,70))
