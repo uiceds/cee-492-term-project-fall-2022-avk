@@ -1,10 +1,8 @@
 andrewb
 CEE
-cocnstruction
-compressive
-csv
+Compressive
+CSV
 dataset
-fuction
 Gadge
 independly
 Kaggle
@@ -16,7 +14,6 @@ Ondova
 stregth
 Superplasticizer
 uiuc
-unarrange
 vgadge
 Vikram
 workability
