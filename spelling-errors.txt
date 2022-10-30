@@ -14,7 +14,7 @@ Mahan
 megapascals
 MPa
 stregth
-Superplasticizer
+superplasticizer
 uiuc
 vgadge
 Vikram
