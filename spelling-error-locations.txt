@@ -3,9 +3,12 @@ content/01.abstract.md:5:Compressive
 content/01.abstract.md:5:kaggle
 content/01.abstract.md:5:Kaggle
 content/01.abstract.md:13:Compressive
+content/01.abstract.md:13:csv
+content/01.abstract.md:13:dataset
 content/01.abstract.md:13:megapascals
 content/01.abstract.md:13:MPa
 content/01.abstract.md:13:Superplasticizer
+content/01.abstract.md:13:unarrange
 content/01.abstract.md:16:Dataset
 content/01.abstract.md:16:fuction
 content/01.abstract.md:18:compressive
@@ -23,4 +26,11 @@ content/01.abstract.md:54:Ondova
 content/01.abstract.md:54:workability
 content/01.abstract.md:55:Compressive
 content/01.abstract.md:59:Superplasticizer
-content/01.abstract.md:63:Compressive
+content/01.abstract.md:62:compressive
+content/01.abstract.md:62:compressive
+content/01.abstract.md:62:Compressive
+content/01.abstract.md:64:Compressive
+content/01.abstract.md:70:cocnstruction
+content/01.abstract.md:70:dataset
+content/01.abstract.md:70:dataset
+content/01.abstract.md:70:MPa

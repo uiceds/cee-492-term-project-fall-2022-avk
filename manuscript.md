@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f6c41b0da394e6a585e2aa2c0b1c7c85af6daa9d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f6c41b0da394e6a585e2aa2c0b1c7c85af6daa9d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f6c41b0da394e6a585e2aa2c0b1c7c85af6daa9d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b3ef8955e4472db065776b5afcc22206d024cbd6/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b3ef8955e4472db065776b5afcc22206d024cbd6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b3ef8955e4472db065776b5afcc22206d024cbd6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f6c41b0da394e6a585e2aa2c0b1c7c85af6daa9d/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b3ef8955e4472db065776b5afcc22206d024cbd6/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@f6c41b0](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/f6c41b0da394e6a585e2aa2c0b1c7c85af6daa9d)
+from [uiceds/cee-492-term-project-fall-2022-avk@b3ef895](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/b3ef8955e4472db065776b5afcc22206d024cbd6)
 on October 30, 2022.
 </em></small>
 -->
@@ -107,7 +107,7 @@ We intend to use Julia to compile these new tables using machine learning tools 
 
 # Exploratory Data Analysis
 
-The data set is composed of nine columns of data that state the following information: Fly Ash component, Water component, Superplasticizer, Coarse Aggregate, Age, and Concrete Compressive Strength. These columns have the following units of measurements: the first 7 columns have the units kg in m^3 mixture, and 8th column in days, 9th column in MPa megapascals. The excel data set has a total of 1030 rows of this data. We found a few discrepancies in the data set and we decided to clean the data before doing any exploratory analysis. The below section describes it in detail.
+The data set is was originally composed of nine columns of data that state the following information: Fly Ash component, Water component, Superplasticizer, Coarse Aggregate, Age, and Concrete Compressive Strength. These columns have the following units of measurements: the first 7 columns have the units kg in m^3 mixture, and 8th column in days, 9th column in MPa megapascals. The excel data set has a total of 1030 rows of this data. We found a few discrepancies in the data set and we decided to clean the data before doing any exploratory analysis. The below section describes it in detail. Also, an updated csv file was used in some cases to include another column named "Sample" to keep the other column combinations constant so we did not unarrange the combinations originally in the dataset.
 
 ## Data Cleaning
 The Dataset that we selected comprised of rows that were repeating multiple times. We could only learn about this when we began with asking questions and trying to code them out. So we go back and clean the data set by using "Unique" fuction, after which the rows reduced from 1030 to 1005.
@@ -156,14 +156,15 @@ In recent years, fly ash has become an increasing common component used in concr
 ### Superplasticizer
 
 ### Age
-
+By creating a histogram plot of Concrete Compressive Strength vs Age where age is the number of days after the concrete has been placed, we see that as concrete age increases the compressive strength increases until it reaches a peak at 28 days and then gradually decreases in strength as age increases. Looking online we see that concrete requires a curing time where once the concrete is placed it needs time to cure which is where the water content in the concrete mixture evaporates, leading to the concrete to settle and harden (Kim 1998). This in return leads to the strength to increase. Based on this information and looking at the data set, to have the concrete mixture to result in the strongest compressive strength we want our age to be around the 28 day mark. 
+![Age](images/Concrete%20Compressive%20Strength%20Vs%20Age.jpg)
 ### Concrete Compressive Strength
 
 
 
 
 # Predictive Modeling
-
+Using our data we can use machine learning to create predictive modeling code for solving for which combinations of concrete mixtures would be ideal to meet a certain strength requirement, based on different construction projects, and the find the minimum optimal cost. To do this we intend to first use the data available in our dataset to find out the unit costs of each component in our concrete. We then will look up research papers over the different strength requirements set in place at the State and Federal level for different construction projects, such as bridges and highways. We then will design a machine learning program that will take our data available and create rough estimations of what how much of each concrete component would need to be used to create the optimal combination. This would result in the creation of a  model of ideal solutions to meet the lowest price and still meet the strength requirements for certain projects. This would be very useful in the cocnstruction industry which would be able to use our machine learning program to evaluate which combination of concrete would best work to meet the requirements of their project while also saving them the most capital. Based on what we have discussed with the TA, this is a feasible idea since our data could be used to create combinations that are not currently in our dataset by using what we learned in class to create rough estimates of new combinations based on the current data. We intend to do this by creating something similar to the solver function in excel where we will have an objective function, such as minimize price or maximize strength, and set up constraints, such as have strength be greater than or equal to 25 MPa or have at least 20% cement. This would give us our end result of a new matrix of the ideal values for the combinations in the concrete.
 
 
 
