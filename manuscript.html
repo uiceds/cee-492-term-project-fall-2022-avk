@@ -7,7 +7,7 @@
   <meta name="author" content="Andrew Bushnell" />
   <meta name="author" content="Kanchan Kulhalli" />
   <meta name="author" content="Vikram Gadge" />
-  <meta name="dcterms.date" content="2022-10-29" />
+  <meta name="dcterms.date" content="2022-10-30" />
   <title>Predicting Compressive Strength of Concrete using Machine learning</title>
   <style>
     code{white-space: pre-wrap;}
@@ -48,8 +48,8 @@
   <meta name="citation_title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="og:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="twitter:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
-  <meta name="dc.date" content="2022-10-29" />
-  <meta name="citation_publication_date" content="2022-10-29" />
+  <meta name="dc.date" content="2022-10-30" />
+  <meta name="citation_publication_date" content="2022-10-30" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -68,9 +68,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/d921c0d0e9b56c26f1acb223867eb5d75be3cffd/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/d921c0d0e9b56c26f1acb223867eb5d75be3cffd/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/d921c0d0e9b56c26f1acb223867eb5d75be3cffd/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/6291dfa16f6609a2780effb64b63ebe1b2a4273e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/6291dfa16f6609a2780effb64b63ebe1b2a4273e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/6291dfa16f6609a2780effb64b63ebe1b2a4273e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -86,10 +86,10 @@
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/d921c0d0e9b56c26f1acb223867eb5d75be3cffd/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/6291dfa16f6609a2780effb64b63ebe1b2a4273e/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@d921c0d](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/d921c0d0e9b56c26f1acb223867eb5d75be3cffd)
-on October 29, 2022.
+from [uiceds/cee-492-term-project-fall-2022-avk@6291dfa](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/6291dfa16f6609a2780effb64b63ebe1b2a4273e)
+on October 30, 2022.
 </em></small>
 -->
 <h2 id="authors">Authors</h2>
@@ -113,13 +113,13 @@ Department of CEE, University of Illinois
 Department of CEE, University of Illinois
 </small></p></li>
 </ul>
-<h1 id="delivarable-1">Delivarable #1</h1>
-<p>Using a data set covering the concrete compressive strength of a variety of different mixture components, we are going to create a machine learning program that will be able to predict when concrete failures will occur, which components and the combinations of these components will work best based on strength requirements of certain structures, and predict maximum allowable loads that can be achieved based on the mixtures</p>
+<h1 id="abstract">Abstract</h1>
+<p>Using a data set covering the concrete compressive strength of a variety of different mixture components, we are going to create a machine learning program that will be able to predict when concrete failures will occur, which components and the combinations of these components will work best based on strength requirements of certain structures, and predict maximum allowable loads that can be achieved based on the mixtures.</p>
 <p>Using these future trends, we will we be able to reach certain conclusions on the future improvements, designs, and materials that should be used in certain structures that we will be able to present to individuals in the fields that use these structures. They then can use these recommendations in their future projects. We will be using the data set of “Concrete Compressive Strength” which was obtained using Kaggle.com <span class="citation" data-cites="1EIcIBT03">[<a href="#ref-1EIcIBT03" role="doc-biblioref">1</a>]</span>. The data comes in the form of an excel file and We will compile all of the data into specific tables and use them to create the future trends we stated above.</p>
 <p>We will be creating new tables and figures that will be of comparisons of when the concrete fails vs the concrete material, strength of concrete vs water to cement ratio, concrete composition vs concrete strength, max allowable loads vs concrete material, max allowable loads vs concrete permutations. In future we will be adding cost of components as new dimension and check out what’s the best and minimal combination to make it cost effective and compare the cost and strength graph.</p>
 <p>We intend to use Julia to compile these new tables using machine learning tools that can be used to predict permutations, concrete to water ratios etc, that are not specifically included within the data set so we can accurately predict these unknown values that can then be used to run theoretical tests in real life construction project scenarios.</p>
 <h1 id="exploratory-data-analysis">Exploratory Data Analysis</h1>
-<p>The data set was originally composed of nine columns of data that state the following information: Fly Ash component, Water component, Superplasticizer, Coarse Aggregate, Age, and Concrete Compressive Strength. These columns have the following units of measurements: kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, kg in m^3 mixture, days, MPa megapascals. The excel data set has a total of 1030 rows of this data. We found a few discrepancies in the data set and we decided to clean the data before doing any exploratory analysis. The below section describes it in detail.</p>
+<p>The data set is composed of nine columns of data that state the following information: Fly Ash component, Water component, Superplasticizer, Coarse Aggregate, Age, and Concrete Compressive Strength. These columns have the following units of measurements: the first 7 columns have the units kg in m^3 mixture, and 8th column in days, 9th column in MPa megapascals. The excel data set has a total of 1030 rows of this data. We found a few discrepancies in the data set and we decided to clean the data before doing any exploratory analysis. The below section describes it in detail.</p>
 <h2 id="data-cleaning">Data Cleaning</h2>
 <p>The Dataset that we selected comprised of rows that were repeating multiple times. We could only learn about this when we began with asking questions and trying to code them out. So we go back and clean the data set by using “Unique” fuction, after which the rows reduced from 1030 to 1005.</p>
 <p>The second challenge we were faced with was that the values of ingredients in the concrete were same for multiple rows but only the Concrete compressive strengths were varying i.e the input columns with same values generated different output. So we took a mean of those values and combined them into a single row.</p>
@@ -224,9 +224,6 @@ Department of CEE, University of Illinois
 <p>The Abrams’ water-to-cement ratio (w/c) pronouncement of 1918 has been described as the most useful and signiﬁcant advancement in the history of concrete technology. His most important formulation was the inverse proportionality between the w/c ratio and the strength of concrete. The generally accepted Abrams rule is a formulation of the observation that an increase in the w/c decreases</p>
 <p>To check whether the Abrams’ law holds true or false.
 We are comparing the w/c ratio with the compressive strength of the concrete.</p>
-<h4 id="wc_ratio-selectdf-cement-water-concrete_compressive_strength">wc_ratio = select(df, [“cement”, “water”, “concrete_compressive_strength”])</h4>
-<h4 id="df.wc_ratio-.-df.water-.-df.cement">df.wc_ratio .= df.water ./ df.cement</h4>
-<h4 id="wc_ratio2-selectdf-wc_ratio-water-cementconcrete_compressive_strength">wc_ratio2 = select(df, [“wc_ratio”, “water”, “cement”,“concrete_compressive_strength”])</h4>
 <h3 id="blast-furnace-slag">Blast Furnace Slag</h3>
 <h3 id="fly-ash">Fly Ash</h3>
 <h3 id="coarse-aggregate-and-fine-aggregate">Coarse Aggregate and Fine aggregate</h3>
@@ -234,8 +231,6 @@ We are comparing the w/c ratio with the compressive strength of the concrete.</p
 <h3 id="age">Age</h3>
 <h3 id="concrete-compressive-strength">Concrete Compressive Strength</h3>
 <h1 id="predictive-modeling">Predictive Modeling</h1>
-<h1 id="ref">Ref:</h1>
-<p>Mahan Mark (2014), Statistical Analysis of Concrete Compressive Strengths for California Highway Bridges, https://doi.org/10.1061/(ASCE)CF.1943-5509.0000404,</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">

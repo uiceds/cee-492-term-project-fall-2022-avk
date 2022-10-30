@@ -2,15 +2,12 @@ andrewb
 CEE
 compressive
 Dataset
-Delivarable
-df
 fuction
 Gadge
 independly
 Kaggle
 Kanchan
 Kulhalli
-Mahan
 megapascals
 MPa
 stregth
