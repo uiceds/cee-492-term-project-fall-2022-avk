@@ -1,7 +1,7 @@
 andrewb
 CEE
 compacity
-compressive
+Compressive
 CSV
 Dataset
 flexural
@@ -14,8 +14,8 @@ Kulhalli
 megapascals
 MPa
 Ondova
-superplasticizer
-Superplasticizers
+Superplasticizer
+superplasticizers
 trendline
 uiuc
 vgadge
