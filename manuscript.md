@@ -1,7 +1,7 @@
 ---
 title: Predicting Compressive Strength of Concrete using Machine learning
 lang: en-US
-date-meta: '2022-10-30'
+date-meta: '2022-10-31'
 author-meta:
 - Andrew Bushnell
 - Kanchan Kulhalli
@@ -16,8 +16,8 @@ header-includes: |-
   <meta name="citation_title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="og:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="twitter:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
-  <meta name="dc.date" content="2022-10-30" />
-  <meta name="citation_publication_date" content="2022-10-30" />
+  <meta name="dc.date" content="2022-10-31" />
+  <meta name="citation_publication_date" content="2022-10-31" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c8cf14a65b32673660ebc94321fc8e9cfc3d4501/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c8cf14a65b32673660ebc94321fc8e9cfc3d4501/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c8cf14a65b32673660ebc94321fc8e9cfc3d4501/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/81e4ccc36d8758256abda5f54a98ba48bf5dd88b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/81e4ccc36d8758256abda5f54a98ba48bf5dd88b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/81e4ccc36d8758256abda5f54a98ba48bf5dd88b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,10 +61,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c8cf14a65b32673660ebc94321fc8e9cfc3d4501/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/81e4ccc36d8758256abda5f54a98ba48bf5dd88b/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@c8cf14a](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/c8cf14a65b32673660ebc94321fc8e9cfc3d4501)
-on October 30, 2022.
+from [uiceds/cee-492-term-project-fall-2022-avk@81e4ccc](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/81e4ccc36d8758256abda5f54a98ba48bf5dd88b)
+on October 31, 2022.
 </em></small>
 -->
 
@@ -134,7 +134,7 @@ end
 
 ## Description of the Dataset
 
-Before we set out to ask questions, we generated the below table to get a deeper understanding of the columns in our dataset.
+Now that we cleaned our dataset, we set out to ask some interesting questions and studying each column and its effect on concrete compressive strength but before we did that, we generated Table @tbl:table-1 to get a general understanding of the columns in our dataset.
 
 |   |               variable              |  min  |   mean  |  median | max    |
 |:-:|:-----------------------------------:|:-----:|:-------:|:-------:|--------|
@@ -149,17 +149,21 @@ Before we set out to ask questions, we generated the below table to get a deeper
 | 8 | :age(days)                          | 1     | 46.1663 | 28.0    | 365    |
 | 9 | :concrete_compressive_strength(MPa) | 2.33  | 35.119  | 33.73   | 82.6   |
 
+Table: Ranges and statistics of the columns in our dataset. {#tbl:table-1}
 
-Several studies independly have shown that concrete stregth development is determined not only by the water cement ratio, but that it is also influenced by the content of other concrete ingredients as well. Hence we tried to look into effects of various other ingredients on the compressive strength of concrete.In the below sections, we describe our columns in details and ask pertinent questions on our dataset.
+Water and Cement are the two most basic ingredients of concrete. The strength of the concrete mixture is heavily influenced by the proportions of these ingredients. We decided to take a look at how the water/cement ratio affects the strength of the concrete.
 
 ### Water and Cement
 The Abrams’ water-to-cement ratio (w/c) pronouncement of 1918 has been described as the most useful and signiﬁcant advancement in the history of concrete technology. His most important formulation was the inverse proportionality between the w/c ratio and the strength of concrete. The generally accepted Abrams rule is a formulation of the observation that an increase in the w/c decreases 
 
-To check whether the Abrams' law holds true or false.
-We are comparing the w/c ratio with the compressive strength of the concrete.
+We decided to check how the Abrams' law holds up for our dataset considering the fact that there are several other ingredients that affect the strength of the concrete. Figure @fig:plot-1 plots the water cement ratio versus the concrete compressive strength. 
 
-![Water-Cement Ratio vs Compressive strength of Concrete](images/WC_Plot.png){#fig:1}
 
+![Water-Cement Ratio vs Compressive strength of Concrete](images/WC_Plot.png){#fig:plot-1}
+
+We can observe that the law holds quite good from a general perspective i.e. the compressive strengths decreases with the increase in the w/c ratio but doesn't hold true on a case by case basis. This is understandable since there are a number of other factors that also influnce the strength.
+
+ In the below sub sections, we try to analyze the effects of various other ingredients on the compressive strength of concrete.
 
 ### Blast Furnace Slag
 

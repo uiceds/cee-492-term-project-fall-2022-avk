@@ -7,7 +7,7 @@
   <meta name="author" content="Andrew Bushnell" />
   <meta name="author" content="Kanchan Kulhalli" />
   <meta name="author" content="Vikram Gadge" />
-  <meta name="dcterms.date" content="2022-10-30" />
+  <meta name="dcterms.date" content="2022-10-31" />
   <title>Predicting Compressive Strength of Concrete using Machine learning</title>
   <style>
     code{white-space: pre-wrap;}
@@ -111,8 +111,8 @@
   <meta name="citation_title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="og:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="twitter:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
-  <meta name="dc.date" content="2022-10-30" />
-  <meta name="citation_publication_date" content="2022-10-30" />
+  <meta name="dc.date" content="2022-10-31" />
+  <meta name="citation_publication_date" content="2022-10-31" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -131,9 +131,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c8cf14a65b32673660ebc94321fc8e9cfc3d4501/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c8cf14a65b32673660ebc94321fc8e9cfc3d4501/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c8cf14a65b32673660ebc94321fc8e9cfc3d4501/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/81e4ccc36d8758256abda5f54a98ba48bf5dd88b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/81e4ccc36d8758256abda5f54a98ba48bf5dd88b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/81e4ccc36d8758256abda5f54a98ba48bf5dd88b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -149,10 +149,10 @@
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c8cf14a65b32673660ebc94321fc8e9cfc3d4501/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/81e4ccc36d8758256abda5f54a98ba48bf5dd88b/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@c8cf14a](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/c8cf14a65b32673660ebc94321fc8e9cfc3d4501)
-on October 30, 2022.
+from [uiceds/cee-492-term-project-fall-2022-avk@81e4ccc](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/81e4ccc36d8758256abda5f54a98ba48bf5dd88b)
+on October 31, 2022.
 </em></small>
 -->
 <h2 id="authors">Authors</h2>
@@ -198,8 +198,10 @@ Department of CEE, University of Illinois
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">rename!</span>(df<span class="op">,</span> <span class="op">:</span>concrete_compressive_strength_mean <span class="op">=&gt;</span> <span class="op">:</span>concrete_compressive_strength)</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
 <h2 id="description-of-the-dataset">Description of the Dataset</h2>
-<p>Before we set out to ask questions, we generated the below table to get a deeper understanding of the columns in our dataset.</p>
-<table>
+<p>Now that we cleaned our dataset, we set out to ask some interesting questions and studying each column and its effect on concrete compressive strength but before we did that, we generated Table <a href="#tbl:table-1">1</a> to get a general understanding of the columns in our dataset.</p>
+<div id="tbl:table-1" class="tablenos">
+<table id="tbl:table-1">
+<caption><span>Table 1:</span> Ranges and statistics of the columns in our dataset. </caption>
 <thead>
 <tr class="header">
 <th style="text-align: center;"></th>
@@ -293,16 +295,18 @@ Department of CEE, University of Illinois
 </tr>
 </tbody>
 </table>
-<p>Several studies independly have shown that concrete stregth development is determined not only by the water cement ratio, but that it is also influenced by the content of other concrete ingredients as well. Hence we tried to look into effects of various other ingredients on the compressive strength of concrete.In the below sections, we describe our columns in details and ask pertinent questions on our dataset.</p>
+</div>
+<p>Water and Cement are the two most basic ingredients of concrete. The strength of the concrete mixture is heavily influenced by the proportions of these ingredients. We decided to take a look at how the water/cement ratio affects the strength of the concrete.</p>
 <h3 id="water-and-cement">Water and Cement</h3>
 <p>The Abrams’ water-to-cement ratio (w/c) pronouncement of 1918 has been described as the most useful and signiﬁcant advancement in the history of concrete technology. His most important formulation was the inverse proportionality between the w/c ratio and the strength of concrete. The generally accepted Abrams rule is a formulation of the observation that an increase in the w/c decreases</p>
-<p>To check whether the Abrams’ law holds true or false.
-We are comparing the w/c ratio with the compressive strength of the concrete.</p>
-<div id="fig:1" class="fignos">
+<p>We decided to check how the Abrams’ law holds up for our dataset considering the fact that there are several other ingredients that affect the strength of the concrete. Figure <a href="#fig:plot-1">1</a> plots the water cement ratio versus the concrete compressive strength.</p>
+<div id="fig:plot-1" class="fignos">
 <figure>
 <img src="images/WC_Plot.png" alt="Figure 1: Water-Cement Ratio vs Compressive strength of Concrete" /><figcaption aria-hidden="true"><span>Figure 1:</span> Water-Cement Ratio vs Compressive strength of Concrete</figcaption>
 </figure>
 </div>
+<p>We can observe that the law holds quite good from a general perspective i.e. the compressive strengths decreases with the increase in the w/c ratio but doesn’t hold true on a case by case basis. This is understandable since there are a number of other factors that also influnce the strength.</p>
+<p>In the below sub sections, we try to analyze the effects of various other ingredients on the compressive strength of concrete.</p>
 <h3 id="blast-furnace-slag">Blast Furnace Slag</h3>
 <h3 id="fly-ash">Fly Ash</h3>
 <p>In recent years, fly ash has become an increasing common component used in concrete mixtures. Fly ash is used to increase the workability of plastic concretes along with increase the strength and durability of regular concretes (Ondova, 2012). Fly ash can also replace a portion of the amount of cement mixture needed which in return reduces the cost while not decreasing the strength. Using our data set
