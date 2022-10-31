@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/81e4ccc36d8758256abda5f54a98ba48bf5dd88b/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/81e4ccc36d8758256abda5f54a98ba48bf5dd88b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/81e4ccc36d8758256abda5f54a98ba48bf5dd88b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfbeaa0c455846c6f2067fc66acd3ae26c6c8bf4/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfbeaa0c455846c6f2067fc66acd3ae26c6c8bf4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfbeaa0c455846c6f2067fc66acd3ae26c6c8bf4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/81e4ccc36d8758256abda5f54a98ba48bf5dd88b/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfbeaa0c455846c6f2067fc66acd3ae26c6c8bf4/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@81e4ccc](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/81e4ccc36d8758256abda5f54a98ba48bf5dd88b)
+from [uiceds/cee-492-term-project-fall-2022-avk@bfbeaa0](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/bfbeaa0c455846c6f2067fc66acd3ae26c6c8bf4)
 on October 31, 2022.
 </em></small>
 -->
@@ -164,6 +164,14 @@ We decided to check how the Abrams' law holds up for our dataset considering the
 We can observe that the law holds quite good from a general perspective i.e. the compressive strengths decreases with the increase in the w/c ratio but doesn't hold true on a case by case basis. This is understandable since there are a number of other factors that also influnce the strength.
 
  In the below sub sections, we try to analyze the effects of various other ingredients on the compressive strength of concrete.
+
+### Superplasticizer
+ Superplasticizers are powerful water reducers that enable an increase in the ultimate stress of concrete by decreasing the w/c ratio, a decrease in the cement content while maintaining the same range of strength or workability, an increase in concrete compacity, and other effects.[@{https://www.sciencedirect.com/science/article/pii/S0958946512001369}],
+
+An important component of most modern concrete mixes, water reducers improve the workability of wet concrete while decreasing the amount of water used in the mix. Superplasticizers decrease the water-cement ratio while providing such benefits as increased density and improved bond strength.
+
+
+
 
 ### Blast Furnace Slag
 
