@@ -131,9 +131,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bc7c90f8c9addf48054768995a892ac33537565d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bc7c90f8c9addf48054768995a892ac33537565d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bc7c90f8c9addf48054768995a892ac33537565d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/7016783f16e2b6208843846a0a4122c1c94b7f76/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/7016783f16e2b6208843846a0a4122c1c94b7f76/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/7016783f16e2b6208843846a0a4122c1c94b7f76/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -149,9 +149,9 @@
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bc7c90f8c9addf48054768995a892ac33537565d/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/7016783f16e2b6208843846a0a4122c1c94b7f76/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@bc7c90f](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/bc7c90f8c9addf48054768995a892ac33537565d)
+from [uiceds/cee-492-term-project-fall-2022-avk@7016783](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/7016783f16e2b6208843846a0a4122c1c94b7f76)
 on October 31, 2022.
 </em></small>
 -->
@@ -200,7 +200,7 @@ Department of CEE, University of Illinois
 <h2 id="description-of-the-dataset">Description of the Dataset</h2>
 <p>Now that we cleaned our dataset, we set out to ask some interesting questions and studying each column and its effect on concrete compressive strength but before we did that, we generated Table <a href="#tbl:table-1">1</a> to get a general understanding of the columns in our dataset.</p>
 <div id="tbl:table-1" class="tablenos">
-<table id="tbl:table-1">
+<table id="tbl:table-1" height="3.5in">
 <caption><span>Table 1:</span> Ranges and statistics of the columns in our dataset. </caption>
 <thead>
 <tr class="header">
@@ -298,11 +298,11 @@ Department of CEE, University of Illinois
 </div>
 <p>Water and Cement are the two most basic ingredients of concrete. The strength of the concrete mixture is heavily influenced by the proportions of these ingredients. We decided to take a look at how the water/cement ratio affects the strength of the concrete.</p>
 <h3 id="water-and-cement">Water and Cement</h3>
-<p>The Abrams’ water-to-cement ratio (w/c) pronouncement of 1918 has been described as the most useful and signiﬁcant advancement in the history of concrete technology. His most important formulation was the inverse proportionality between the w/c ratio and the strength of concrete. The generally accepted Abrams rule is a formulation of the observation that an increase in the w/c decreases</p>
+<p>The Abrams’ water-to-cement ratio (w/c) pronouncement of 1918 has been described as the most useful and signiﬁcant advancement in the history of concrete technology. His most important formulation was the inverse proportionality between the w/c ratio and the strength of concrete. The generally accepted Abrams rule is a formulation of the observation that an increase in the w/c decreases<span class="citation" data-cites="doi:10.1016/S0008-8846">[<a href="#ref-doi:10.1016/S0008-8846" role="doc-biblioref"><strong>doi:10.1016/S0008-8846?</strong></a>]</span></p>
 <p>We decided to check how the Abrams’ law holds up for our dataset considering the fact that there are several other ingredients that affect the strength of the concrete. Figure <a href="#fig:plot-1">1</a> plots the water cement ratio versus the concrete compressive strength.</p>
 <div id="fig:plot-1" class="fignos">
 <figure>
-<img src="images/WC.png" alt="Figure 1: Water-Cement Ratio vs Compressive strength of Concrete" /><figcaption aria-hidden="true"><span>Figure 1:</span> Water-Cement Ratio vs Compressive strength of Concrete</figcaption>
+<img src="images/WC.png" style="height:2.5in" alt="Figure 1: Water-Cement Ratio vs Compressive strength of Concrete" /><figcaption aria-hidden="true"><span>Figure 1:</span> Water-Cement Ratio vs Compressive strength of Concrete</figcaption>
 </figure>
 </div>
 <p>We can observe that the law holds quite good from a general perspective i.e. the compressive strengths decreases with the increase in the w/c ratio but doesn’t hold true on a case by case basis. This is understandable since there are a number of other factors that also influnce the strength.</p>
@@ -312,7 +312,7 @@ Department of CEE, University of Illinois
 <p>An important component of most modern concrete mixes, water reducers improve the workability of wet concrete while decreasing the amount of water used in the mix. Superplasticizers decrease the water-cement ratio while providing such benefits as increased density and improved bond strength.</p>
 <div id="fig:plot-2" class="fignos">
 <figure>
-<img src="images/spc.png" alt="Figure 2: Superplasticizer vs Compressive strength of Concrete" /><figcaption aria-hidden="true"><span>Figure 2:</span> Superplasticizer vs Compressive strength of Concrete</figcaption>
+<img src="images/spc.png" style="height:2.5in" alt="Figure 2: Superplasticizer vs Compressive strength of Concrete" /><figcaption aria-hidden="true"><span>Figure 2:</span> Superplasticizer vs Compressive strength of Concrete</figcaption>
 </figure>
 </div>
 <p>In order to study the effect of superplasticizer alone, we kept all the other columns constant and compared the varying superplasticizer with the concrete compressive strength. Figure <a href="#fig:plot-2">2</a> shows the line plots for different samples. It is not clear how the superplasticizer is affecting the strength. We looked through a number of articles and research papers and we found out that the effect of superplasticizers are more pronounced when the ratio of superplasticizer to cement is between 0.5% to 3% <span class="citation" data-cites="X8Ql80fQ">[<a href="#ref-X8Ql80fQ" role="doc-biblioref">3</a>]</span>. To verify this, we plotted Figure <a href="#fig:plot-3">3</a> with two samples, the first one has a superplasticizer/cement(s/c) ratio equal to 0.2% and the second one has s/c ratio equal to 2%.</p>
@@ -334,33 +334,33 @@ Department of CEE, University of Illinois
 <span class="citation" data-cites="1092kmQjH">[<a href="#ref-1092kmQjH" role="doc-biblioref">5</a>]</span>.</p>
 <div id="fig:plot-5" class="fignos">
 <figure>
-<img src="images/ca.png" style="height:5in" alt="Figure 5: Coarse Aggregate vs Concrete Compressive Strength" /><figcaption aria-hidden="true"><span>Figure 5:</span> Coarse Aggregate vs Concrete Compressive Strength</figcaption>
+<img src="images/ca.png" style="height:2.5in" alt="Figure 5: Coarse Aggregate vs Concrete Compressive Strength" /><figcaption aria-hidden="true"><span>Figure 5:</span> Coarse Aggregate vs Concrete Compressive Strength</figcaption>
 </figure>
 </div>
 <p>We can observe from Figure <a href="#fig:plot-5">5</a> that there is no positive correlation between the coarse aggregate and the concrete compressive strength. We couldn’t really understand how to interpret the graph. It’s possible that it’s effects weren’t pronounced in the samples that we have taken. It is clear that we need a more refined model to understand the effects of this property.</p>
-<p><img src="images/fa.png" id="fig:plot-6" style="height:6in" alt="Fine Aggregate vs Concrete Compressive Strength" />
+<p><img src="images/fa.png" id="fig:plot-6" style="height:2.5in" alt="Fine Aggregate vs Concrete Compressive Strength" />
 Figure ?? shows a positive correlation between the fine aggregate and the concrete compressive strength which is quite intuitive.</p>
 <p>For both the graphs, we have kept all the columns constant except for the column that we are analyzing.</p>
 <h3 id="age">Age</h3>
 <p>By creating a histogram plot of Concrete Compressive Strength vs Age where age is the number of days after the concrete has been placed, we see that as concrete age increases the compressive strength increases until it reaches a peak at approximately 28 days and then gradually decreases in strength as age increases due to wear and tear of the concrete material. Looking online we see that concrete requires a curing time where once the concrete is placed it needs time to cure which is where the water content in the concrete mixture evaporates, leading to the concrete to settle and harden (Kim 1998). This in return leads to the strength to increase. Based on this information and looking at the data set, to have the concrete mixture to result in the strongest compressive strength we want our age to be around the 28 day mark which is the ideal curing time.
-<img src="images/age.jpg" id="fig:plot-7" style="height:3in" alt="Age vs Concrete Compressive Strength" /></p>
+<img src="images/age.jpg" id="fig:plot-7" style="height:2.5in" alt="Age vs Concrete Compressive Strength" /></p>
 <h3 id="blast-furnace-slag">Blast Furnace Slag</h3>
 <p>Concretes containing slag as a partial replacement of cement (up to 40%) had higher compressive and flexural strengths casting and curing at +42°C than those of concretes made with Portland cement alone<span class="citation" data-cites="ol9pNTtX">[<a href="#ref-ol9pNTtX" role="doc-biblioref">6</a>]</span>.</p>
 <div id="fig:plot-8" class="fignos">
 <figure>
-<img src="images/bfs.png" alt="Figure 6: Blast Furnace Slag vs Compressive strength of Concrete" /><figcaption aria-hidden="true"><span>Figure 6:</span> Blast Furnace Slag vs Compressive strength of Concrete</figcaption>
+<img src="images/bfs.png" style="height:2.5in" alt="Figure 6: Blast Furnace Slag vs Compressive strength of Concrete" /><figcaption aria-hidden="true"><span>Figure 6:</span> Blast Furnace Slag vs Compressive strength of Concrete</figcaption>
 </figure>
 </div>
 <p>Figure <a href="#fig:plot-8">6</a> shows a negative correlation where the compressive strength of the concrete is decreasing with the increase in the Blast furnace slag content.</p>
 <h3 id="concrete-compressive-strength">Concrete Compressive Strength</h3>
 <div id="fig:plot-9" class="fignos">
 <figure>
-<img src="images/ccs_conclusion.png" alt="Figure 7: Proportions of the components at minimum and maximum concrete compressive strengths" /><figcaption aria-hidden="true"><span>Figure 7:</span> Proportions of the components at minimum and maximum concrete compressive strengths</figcaption>
+<img src="images/ccs_conclusion.png" style="height:2.5in" alt="Figure 7: Proportions of the components at minimum and maximum concrete compressive strengths" /><figcaption aria-hidden="true"><span>Figure 7:</span> Proportions of the components at minimum and maximum concrete compressive strengths</figcaption>
 </figure>
 </div>
 <p>The graph above explains how the proportions of the 8 components are affecting the concrete compressive strength. It clearly shows that the second bar graph has more quantity of superplasticizer and less quantity of water than the first bar graph. Also, the second bar graph has good aging time than the first one. Hence clearly the second plot has more concrete compressive strength than the first one.</p>
 <h1 id="predictive-modeling">Predictive Modeling</h1>
-<p>Using our data set we can create a machine learning program code to produce a predictive modeling code for solving for which combinations of concrete mixtures would be ideal to meet a certain strength requirement, based on different construction projects, and then find the minimum optimal cost. To do this we intend to first use the data available in our dataset to find out the unit costs of each component in our concrete. We then will look up research papers over the different strength requirements set in place at the State and Federal level for different construction projects, such as bridges and highways where highway bridges require a minimum of 25 MPa to pass the strength requirements set in place in California <span class="citation" data-cites="doi:10.1061">[<a href="#ref-doi:10.1061" role="doc-biblioref"><strong>doi:10.1061?</strong></a>/(ASCE)CF.1943-5509.0000404]</span>. We then will design a machine learning program that will take our data available and create rough estimations of how much of each concrete component would need to be used to create the optimal combination for each project. This would be done through the creation of a model of ideal solutions to meet the lowest price and still meet the strength requirements for each unique project. This would be very useful in the construction industry which would be able to use our machine learning program to evaluate which combination of concrete would best work to meet the requirements of their project while also saving the construction company the most capital. Based on what we have discussed with the TA, this is a feasible idea since our data could be used to create combinations that are not currently in our dataset by using what we learned in class to create rough estimates of new combinations based on the current data. For example we could find the new compressive strength of a certain new combination to be the average strength of two known combinations from our data set or use certain criteria found online, such as impact of water to cement ratio or fly ash to concrete ratio, to make a rough estimate of the new combinations results compressive strength. We intend to do this by creating something similar to the solver function in excel where we will have an objective function, such as minimize price and maximize strength, and set up constraints, such as have strength be greater than or equal to 25 MPa or have at least 20% cement. Then solving this would give us our end result of a new matrix of the ideal values for the combinations in the concrete to be used for that specific project.</p>
+<p>Using our data set we can create a machine learning program code to produce a predictive modeling code for solving for which combinations of concrete mixtures would be ideal to meet a certain strength requirement, based on different construction projects, and then find the minimum optimal cost. To do this we intend to first use the data available in our dataset to find out the unit costs of each component in our concrete. We then will look up research papers over the different strength requirements set in place at the State and Federal level for different construction projects, such as bridges and highways where highway bridges require a minimum of 25 MPa to pass the strength requirements set in place in California <span class="citation" data-cites="doi:10.1061">[<a href="#ref-doi:10.1061" role="doc-biblioref"><strong>doi:10.1061?</strong></a>/(asce)cf.1943-5509.0000404]</span>. We then will design a machine learning program that will take our data available and create rough estimations of how much of each concrete component would need to be used to create the optimal combination for each project. This would be done through the creation of a model of ideal solutions to meet the lowest price and still meet the strength requirements for each unique project. This would be very useful in the construction industry which would be able to use our machine learning program to evaluate which combination of concrete would best work to meet the requirements of their project while also saving the construction company the most capital. Based on what we have discussed with the TA, this is a feasible idea since our data could be used to create combinations that are not currently in our dataset by using what we learned in class to create rough estimates of new combinations based on the current data. For example we could find the new compressive strength of a certain new combination to be the average strength of two known combinations from our data set or use certain criteria found online, such as impact of water to cement ratio or fly ash to concrete ratio, to make a rough estimate of the new combinations results compressive strength. We intend to do this by creating something similar to the solver function in excel where we will have an objective function, such as minimize price and maximize strength, and set up constraints, such as have strength be greater than or equal to 25 MPa or have at least 20% cement. Then solving this would give us our end result of a new matrix of the ideal values for the combinations in the concrete to be used for that specific project.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
