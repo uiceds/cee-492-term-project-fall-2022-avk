@@ -3,7 +3,7 @@ CEE
 compacity
 Compressive
 CSV
-Dataset
+dataset
 flexural
 Gadge
 imapct
@@ -14,8 +14,8 @@ Kulhalli
 megapascals
 MPa
 Ondova
-Superplasticizer
-superplasticizers
+superplasticizer
+Superplasticizers
 trendline
 uiuc
 vgadge
