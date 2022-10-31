@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/24fa7d4a8d19a3132511bcac1e29cef81f87dba7/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/24fa7d4a8d19a3132511bcac1e29cef81f87dba7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/24fa7d4a8d19a3132511bcac1e29cef81f87dba7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/7d0732216a10e467df60c2bd84f27eb4fd1e4e6f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/7d0732216a10e467df60c2bd84f27eb4fd1e4e6f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/7d0732216a10e467df60c2bd84f27eb4fd1e4e6f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/24fa7d4a8d19a3132511bcac1e29cef81f87dba7/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/7d0732216a10e467df60c2bd84f27eb4fd1e4e6f/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@24fa7d4](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/24fa7d4a8d19a3132511bcac1e29cef81f87dba7)
+from [uiceds/cee-492-term-project-fall-2022-avk@7d07322](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/7d0732216a10e467df60c2bd84f27eb4fd1e4e6f)
 on October 31, 2022.
 </em></small>
 -->
@@ -197,14 +197,14 @@ We can observe from Figure @fig:plot-5 that there is no positive correlation bet
 
 ![Fine Aggregate vs Concrete Compressive Strength](images/fa.png){#fig:plot-6 height=2.5in}
 
-Figure @fig:plot-6 shows a positive correlation between the fine aggregate and the concrete compressive strength which is as expected.
-
-For both the graphs, we have kept all the columns constant except for the column that we are analyzing.
+Figure @fig:plot-6 shows a positive correlation between the fine aggregate and the concrete compressive strength which is as expected. For both the graphs, we have kept all the columns constant except for the column that we are analyzing.
 
 
 ### Age
-Figure @fig:plot-7 shows a histogram plot of Age vs Concrete Compressive Strength where age is the number of days after the concrete has been placed, we see that as concrete age increases the compressive strength increases until it reaches a peak at approximately 28 days and then gradually decreases in strength as age increases due to wear and tear of the concrete material. From [@{https://www.sciencedirect.com/science/article/abs/pii/S0008884698001641?via%3Dihub}], we understood that the concrete requires a curing time where once the concrete is placed it needs time to cure which is where the water content in the concrete mixture evaporates, leading to the concrete to settle and harden. This in return leads to increase in the concrete compressive strength. Based on this information and looking at the data set, to have the concrete mixture  result in the strongest compressive strength, we want our age to be around the 28-day mark which is the ideal curing time.
+
 ![Age vs Concrete Compressive Strength](images/age.jpg){#fig:plot-7 height=2.5in}
+
+Figure @fig:plot-7 shows a histogram plot of Age vs Concrete Compressive Strength where age is the number of days after the concrete has been placed, we see that as concrete age increases the compressive strength increases until it reaches a peak at approximately 28 days and then gradually decreases in strength as age increases due to wear and tear of the concrete material. From [@{https://www.sciencedirect.com/science/article/abs/pii/S0008884698001641?via%3Dihub}], we understood that the concrete requires a curing time where once the concrete is placed it needs time to cure which is where the water content in the concrete mixture evaporates, leading to the concrete to settle and harden. This in return leads to increase in the concrete compressive strength. Based on this information and looking at the data set, to have the concrete mixture  result in the strongest compressive strength, we want our age to be around the 28-day mark which is the ideal curing time.
 
 
 ### Blast Furnace Slag
@@ -222,12 +222,10 @@ However, Figure @fig:plot-8 shows a negative correlation where the compressive s
 
 The graph above explains how the proportions of the 8 components are affecting the concrete compressive strength. It clearly shows that the second bar graph has more quantity of superplasticizer and less quantity of water than the first bar graph. Also, the second bar graph has good aging time than the first one. Hence clearly the second plot has more concrete compressive strength than the first one.
 
-
 # Predictive Modeling
 Using our data setwe can create a machine learning model to produce a predictive modeling code for solving for which combinations of concrete mixtures would be ideal to meet a certain strength requirement, based on different construction projects, and then find the minimum optimal cost. To do this we intend to first use the data available in our dataset to find out the unit costs of each component in our concrete. We then will look up research papers over the different strength requirements set in place at the State and Federal level for different construction projects, such as bridges and highways where highway bridges require a minimum of 25 MPa to pass the strength requirements set in place in California [@{https://ascelibrary.org/doi/10.1061/%28ASCE%29CF.1943-5509.0000404}]. 
 
-
-As a first step towards create a feasible model, we plan to use regression analysis. The reason is that we have 8 independent variables(the 8 columns described in detail in the previous section) affecting the single dependent variable which is the concrete compressive strength. Depending on the results of the model, we plan to explore more advanced machine learning models. We will create rough estimations of how much of each concrete component would need to be used to create the optimal combination for each project. This would be done through the creation of a model of ideal solutions to meet the lowest price and still meet the strength requirements for each unique project. This would be very useful in the construction industry which would be able to use our machine learning models to evaluate which combination of concrete would best work to meet the requirements of their project while also saving the construction company the most capital. 
+As a first step towards create a feasible model, we plan to use regression analysis. The reason is that we have 8 independent variables (the 8 columns described in detail in the previous section) affecting the single dependent variable which is the concrete compressive strength. Depending on the results of the model, we plan to explore more advanced machine learning models. We will create rough estimations of how much of each concrete component would need to be used to create the optimal combination for each project. This would be done through the creation of a model of ideal solutions to meet the lowest price and still meet the strength requirements for each unique project. This would be very useful in the construction industry which would be able to use our machine learning models to evaluate which combination of concrete would best work to meet the requirements of their project while also saving the construction company the most capital. 
 
 Based on what we have discussed with the TA, this is a feasible idea since our data could be used to create combinations that are not currently in our dataset by using what we learned in class to create rough estimates of new combinations based on the current data. For example, we could find the new compressive strength of a certain new combination to be the average strength of two known combinations from our data set or use certain criteria found online, such as impact of water to cement ratio or fly ash to concrete ratio, to make a rough estimate of the new combinations results compressive strength. We intend to do this by creating something like the solver function in excel where we will have an objective function, such as minimize price and maximize strength, and set up constraints, such as have strength be greater than or equal to 25 MPa or have at least 20% cement. Then solving this would give us our result of a new matrix of the ideal values for the combinations in the concrete to be used for that specific project.
 
