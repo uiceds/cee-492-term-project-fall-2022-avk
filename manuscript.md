@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/72ab7245ad98ce591cd29d718b8460a820f83110/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/72ab7245ad98ce591cd29d718b8460a820f83110/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/72ab7245ad98ce591cd29d718b8460a820f83110/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/cd924a7ac2e10862228fee83247ab439afe070ac/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/cd924a7ac2e10862228fee83247ab439afe070ac/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/cd924a7ac2e10862228fee83247ab439afe070ac/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/72ab7245ad98ce591cd29d718b8460a820f83110/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/cd924a7ac2e10862228fee83247ab439afe070ac/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@72ab724](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/72ab7245ad98ce591cd29d718b8460a820f83110)
+from [uiceds/cee-492-term-project-fall-2022-avk@cd924a7](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/cd924a7ac2e10862228fee83247ab439afe070ac)
 on October 31, 2022.
 </em></small>
 -->
@@ -184,17 +184,34 @@ We can see that a decrease in the superplasticizer to water ratio results in dec
 
 ### Fly Ash
 
-In recent years, fly ash has become an increasing common component used in concrete mixtures. Fly ash is used to increase the workability of plastic concretes along with increase the strength and durability of regular concretes (Ondova, 2012). Fly ash can also replace a portion of the amount of cement mixture needed which in return reduces the cost while not decreasing the strength. Using our data set
-![Fly_Ash_Image](images/Compressive%20Strength%20vs%20Fly%20Ash.jpg)
+In recent decades, fly ash has become an increasing common component used in concrete mixtures. Fly ash is used to increase the workability of plastic concretes along with increase the strength and durability of regular concretes (Ondova, 2012). Fly ash can also be used to  replace a portion of the amount of the cement mixture needed. This in return reduces the cost while not decreasing the strength. Using our data set we first began by organizing the data set to only include unique values of fly ash since there were many rows that had no fly ash component in their concrete mixture. Then using this data set, we created a histogram to show the general trendline of the imapct that the fly ash component has on the compressive strength. We see that using fly ash does increase the strength of the concrete but peaks at approximately 20 kg per m^3 mixture and then decreases as more fly ash is used. This is mostly due to fly ash not being suitable to replace fully or the majority of the cement used in the mixture and is used more as a binding unit that helps with the workability and durability to a certain degree [@doi:10.1016/j.proeng.2012.07.582].
+
+![Fly Ash vs Concrete Compressive Strength](images/flyash.jpg){#fig:plot-4}
+
 
 ### Coarse Aggregate and Fine aggregate
+Aggregates are inert granular materials such as sand, gravel, or crushed stone that, along with water and portland cement, are an essential ingredient in concrete. Fine aggregates generally consist of natural sand or crushed stone with most particles passing through a 3/8-inch sieve. Coarse aggregates are any particles greater than 0.19 inch, but generally range between 3/8 and 1.5 inches in diameter. Gravels constitute the majority of coarse aggregate used in concrete with crushed stone making up most of the remainder
+[@{https://www.cement.org/cement-concrete/concrete-materials/aggregates}].
 
-### Superplasticizer
+
+![Coarse Aggregate vs Concrete Compressive Strength](images/ca.jpg){#fig:plot-5}
+
+We can observe from Figure @fig:plot-5 that there is no positive correlation between the coarse aggregate and the concrete compressive strength. We couldn't really understand how to interpret the graph. It's possible that it's effects weren't pronounced in the samples that we have taken. It is clear that we need a more refined model to understand the effects of this property.
+
+![Fine Aggregate vs Concrete Compressive Strength](images/fa.jpg){#fig:plot-6}
+Figure @fig:plot-6 shows a positive correlation between the fine aggregate and the concrete compressive strength which is quite intuitive.
+
+For both the graphs, we have kept all the columns constant except for the column that we are analyzing.
+
 
 ### Age
+By creating a histogram plot of Concrete Compressive Strength vs Age where age is the number of days after the concrete has been placed, we see that as concrete age increases the compressive strength increases until it reaches a peak at approximately 28 days and then gradually decreases in strength as age increases due to wear and tear of the concrete material. Looking online we see that concrete requires a curing time where once the concrete is placed it needs time to cure which is where the water content in the concrete mixture evaporates, leading to the concrete to settle and harden (Kim 1998). This in return leads to the strength to increase. Based on this information and looking at the data set, to have the concrete mixture to result in the strongest compressive strength we want our age to be around the 28 day mark which is the ideal curing time.
+![Age vs Concrete Compressive Strength](images/age.jpg){#fig:plot-7}
+
 
 ### Concrete Compressive Strength
 
+![Proportions of the components at minimum and maximum concrete compressive strengths](images/ccs_conclusion.png){#fig:plot-8}
 
 
 
