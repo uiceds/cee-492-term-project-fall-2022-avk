@@ -1,9 +1,10 @@
 andrewb
 CEE
 compacity
-Compressive
+compressive
 CSV
 dataset
+flexural
 Gadge
 imapct
 influnce
@@ -14,7 +15,7 @@ megapascals
 MPa
 Ondova
 Superplasticizer
-Superplasticizers
+superplasticizers
 trendline
 uiuc
 vgadge
