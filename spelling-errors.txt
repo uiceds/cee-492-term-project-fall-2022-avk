@@ -1,9 +1,9 @@
 andrewb
 CEE
 compacity
-compressive
+Compressive
 CSV
-Dataset
+dataset
 Gadge
 influnce
 Kaggle
@@ -13,7 +13,7 @@ megapascals
 MPa
 Ondova
 Superplasticizer
-Superplasticizers
+superplasticizers
 uiuc
 vgadge
 Vikram

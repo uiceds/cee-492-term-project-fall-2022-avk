@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfbeaa0c455846c6f2067fc66acd3ae26c6c8bf4/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfbeaa0c455846c6f2067fc66acd3ae26c6c8bf4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfbeaa0c455846c6f2067fc66acd3ae26c6c8bf4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/57b77e049feba7c419059d1a43262c83252cef4c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/57b77e049feba7c419059d1a43262c83252cef4c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/57b77e049feba7c419059d1a43262c83252cef4c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/bfbeaa0c455846c6f2067fc66acd3ae26c6c8bf4/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/57b77e049feba7c419059d1a43262c83252cef4c/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@bfbeaa0](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/bfbeaa0c455846c6f2067fc66acd3ae26c6c8bf4)
+from [uiceds/cee-492-term-project-fall-2022-avk@57b77e0](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/57b77e049feba7c419059d1a43262c83252cef4c)
 on October 31, 2022.
 </em></small>
 -->
@@ -159,18 +159,24 @@ The Abrams’ water-to-cement ratio (w/c) pronouncement of 1918 has been describ
 We decided to check how the Abrams' law holds up for our dataset considering the fact that there are several other ingredients that affect the strength of the concrete. Figure @fig:plot-1 plots the water cement ratio versus the concrete compressive strength. 
 
 
-![Water-Cement Ratio vs Compressive strength of Concrete](images/WC_Plot.png){#fig:plot-1}
+![Water-Cement Ratio vs Compressive strength of Concrete](images/WC.png){#fig:plot-1}
 
 We can observe that the law holds quite good from a general perspective i.e. the compressive strengths decreases with the increase in the w/c ratio but doesn't hold true on a case by case basis. This is understandable since there are a number of other factors that also influnce the strength.
 
  In the below sub sections, we try to analyze the effects of various other ingredients on the compressive strength of concrete.
 
 ### Superplasticizer
- Superplasticizers are powerful water reducers that enable an increase in the ultimate stress of concrete by decreasing the w/c ratio, a decrease in the cement content while maintaining the same range of strength or workability, an increase in concrete compacity, and other effects.[@{https://www.sciencedirect.com/science/article/pii/S0958946512001369}],
+ Superplasticizers are powerful water reducers that enable an increase in the ultimate stress of concrete by decreasing the w/c ratio, a decrease in the cement content while maintaining the same range of strength or workability, an increase in concrete compacity, and other effects.[@{https://www.sciencedirect.com/science/article/pii/S0958946512001369}]
 
 An important component of most modern concrete mixes, water reducers improve the workability of wet concrete while decreasing the amount of water used in the mix. Superplasticizers decrease the water-cement ratio while providing such benefits as increased density and improved bond strength.
 
+![Superplasticizer vs Compressive strength of Concrete](images/spc.png){#fig:plot-2}
 
+In order to study the effect of superplasticizer alone, we kept all the other columns constant and compared the varying superplasticizer with the concrete compressive strength. Figure @fig:plot-2 shows the line plots for different samples. It is not clear how the superplasticizer is affecting the strength. We looked through a number of articles and research papers and we found out that the effect of superplasticizers are more pronounced when the ratio of superplasticizer to cement is between 0.5% to 3% [@{http://www.buildingresearch.com.np/newfeatures.php}]. To verify this, we plotted Figure @fig:plot-3 with two samples, the first one has a superplasticizer/cement(s/c) ratio equal to 0.2% and the second one has s/c ratio equal to 2%.
+
+![Superplasticizer to Water ratio vs Compressive strength of Concrete](images/wspc.png){#fig:plot-3}
+
+We can see that a decrease in the superplasticizer to water ratio results in decrease in the concrete compressive strength. This suggests a positive correlation between the superplasticizer and the concrete strength. However for ratios greater than 3%, we did not find any kind of correlation between these two suggesting that the effect of superplasticizer depends on the s/c ratio.
 
 
 ### Blast Furnace Slag
