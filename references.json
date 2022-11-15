@@ -27,8 +27,8 @@
       "date-parts": [
         [
           "2022",
-          10,
-          31
+          11,
+          15
         ]
       ]
     },
@@ -73,8 +73,8 @@
       "date-parts": [
         [
           "2022",
-          10,
-          31
+          11,
+          15
         ]
       ]
     },
@@ -96,8 +96,8 @@
       "date-parts": [
         [
           "2022",
-          10,
-          31
+          11,
+          15
         ]
       ]
     },
@@ -130,8 +130,8 @@
       "date-parts": [
         [
           "2022",
-          10,
-          31
+          11,
+          15
         ]
       ]
     },
@@ -156,8 +156,8 @@
       "date-parts": [
         [
           "2022",
-          10,
-          31
+          11,
+          15
         ]
       ]
     },
@@ -174,8 +174,8 @@
       "date-parts": [
         [
           "2022",
-          10,
-          31
+          11,
+          15
         ]
       ]
     },
@@ -190,23 +190,38 @@
   {
     "id": "11ifDwhDV",
     "type": "article-journal",
-    "abstract": "In this experimental and analytic research, the strength development for various curing histories was investigated with particular regard to the influ…",
+    "abstract": "In this experimental and analytic research, the strength development for various curing histories was investigated with particular regard to the influences of curing time points with given temperatures. For this purpose, four different points of curing time were considered with an individual interval of 24 h. Two different temperatures of 5°C and 40°C were applied for the selective intervals, whereas the rest period days were under the reference curing condition of 20°C. A new model for the strength prediction was suggested based on the rate constant model. In this model, the equivalent ages introduced in the Saul and Arrhenius models were modified to show the effects of curing temperature at different ages. Test results show that the concrete subjected to a high temperature at an early age attains higher early-age strength but eventually attains lower later-age strength. The concrete subjected to a low temperature at an early age leads to lower early-age strength but almost the same later-age strength. Moreover, the proposed model showed better agreement with the test results than the existing models.",
     "container-title": "Cement and Concrete Research",
     "DOI": "10.1016/S0008-8846(98)00164-1",
     "ISSN": "0008-8846",
     "issue": "12",
+    "journalAbbreviation": "Cement and Concrete Research",
     "language": "en",
     "page": "1761-1773",
-    "source": "www.sciencedirect.com",
+    "source": "ScienceDirect",
     "title": "Compressive strength development of concrete with different curing time and temperature",
-    "URL": "https://www.sciencedirect.com/science/article/abs/pii/S0008884698001641",
+    "URL": "https://www.sciencedirect.com/science/article/pii/S0008884698001641",
     "volume": "28",
+    "author": [
+      {
+        "family": "Kim",
+        "given": "J. -K"
+      },
+      {
+        "family": "Moon",
+        "given": "Y. -H"
+      },
+      {
+        "family": "Eo",
+        "given": "S. -H"
+      }
+    ],
     "accessed": {
       "date-parts": [
         [
           "2022",
-          10,
-          31
+          11,
+          15
         ]
       ]
     },
@@ -224,23 +239,39 @@
   {
     "id": "11H4Sj6jZ",
     "type": "article-journal",
-    "abstract": "It is considered that using crushed recycled concrete as aggregate for concrete production is a viable alternative to dumping and would help to conser…",
+    "abstract": "It is considered that using crushed recycled concrete as aggregate for concrete production is a viable alternative to dumping and would help to conserve abiotic resources. This use has fundamentally been based on the coarse fraction because the fine fraction is likely to degrade the performance of the resulting concrete. This paper presents results from a research work undertaken at Instituto Superior Técnico (IST), Lisbon, Portugal, in which the effects of incorporating two types of superplasticizer on the mechanical performance of concrete containing fine recycled aggregate were evaluated. The purpose was to see if the addition of superplasticizer would offset the detrimental effects associated with the use of fine recycled concrete aggregate. The experimental programme is described and the results of tests for splitting tensile strength, modulus of elasticity and abrasion resistance are presented. The relative performance of concrete made with recycled aggregate was found to decrease. However, the same concrete with admixtures in general exhibited a better mechanical performance than the reference mixes without admixtures or with a less active superplasticizer. Therefore, it is argued that the mechanical performance of concrete made with fine recycled concrete aggregates can be as good as that of conventional concrete, if superplasticizers are used to reduce the water–cement ratio of the former concrete.",
     "container-title": "Cement and Concrete Composites",
     "DOI": "10.1016/j.cemconcomp.2012.06.009",
     "ISSN": "0958-9465",
     "issue": "9",
+    "journalAbbreviation": "Cement and Concrete Composites",
     "language": "en",
     "page": "1044-1052",
-    "source": "www.sciencedirect.com",
+    "source": "ScienceDirect",
     "title": "The effect of superplasticizers on the mechanical performance of concrete made with fine recycled concrete aggregates",
-    "URL": "https://www.sciencedirect.com/science/article/abs/pii/S0958946512001369",
+    "URL": "https://www.sciencedirect.com/science/article/pii/S0958946512001369",
     "volume": "34",
+    "author": [
+      {
+        "family": "Pereira",
+        "given": "P."
+      },
+      {
+        "family": "Evangelista",
+        "given": "L."
+      },
+      {
+        "family": "Brito",
+        "given": "J.",
+        "non-dropping-particle": "de"
+      }
+    ],
     "accessed": {
       "date-parts": [
         [
           "2022",
-          10,
-          31
+          11,
+          15
         ]
       ]
     },
