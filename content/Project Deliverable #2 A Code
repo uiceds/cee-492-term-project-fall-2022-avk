@@ -10,6 +10,7 @@ begin
     using Distributions
     using LinearAlgebra
     using Random
+    using PlotlyJS
 end
 df = CSV.read("C:/Users/STP/Desktop/ConcreteProjectData2.csv", DataFrame)
 #describe(df)
@@ -37,12 +38,79 @@ Sample = df[:,10]
 #x = df.Days
 #y = df.ConcreteCompressiveStrength
 #str = [@sprintf("%.2f", yi) for yi in y]
-histogram(df.Days,df.ConcreteCompressiveStrength, xaxis = "Days", yaxis = "Compressive Strength (MPa)", title = "Compressive Strength vs Age", legend=false, xlims = (0,100), ylims = (0,150))
-plot!(y, st=:scatter,marker_shape=:none,primary=false,series_annotations=x)
+#histogram(df.Days,df.ConcreteCompressiveStrength, xaxis = "Days", yaxis = "Compressive Strength (MPa)", title = "Compressive Strength vs Age", legend=false, xlims = (0,100), ylims = (0,150))
+#plot!(y, st=:scatter,marker_shape=:none,primary=false,series_annotations=x)
 #annotate!(x,y, str, :bottom)
 #histogram(df.Cement,df.ConcreteCompressiveStrength,xaxis = "Cement (kg)", yaxis = "Compressive Strength (MPa)", title = "Compressive Strength vs Cement mixture")
 #println(replace!(df.FlyAsh, 0 =>1))
 #print(df)
-xFS = unique(df, [:FlyAsh])
+#xFS = unique(df, [:FlyAsh])
 #xFS = replace!(df.FlyAsh, 0 =>1)FlyAsh, df.ConcreteCompressiveStrength)
-histogram(xFS.FlyAsh,xFS.ConcreteCompressiveStrength,xaxis = "FlyAsh (kg)", yaxis = "Compressive Strength (MPa)", title = "Compressive Strength vs Fly Ash", legend=false, xlims = (0,100), ylims = (0,70))
+#histogram(xFS.FlyAsh,xFS.ConcreteCompressiveStrength,xaxis = "FlyAsh (kg)", yaxis = "Compressive Strength (MPa)", title = "Compressive Strength vs Fly Ash", legend=false, xlims = (0,100), ylims = (0,70))
+function init_centroid(x::Matrix{T},k::Int) where T<:AbstractFloat
+    n = size(x,1)
+    i = sample(1:n, k, replace=false)
+    x[i, :]
+end
+function calc_distance(x_obs::Vector{T}, centroids::Matrix{T}) where T<:AbstractFloat
+    k = size(centroids,1)
+    distances = zeros(k)
+    for i in 1:k
+        distances[i] = norm(x_obs .- centroids[i, :]) ^2
+    end
+    distances
+end
+function calc_groups(x::Matrix{T}, centroids::Matrix{T}) where T<:AbstractFloat
+    n = size(x,1)
+    groups = zeros(Int,n)
+    for o in 1:n
+        d = calc_distance(x[o,:], centroids)
+        groups[o] = argmin(d)
+    end
+    groups
+end
+function update_centroids!(centroid::Matrix{T},x::Matrix{T},groups::Vector{Int}) where T<:AbstractFloat
+    k = size(centroid,1)
+    for g in 1:k
+        ingroup = (groups .==g)
+        groupobs = x[ingroup,:]
+        groupmean = mean(groupobs, dims=1)
+        centroid[g,:] = groupmean
+    end
+end
+function kmeans(x::Matrix{T}, k::Int, nsteps::Int) where T<:AbstractFloat
+    centroid = init_centroid(x,k)
+    groups = calc_groups(x,centroid)
+    for i in 1:nsteps
+        groups = calc_groups(x,centroid)
+        update_centroids!(centroid, x, groups)
+    end
+    return calc_groups(x, centroid), update_centroids!(centroid, x, groups)
+end
+
+# dd = CSV.read("C:/Users/STP/Desktop/book11.csv", DataFrame)
+# CI = Vector(dd[:,1])
+# WC = Vector(dd[:,3])
+# TCP = Vector(dd[:,2])
+# CI
+# WC
+# TCP
+# gr()
+# data = Matrix(dd)
+# heatmap(1:size(data,1),
+#     1:size(data,2), data,
+#     c=cgrad([:black, :blue,:red, :white]),
+#     xlabel="x values", ylabel="y values",
+#     title="My title")
+
+X = Matrix(df)
+init1 = init_centroid(X,10)
+print(init1)
+Z = zeros(10,1)
+ZZ = replace(Z,0=>20)
+ZZZ = vec(ZZ)
+println(ZZ)
+distances1 = calc_distance(ZZZ,init1)
+groups1 = calc_groups(X,init1)
+update1 = update_centroids!(init1,X,groups1)
+kmeans1 = kmeans(X,10,10000)
