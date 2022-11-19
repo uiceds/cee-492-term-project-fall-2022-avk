@@ -91,14 +91,4 @@ content/01.abstract.md:133:compressive
 content/01.abstract.md:133:compressive
 content/01.abstract.md:133:dataset
 content/01.abstract.md:133:MPa
-content/01.abstract.md:136:constrainted
-content/01.abstract.md:136:mulitple
-content/01.abstract.md:136:profesor
-content/01.abstract.md:140:centroids
-content/01.abstract.md:140:centroids
-content/01.abstract.md:140:centroids
-content/01.abstract.md:140:centroids
-content/01.abstract.md:140:centroids
-content/01.abstract.md:140:centroids
-content/01.abstract.md:140:clsuters
-content/01.abstract.md:140:kmeans
+content/01.abstract.md:137:mulitple

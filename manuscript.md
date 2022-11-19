@@ -1,7 +1,7 @@
 ---
 title: Predicting Compressive Strength of Concrete using Machine learning
 lang: en-US
-date-meta: '2022-11-15'
+date-meta: '2022-11-19'
 author-meta:
 - Andrew Bushnell
 - Kanchan Kulhalli
@@ -16,8 +16,8 @@ header-includes: |-
   <meta name="citation_title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="og:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="twitter:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
-  <meta name="dc.date" content="2022-11-15" />
-  <meta name="citation_publication_date" content="2022-11-15" />
+  <meta name="dc.date" content="2022-11-19" />
+  <meta name="citation_publication_date" content="2022-11-19" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/6572ded28da543b61eb3bdcb46e11acec89d8858/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/6572ded28da543b61eb3bdcb46e11acec89d8858/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/6572ded28da543b61eb3bdcb46e11acec89d8858/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/09423ba522613f93d0379d19b79e74822a03dd5b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/09423ba522613f93d0379d19b79e74822a03dd5b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/09423ba522613f93d0379d19b79e74822a03dd5b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,10 +61,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/6572ded28da543b61eb3bdcb46e11acec89d8858/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/09423ba522613f93d0379d19b79e74822a03dd5b/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@6572ded](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/6572ded28da543b61eb3bdcb46e11acec89d8858)
-on November 15, 2022.
+from [uiceds/cee-492-term-project-fall-2022-avk@09423ba](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/09423ba522613f93d0379d19b79e74822a03dd5b)
+on November 19, 2022.
 </em></small>
 -->
 
@@ -228,13 +228,30 @@ Using our data setwe can create a machine learning model to produce a predictive
 As a first step towards create a feasible model, we plan to use regression analysis. The reason is that we have 8 independent variables (the 8 columns described in detail in the previous section) affecting the single dependent variable which is the concrete compressive strength. Depending on the results of the model, we plan to explore more advanced machine learning models. We will create rough estimations of how much of each concrete component would need to be used to create the optimal combination for each project. This would be done through the creation of a model of ideal solutions to meet the lowest price and still meet the strength requirements for each unique project. This would be very useful in the construction industry which would be able to use our machine learning models to evaluate which combination of concrete would best work to meet the requirements of their project while also saving the construction company the most capital. 
 
 Based on what we have discussed with the TA, this is a feasible idea since our data could be used to create combinations that are not currently in our dataset by using what we learned in class to create rough estimates of new combinations based on the current data. For example, we could find the new compressive strength of a certain new combination to be the average strength of two known combinations from our data set or use certain criteria found online, such as impact of water to cement ratio or fly ash to concrete ratio, to make a rough estimate of the new combinations results compressive strength. We intend to do this by creating something like the solver function in excel where we will have an objective function, such as minimize price and maximize strength, and set up constraints, such as have strength be greater than or equal to 25 MPa or have at least 20% cement. Then solving this would give us our result of a new matrix of the ideal values for the combinations in the concrete to be used for that specific project.
+
 # Preliminary Predictive Modeling
 
-In this section, we will explore mulitple methods for creating drafts for our predictive modeling analysis. After reviewing the potential examples that could be used, we decided to use clustering (k-means) and ... to get our initial drafts. With advice from the profesor we also will attempt to create a constrainted optimization using "JuMP" in Julia.
+In this section, we will explore mulitple methods for creating drafts for our predictive modeling analysis. After reviewing the potential examples that could be used and discussing in depth with the TA and Professor, we have realized that the methods that would be most ideal for our data set would be the Decision tree method and the regression method including the logic regression. To make sure that all our group members were on the same page, we made sure that our cleaned data was the same for every members so no errors would occur with differences in our data frames when testing our draft predictive models.
 
-# K-Means
+# Decision Tree
 
-To begin, we tried using the k-means clustering method in Julia to create a predictive model of our data using unsupervised clustering of our data. To start we created a function to give us random initial centroids in our data set.... Since the size of our data set is a 1030x10 Matrix, we decided to get 10 initial clusters for our data set. Next we want to calculate the distance between our initial centroids and the vector we are looking for "x_obs" which in our case will be a 10 x 1 matrix and will have all of its values be equal to 20 which represents the theoretical minimum strength required for the highway construction project we are basing our predictive modeling analysis for which will be done using our function calc_distance we created... After we have the distances for our centroids, we want to assign them to a specific group based on the location they are at in the data set using the calc_group function we created which returns a vector assigning group numbers to out data set.... After we have our groups made, we now want to update our centroids so they become the actual centroids for the observations we assigned to them when we created the groups and we do this by using the function we created update_centroids!.... After we update our centroids to be located at the center of the groups they were assigned to, we now can do the actual k-mean algorithm to find our clusters of our data for our predictive modeling analysis. Using our function we created kmeans, we can find which cluster each of our observations should be located in our data set where we do 10000 steps for our data to get an accurate result for our k-mean data and we choose 10 for our k integers since we originally chose 10 initial clsuters and want to be consistent...
+To begin, we tried using the decision tree method in Julia to create a predictive model of our data using a regression tree made out of our data. To start, we split up our cleaned data into independent and dependent variables that would be in the form of a matrix and vector respectfully so they then can be used to create our tree.
+
+```
+{
+  independent = Matrix(XXX),
+  dependent = vec(Matrix(XX))
+
+}
+```
+We then would build our initial tree using our independent and dependent variables using the following code.
+
+```
+{
+init_tree = build_tree(dependent, independent)
+}
+```
+After our initial tree was created we then
 
 ## References {.page_break_before}
 
