@@ -3,7 +3,7 @@ CEE
 compacity
 compressive
 CSV
-dataset
+Dataset
 flexural
 Gadge
 imapct
@@ -15,7 +15,7 @@ MPa
 mulitple
 setwe
 superplasticizer
-superplasticizers
+Superplasticizers
 trendline
 uiuc
 vgadge
