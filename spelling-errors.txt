@@ -1,7 +1,7 @@
 andrewb
 CEE
 compacity
-Compressive
+compressive
 CSV
 dataset
 DecisionTree
@@ -14,6 +14,7 @@ Kulhalli
 megapascals
 MPa
 mulitple
+Scatterplot
 setwe
 superplasticizer
 superplasticizers

@@ -95,3 +95,5 @@ content/01.abstract.md:137:mulitple
 content/01.abstract.md:141:compressive
 content/01.abstract.md:141:dataset
 content/01.abstract.md:150:DecisionTree
+content/01.abstract.md:171:Scatterplot
+content/01.abstract.md:171:Scatterplot
