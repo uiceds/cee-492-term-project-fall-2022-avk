@@ -15,6 +15,9 @@ begin
     using Zygote
     using ProgressLogging
     using DecisionTree
+    using EvoTrees
+    using MLJ
+    using MLJModels
 end
 # df = CSV.read("C:/Users/STP/Desktop/ConcreteProjectData2.csv", DataFrame)
 # #describe(df)
@@ -270,19 +273,71 @@ dfff = Matrix(dff)
 # apply learned model
 apply_tree(init_tree,dfff)
 # run 3-fold cross validation, returns array of coefficients of determination (R^2)
-n_folds = 3
+n_folds = 5
 r2 = nfoldCV_tree(dependent, independent, n_folds)
 
 n_subfeatures = 0; max_depth = -1; min_samples_leaf = 10
-min_samples_split = 2; min_purity_increase = 0.0; pruning_purity = 1 ; seed=3
+min_samples_split = 2; min_purity_increase = 0.0; pruning_purity = 1.0 ; seed=3
 
 mnn = build_tree(dependent, independent, n_subfeatures, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; rng = seed)
-println(mnn)
+println(init_tree)
+print_tree(init_tree)
+
+print_tree(mnn)
 r2 =  nfoldCV_tree(dependent, independent, n_folds, pruning_purity, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; verbose = true, rng = seed)
 accuracyy= nfoldCV_tree(dependent, independent, n_folds, pruning_purity, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; verbose = true, rng = seed) 
 println(accuracyy)
 print_tree(mnn)
+print_tree(mnn.fitresult[1])
 sw = apply_tree(mnn,independent)
+dependent
 sww = apply_tree(init_tree,dfff)
-accuracyy= nfoldCV_tree(dependent, independent, n_folds, pruning_purity, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; verbose = true, rng = seed) 
-Plots.plot(sw,sww)
+function accuracy(yhat::AbstractVector,y::AbstractVector)
+    mean(yhat .== y)
+end
+function gini_impurity(y::AbstractVector)
+    ig = 1.0
+    println(y)
+    u = unique(y)
+    for c in u 
+        p = mean(c .== y)^2
+        ig -= p
+    end
+    ig
+end
+gini_impurity(sw)
+gini_impurity(dependent)
+function weighted_gini(x::Vector{Float64}, cut::Float64,y::AbstractVector)
+    idx = x .>= cut
+    fcut = sum(idx)./length(y)
+
+    ig1 = gini_impurity(y[idx])
+    ig2 = gini_impurity(y[.!(idx)])
+    ig1 * fcut + ig2 * (1-fcut)
+end
+function min_impurity(x::Vector{Float64}, y::Vector{Bool})
+    argmin([weighted_gini(x,i,y) for i in unique(x)])
+end
+accuracy(sw,dependent)
+#accuracyy= nfoldCV_tree(dependent, independent, n_folds, pruning_purity, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; verbose = true, rng = seed) 
+Plots.scatter(sw,sww)
+Plots.plot(mnn,3)
+config = EvoTreeRegressor(
+    loss=:linear, 
+    nrounds=100, 
+    nbins=100,
+    lambda=0.5, 
+    gamma=0.1, 
+    eta=0.1,
+    max_depth=6, 
+    min_weight=1.0,
+    rowsample=0.5, 
+    colsample=1.0)
+    x_train = independent
+    y_train = dependent
+    # y_train = sw
+mmm = fit_evotree(config; x_train, y_train)
+Plots.plot(mmm,2, size=(1800,1800))
+# mmmm = fit_evotree(config; x_train, y_train)
+# Plots.plot(mmmm,2, size=(1500,1500))
+#Plots.heatmap(unique(independent),dependent)
