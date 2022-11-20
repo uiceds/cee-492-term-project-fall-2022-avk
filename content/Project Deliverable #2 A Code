@@ -279,7 +279,7 @@ r2 = nfoldCV_tree(dependent, independent, n_folds)
 n_subfeatures = 0; max_depth = -1; min_samples_leaf = 10
 min_samples_split = 2; min_purity_increase = 0.0; pruning_purity = 1.0 ; seed=3
 
-mnn = build_tree(dependent, independent, n_subfeatures, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; rng = seed)
+new_init_tree = build_tree(dependent, independent, n_subfeatures, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; rng = seed)
 println(init_tree)
 print_tree(init_tree)
 
@@ -288,7 +288,7 @@ r2 =  nfoldCV_tree(dependent, independent, n_folds, pruning_purity, max_depth, m
 accuracyy= nfoldCV_tree(dependent, independent, n_folds, pruning_purity, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; verbose = true, rng = seed) 
 println(accuracyy)
 print_tree(mnn)
-sw = apply_tree(mnn,independent)
+new_dependent_vector = apply_tree(mnn,independent)
 dependent
 sww = apply_tree(init_tree,dfff)
 function accuracy(yhat::AbstractVector,y::AbstractVector)
@@ -333,11 +333,11 @@ config = EvoTreeRegressor(
     rowsample=0.5, 
     colsample=1.0)
     x_train = independent
-    y_train = sw
-    # y_train = sw
+    y_train = dependent
 mmm = fit_evotree(config; x_train, y_train)
-Plots.plot(mmm,2, size=(1800,1800))
+Unaltered = Plots.plot(mmm,2, size=(1800,1800))
 # mmmm = fit_evotree(config; x_train, y_train)
 # Plots.plot(mmmm,2, size=(1500,1500))
 #Plots.heatmap(unique(independent),dependent)
 Plots.scatter(sw, dependent, xlabel= "# Samples", ylabel= "Strength (MPa)", label="Dependent and Decision Tree Adjusted Dependent Variables", smooth=true)
+accuracyyy= nfoldCV_tree(new_dependent_vector, independent, n_folds, pruning_purity, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; verbose = true, rng = seed) 
