@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/eeb6f1db9e9331d4584e0014a7d572c533df3795/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/eeb6f1db9e9331d4584e0014a7d572c533df3795/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/eeb6f1db9e9331d4584e0014a7d572c533df3795/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b967ebb57799ce023707c77a98d40977307e7748/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b967ebb57799ce023707c77a98d40977307e7748/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b967ebb57799ce023707c77a98d40977307e7748/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/eeb6f1db9e9331d4584e0014a7d572c533df3795/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/b967ebb57799ce023707c77a98d40977307e7748/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@eeb6f1d](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/eeb6f1db9e9331d4584e0014a7d572c533df3795)
+from [uiceds/cee-492-term-project-fall-2022-avk@b967ebb](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/b967ebb57799ce023707c77a98d40977307e7748)
 on November 20, 2022.
 </em></small>
 -->
@@ -261,11 +261,11 @@ print_tree(init_tree)
 
 
 
-![First decision tree with independent and dependent variables only](images/Decision%20Tree%20with%20Independent%20and%20Dependent%20Variables%20.jpg){#fig:plot-9 height=2.5in}
+![First decision tree with independent and dependent variables only](images/Decision%20Tree%20with%20Independent%20and%20Dependent%20Variables%20.jpg){#fig:plot-10 height=2.5in}
 
-![Second decision tree with independent and new dependent variables only](images/Decision%20Tree%20with%20Independent%20and%20New%20Dependent%20Variables%20Following%20Apply%20Tree%20Function%20.jpg){#fig:plot-9 height=2.5in}
+![Second decision tree with independent and new dependent variables only](images/Decision%20Tree%20with%20Independent%20and%20New%20Dependent%20Variables%20Following%20Apply%20Tree%20Function%20.jpg){#fig:plot-11 height=2.5in}
 
-![Scatterplot of dependent variables and decision tree adjusted dependent variables](images/Scatterplot%20of%20Dependent%20and%20Decision%20Tree%20Adjusted%20Dependent%20Variables.jpg){#fig:plot-9 height=2.5in}
+![Scatterplot of dependent variables and decision tree adjusted dependent variables](images/Scatterplot%20of%20Dependent%20and%20Decision%20Tree%20Adjusted%20Dependent%20Variables.jpg){#fig:plot-12 height=2.5in}
 
 ## References {.page_break_before}
 

@@ -1,7 +1,7 @@
 andrewb
 CEE
 compacity
-compressive
+Compressive
 CSV
 dataset
 DecisionTree
@@ -17,7 +17,7 @@ mulitple
 Scatterplot
 setwe
 superplasticizer
-superplasticizers
+Superplasticizers
 trendline
 uiuc
 vgadge
