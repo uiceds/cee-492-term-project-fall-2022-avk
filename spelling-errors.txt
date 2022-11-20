@@ -1,9 +1,10 @@
 andrewb
 CEE
 compacity
-compressive
+Compressive
 CSV
-Dataset
+dataset
+DecisionTree
 flexural
 Gadge
 imapct
@@ -15,7 +16,7 @@ MPa
 mulitple
 setwe
 superplasticizer
-Superplasticizers
+superplasticizers
 trendline
 uiuc
 vgadge

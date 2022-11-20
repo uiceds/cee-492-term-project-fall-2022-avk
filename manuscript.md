@@ -1,7 +1,7 @@
 ---
 title: Predicting Compressive Strength of Concrete using Machine learning
 lang: en-US
-date-meta: '2022-11-19'
+date-meta: '2022-11-20'
 author-meta:
 - Andrew Bushnell
 - Kanchan Kulhalli
@@ -16,8 +16,8 @@ header-includes: |-
   <meta name="citation_title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="og:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="twitter:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
-  <meta name="dc.date" content="2022-11-19" />
-  <meta name="citation_publication_date" content="2022-11-19" />
+  <meta name="dc.date" content="2022-11-20" />
+  <meta name="citation_publication_date" content="2022-11-20" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/7496b4e6426b5b9a1f04412f797c9d4103dbbabe/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/7496b4e6426b5b9a1f04412f797c9d4103dbbabe/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/7496b4e6426b5b9a1f04412f797c9d4103dbbabe/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8f72e90f3d750176d2b99aa74975a29354020b3e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8f72e90f3d750176d2b99aa74975a29354020b3e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8f72e90f3d750176d2b99aa74975a29354020b3e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,10 +61,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/7496b4e6426b5b9a1f04412f797c9d4103dbbabe/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8f72e90f3d750176d2b99aa74975a29354020b3e/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@7496b4e](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/7496b4e6426b5b9a1f04412f797c9d4103dbbabe)
-on November 19, 2022.
+from [uiceds/cee-492-term-project-fall-2022-avk@8f72e90](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/8f72e90f3d750176d2b99aa74975a29354020b3e)
+on November 20, 2022.
 </em></small>
 -->
 
@@ -235,7 +235,7 @@ In this section, we will explore mulitple methods for creating drafts for our pr
 
 # Decision Tree
 
-To begin, we tried using the decision tree method in Julia to create a predictive model of our data using a regression tree made out of our data. To start, we split up our cleaned data into independent (the concrete admixtures, XXX) and dependent variables (the concrete compressive strength, XX) that would be in the form of a matrix and vector respectfully so they then can be used to create our tree.
+To begin, we tried using the decision tree method in Julia to create a predictive model of our data using a regression tree made out of our data since our dataset is non-linear. To start, we split up our cleaned data into independent variables (the concrete admixtures, XXX) and dependent variables (the concrete compressive strength, XX) that would be in the form of a matrix and vector respectfully so they then can be used to create our decision tree.
 
 ```
 {
@@ -244,14 +244,25 @@ To begin, we tried using the decision tree method in Julia to create a predictiv
 
 }
 ```
-We then would build our initial tree using our independent and dependent variables using the following code.
+We then would build our initial tree using our independent and dependent variables using the following code available in the DecisionTree package from Julia.
 
 ```
 {
 init_tree = build_tree(dependent, independent)
 }
 ```
-After our initial tree was created we then
+After our initial tree was created we then tried using the print_tree function to visualize what our initial tree looked like in terms of values as seen below. However, this returned  
+
+```
+{
+print_tree(init_tree)
+}
+```
+
+
+
+![First decision tree with independent and dependent variables only](images/Decision%20Tree%20with%20Independent%20and%20Dependent%20Variables%20.jpg){#fig:plot-9 height=2.5in}
+
 
 ## References {.page_break_before}
 
