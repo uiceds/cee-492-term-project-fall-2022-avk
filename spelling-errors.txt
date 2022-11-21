@@ -5,9 +5,7 @@ compacity
 compressive
 CSV
 dataset
-decions
 DecisionTree
-ebst
 EvoTrees
 flexural
 Gadge
@@ -26,11 +24,10 @@ mulitple
 overfitted
 RMSE
 Scatterplot
-superplasticizer
-superplasticizers
+Superplasticizer
+Superplasticizers
 trendline
 uiuc
 vgadge
 Vikram
-vlaue
 workability

@@ -118,12 +118,10 @@ content/01.abstract.md:212:dataset
 content/01.abstract.md:212:EvoTrees
 content/01.abstract.md:212:MLJ
 content/01.abstract.md:212:MLJModels
-content/01.abstract.md:235:vlaue
 content/01.abstract.md:241:accuracyy
 content/01.abstract.md:252:accuracyy
-content/01.abstract.md:274:ebst
 content/01.abstract.md:276:Scatterplot
 content/01.abstract.md:276:Scatterplot
-content/01.abstract.md:278:decions
 content/01.abstract.md:278:gini
 content/01.abstract.md:278:impurtity
+content/01.abstract.md:300:gini
