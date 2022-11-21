@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/cfe677bd63699f9ea04b200ae740cdbeb220ea46/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/cfe677bd63699f9ea04b200ae740cdbeb220ea46/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/cfe677bd63699f9ea04b200ae740cdbeb220ea46/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/056bc267e091f1e75f5da0a246738fb786fa2fa9/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/056bc267e091f1e75f5da0a246738fb786fa2fa9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/056bc267e091f1e75f5da0a246738fb786fa2fa9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/cfe677bd63699f9ea04b200ae740cdbeb220ea46/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/056bc267e091f1e75f5da0a246738fb786fa2fa9/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@cfe677b](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/cfe677bd63699f9ea04b200ae740cdbeb220ea46)
+from [uiceds/cee-492-term-project-fall-2022-avk@056bc26](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/056bc267e091f1e75f5da0a246738fb786fa2fa9)
 on November 21, 2022.
 </em></small>
 -->
@@ -346,7 +346,7 @@ Mean Coeff of Determination: 0.7863928687545627
  0.8112046184837071
  0.7511667468611821
 ```
-We see that the average accuracy of our initial decision tree is 78.6 percent. To increase the accuracy, we then ran our independent and dependent variables through another build tree function but now using the default sub_features that we used in our "accuracyy" function from earlier. We then take this new decision tree and run it through the "apply_tree" function to create a new vector of our dependent variables. Which we then can use to compare to our initial dependent variables vector. Then we can check the accuracy of this with our new dependent variable vector compared to our original and we see that we now have an average accuracy of 90.9%
+We see that the average accuracy of our initial decision tree is 78.6%. To increase the accuracy, we then ran our independent and dependent variables through another build tree function but now using the default sub_features that we used in our "accuracyy" function from earlier. We then take this new decision tree and run it through the "apply_tree" function to create a new vector of our dependent variables. Which we then can use to compare to our initial dependent variables vector. Then we can check the accuracy of this with our new dependent variable vector compared to our original and we see that we now have an average accuracy of 90.9%
 
 ```julia
 new_init_tree = build_tree(dependent, independent, n_subfeatures, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; rng = seed)
