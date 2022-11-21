@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a1d66011be9789aabdc3d891afe83ab47b46bb95/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a1d66011be9789aabdc3d891afe83ab47b46bb95/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a1d66011be9789aabdc3d891afe83ab47b46bb95/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2996ecbd572be683ad8a42e60a106ddc9327ca8f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2996ecbd572be683ad8a42e60a106ddc9327ca8f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2996ecbd572be683ad8a42e60a106ddc9327ca8f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a1d66011be9789aabdc3d891afe83ab47b46bb95/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2996ecbd572be683ad8a42e60a106ddc9327ca8f/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@a1d6601](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/a1d66011be9789aabdc3d891afe83ab47b46bb95)
+from [uiceds/cee-492-term-project-fall-2022-avk@2996ecb](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/2996ecbd572be683ad8a42e60a106ddc9327ca8f)
 on November 21, 2022.
 </em></small>
 -->
@@ -271,41 +271,43 @@ sqrt(mse(y_hat, y_test))
 
 ```
 
-We got an RMSE ~ 10 for the above model. ![Linear Regression Model](images/linear-reg.png){#fig:linear-reg height=2.5in}
-From the Figure @fig:linear-reg, we can see that although a lot of points are closer to the 45 degree line, we can also see that there are a large number of points which deviate from the line quite a bit. This can suggest a few things
-1. The dependency of the independent variables cannot be modeled linearly and hence we may need a more complex model like a neural network.
-2. Our dataset comprises of only 8 variables that affect the concrete compressive strength. There may be many other factors that affect the strength which is clearly a limitation of the dataset. 
+![Linear Regression Model](images/linear-reg.png){#fig:linear-reg height=2.5in}
+
+
+We got an RMSE ~ 10 for the above model. From the Figure @fig:linear-reg, we can see that although a lot of points are closer to the 45 degree line, we can also see that there are a large number of points which deviate from the line quite a bit. This can suggest a few things
+* The model has overfitted on the training data and is performing poorly on the testing data.
+* The dependency of the independent variables cannot be modeled linearly and hence we may need a more complex model like a neural network.
+* Our dataset comprises of only 8 variables that affect the concrete compressive strength. There may be many other factors that affect the strength which is clearly a limitation of the dataset. 
+
+To follow this up, we implemented logisitic regression model and the multilayered regression model(neural network) to see if we can make any significant improvements to the model. However, we found out that the RMSE to be around 34. This was unexpected since we expected the non linear models to perform better but it turned out that they performed extremely poorly in comparison with the linear regression model. Hence, we decided not to plot them.
+
+### Conclusions
+* To understand why our linear regression model performs badly, we checked if we overfitted the model on the training data. However, the RMSE on the training data and the testing data are almost the same and hence we haven't really overfitted the model.
+* We will continue to explore why our neural network models performed so poorly and hope we could find a convincing answer by the next deadline. One of the plausible reasons could be that we haven't done any regularization. Although, we realized that our model hasn't really overfitted but it would be a good idea to try this out for the future.
+* We could try and implement a stochastic gradient descent algorithm and verify if that improves our model.
 
 
 ## Decision Tree
 
 To begin, we tried using the decision tree method in Julia to create a predictive model of our data using a regression tree made out of our data since our dataset is non-linear. To start, we split up our cleaned data into independent variables (the concrete admixtures, XXX) and dependent variables (the concrete compressive strength, XX) that would be in the form of a matrix and vector respectfully so they then can be used to create our decision tree.
 
-```
-{
+```julia
   independent = Matrix(XXX),
   dependent = vec(Matrix(XX))
-
-}
 ```
 We then would build our initial tree using our independent and dependent variables using the following code available in the DecisionTree package from Julia.
 
-```
-{
+```julia
 init_tree = build_tree(dependent, independent)
-}
 ```
 After our initial tree was created we then tried using the print_tree function to visualize what our initial tree looked like in terms of values as seen below. However, this returned only the tree in numerical form so it was hard to visualize. 
 
-```
-{
+```julia
 print_tree(init_tree)
-}
 ```
 This led to us needing to research online how to plot the decision tree we made and ended up using the "EvoTrees", "MLJ", and "MLJModels" packages in Julia that led to us being able to form the following plot our initial decision tree that used our unaltered independent and dependent variables from our dataset.
 
-```
-{
+```julia
 config = EvoTreeRegressor(
     loss=:linear, 
     nrounds=100, 
@@ -321,16 +323,14 @@ config = EvoTreeRegressor(
     y_train = dependent
 mmm = fit_evotree(config; x_train, y_train)
 Unaltered = Plots.plot(mmm,2, size=(1800,1800))
-}
 ```
 Using the code above we were able to successfully plot our initial decision tree as seen below.
 
-![First decision tree with independent and dependent variables only](images/Decision%20Tree%20with%20Independent%20and%20Dependent%20Variables%20.jpg){#fig:plot-10 height=2.5in}
+![First decision tree with independent and dependent variables only](images/Decision%20Tree%20with%20Independent%20and%20Dependent%20Variables%20.jpg){#fig:plot-10 height=5in}
 
 We then used the following code which run a cross validation of our inputs we are using and on the number of n-folds we chose, which we chose 5 for our data set since using more than this did not change the accuracy and using less than this lowered the accuracy. All the other variables using in the function we set as the default values since only changing the pruning purity affected the accuracy but only lowered it since it can only be a value from 0 to 1 and having a vlaue of 1 gave the highest accuracy.
 
-```
-{
+```julia
 n_folds = 5
 n_subfeatures = 0; max_depth = -1; min_samples_leaf = 10
 min_samples_split = 2; min_purity_increase = 0.0; pruning_purity = 1.0 ; seed=3
@@ -344,15 +344,13 @@ Mean Coeff of Determination: 0.7863928687545627
  0.7354379123502578
  0.8112046184837071
  0.7511667468611821
-}
 ```
 We see that the average accuracy of our initial decision tree is 78.6 percent. To increase the accuracy, we then ran our independent and dependent variables through another build tree function but now using the default sub_features that we used in our "accuracyy" function from earlier. We then take this new decision tree and run it through the "apply_tree" function to create a new vector of our dependent variables which we then can use to compare to our initial dependent variables vector. Then we can check the accuracy of this our new dependent variable vector compared to our original and we see that we have an average accuracy of  90.9%
 
-```
-{
+```julia
 new_init_tree = build_tree(dependent, independent, n_subfeatures, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; rng = seed)
 
-new_dependent_vector = apply_tree(mnn,independent)
+new_dependent_vector = apply_tree(mnn, independent)
 
 accuracyyy= nfoldCV_tree(new_dependent_vector, independent, n_folds, pruning_purity, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; verbose = true, rng = seed) 
 
@@ -364,28 +362,26 @@ Mean Coeff of Determination: 0.9094893339292118
  0.8489222674442972
  0.9591954741485458
  0.9035974876327418
-}
 ```
 We then plotted this new decision tree the same way we did the first one and it produced the following.
 
-![Second decision tree with independent and new dependent variables only](images/Decision%20Tree%20with%20Independent%20and%20New%20Dependent%20Variables%20Following%20Apply%20Tree%20Function%20.jpg){#fig:plot-11 height=2.5in}
+![Second decision tree with independent and new dependent variables only](images/Decision%20Tree%20with%20Independent%20and%20New%20Dependent%20Variables%20Following%20Apply%20Tree%20Function%20.jpg){#fig:plot-11 height=5in}
 
 Lastly, to see how the original dependent variables vector and the new dependent variables vector after running it through the decision trees machine learning method we made the following scatter plot to show how the two relate and the ebst fit line fits approximately 75% of the points on the plot seen below
 
-![Scatterplot of dependent variables and decision tree adjusted dependent variables](images/Scatterplot%20of%20Dependent%20and%20Decision%20Tree%20Adjusted%20Dependent%20Variables.jpg){#fig:plot-12 height=2.5in}
+![Scatterplot of dependent variables and decision tree adjusted dependent variables](images/Scatterplot%20of%20Dependent%20and%20Decision%20Tree%20Adjusted%20Dependent%20Variables.jpg){#fig:plot-12 height=5in}
 
 Lastly, we can see how the gini-impurtity has changed after running our dependent variable vector through the decions tree and we see that they are very close to being the same value which means that our decision tree above are very similar which means our machine learning made an accurate prediction.
 
-```
-{
+```julia
 gini_impurity(sw)
 gini_impurity(dependent)
 
 output =
 0.9865130723205006
 0.9986078141259189
-}
 ```
+
 The decision tree method overall seemed like a viable option to create a draft predictive model for our data set and we intend to refine our trees to be used later on.
 
 ## References {.page_break_before}
