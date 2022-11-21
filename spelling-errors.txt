@@ -4,7 +4,7 @@ CEE
 compacity
 compressive
 CSV
-Dataset
+dataset
 decions
 DecisionTree
 ebst
@@ -12,6 +12,7 @@ EvoTrees
 flexural
 Gadge
 gini
+hyperparameters
 imapct
 impurtity
 Kaggle
@@ -22,10 +23,10 @@ MLJ
 MLJModels
 MPa
 mulitple
+RMSE
 Scatterplot
-setwe
-superplasticizer
-Superplasticizers
+Superplasticizer
+superplasticizers
 trendline
 uiuc
 vgadge

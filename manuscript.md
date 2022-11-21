@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/047c9532cece504f5244f74559011f59999f6e13/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/047c9532cece504f5244f74559011f59999f6e13/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/047c9532cece504f5244f74559011f59999f6e13/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a1d66011be9789aabdc3d891afe83ab47b46bb95/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a1d66011be9789aabdc3d891afe83ab47b46bb95/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a1d66011be9789aabdc3d891afe83ab47b46bb95/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/047c9532cece504f5244f74559011f59999f6e13/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/a1d66011be9789aabdc3d891afe83ab47b46bb95/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@047c953](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/047c9532cece504f5244f74559011f59999f6e13)
+from [uiceds/cee-492-term-project-fall-2022-avk@a1d6601](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/a1d66011be9789aabdc3d891afe83ab47b46bb95)
 on November 21, 2022.
 </em></small>
 -->
@@ -223,7 +223,7 @@ However, Figure @fig:plot-8 shows a negative correlation where the compressive s
 The graph above explains how the proportions of the 8 components are affecting the concrete compressive strength. It clearly shows that the second bar graph has more quantity of superplasticizer and less quantity of water than the first bar graph. Also, the second bar graph has good aging time than the first one. Hence clearly the second plot has more concrete compressive strength than the first one.
 
 # Predictive Modeling
-Using our data setwe can create a machine learning model to produce a predictive modeling code for solving for which combinations of concrete mixtures would be ideal to meet a certain strength requirement, based on different construction projects, and then find the minimum optimal cost. To do this we intend to first use the data available in our dataset to find out the unit costs of each component in our concrete. We then will look up research papers over the different strength requirements set in place at the State and Federal level for different construction projects, such as bridges and highways where highway bridges require a minimum of 25 MPa to pass the strength requirements set in place in California [@{https://ascelibrary.org/doi/10.1061/%28ASCE%29CF.1943-5509.0000404}]. 
+Using our data set, we can create a machine learning model to produce a predictive modeling code for solving for which combinations of concrete mixtures would be ideal to meet a certain strength requirement, based on different construction projects, and then find the minimum optimal cost. To do this we intend to first use the data available in our dataset to find out the unit costs of each component in our concrete. We then will look up research papers over the different strength requirements set in place at the State and Federal level for different construction projects, such as bridges and highways where highway bridges require a minimum of 25 MPa to pass the strength requirements set in place in California [@{https://ascelibrary.org/doi/10.1061/%28ASCE%29CF.1943-5509.0000404}]. 
 
 As a first step towards create a feasible model, we plan to use regression analysis. The reason is that we have 8 independent variables (the 8 columns described in detail in the previous section) affecting the single dependent variable which is the concrete compressive strength. Depending on the results of the model, we plan to explore more advanced machine learning models. We will create rough estimations of how much of each concrete component would need to be used to create the optimal combination for each project. This would be done through the creation of a model of ideal solutions to meet the lowest price and still meet the strength requirements for each unique project. This would be very useful in the construction industry which would be able to use our machine learning models to evaluate which combination of concrete would best work to meet the requirements of their project while also saving the construction company the most capital. 
 
@@ -231,9 +231,53 @@ Based on what we have discussed with the TA, this is a feasible idea since our d
 
 # Preliminary Predictive Modeling
 
-In this section, we will explore mulitple methods for creating drafts for our predictive modeling analysis. After reviewing the potential examples that could be used and discussing in depth with the TA and Professor, we have realized that the methods that would be most ideal for our data set would be the Decision tree method and the regression method including the logic regression. To make sure that all our group members were on the same page, we made sure that our cleaned data was the same for every members so no errors would occur with differences in our data frames when testing our draft predictive models.
+In this section, we will explore mulitple methods for creating drafts for our predictive modeling analysis. After reviewing the potential methods/algorithms that could be used and discussing in depth with the TA and Professor, we have realized that the methods that would be most ideal for our data set would be the regression method and the decision tree method. We started off with developing a model using Linear Regression which would be our base model. We have further implemented the Decision tree model which shows a great improvement in accuracy.
 
-### Decision Tree
+
+## Regression
+Our dataset consists of 8 independent variables and one dependent variable. We want to know how each of these independent variables affect the dependent variable i.e. concrete compressive strength. To begin with, we can check if these independent variables affect the concrete strength linearly by implementing a simple linear regression model.
+
+We first divided our data into two sets (i) training data set (ii) testing data set. The training data set consists of 750 rows and the testing dataset consists of the remaining 242 rows. So, we split our dataset into training and testing to about 75% and 25% roughly. We didn't split our data set into evaluation dataset since the number of hyperparameters to be tuned for this model were only a few. We set our learning rate to 0.1 and the number of steps to 1000. These hyperparameters are needed for finding the global minima for our cost function which is the mean squared error in our case. We did tune our hyperparameters a bit however we didn't see any noticeable improvement in the results. 
+
+Here is a snippet of our model.
+
+```julia
+# Linear regression model -> Y = beta.X + C
+function minimize!(f_model::Function, x::Matrix{T}, y::Vector{T}, p::Vector{T}, η::T, num_steps::Int)::Vector{T} where T<:AbstractFloat
+	f(p) = mse(f_model(x,p),y)
+	for i in 1:num_steps
+		g = f'(p)
+		p -= η * g 
+	end
+	p
+end
+
+function model(x::Matrix{T}, p::Vector{T})::Vector{T} where T<:AbstractFloat
+	p1 = p[1:end-1]
+	p2 = p[end]
+	ŷ = x * p1 .+ p2
+end
+
+# Train the model on df_train ~ 750 rows and learn the model parameters beta.
+T = Matrix(normalize_df(df_train))
+beta = minimize!(model, T, y_train, rand(size(T)[2]+1), 0.1, 1000)
+
+# Use the model parameters(beta) to predict the concrete compressive strength(y_hat)
+input_data = Matrix(normalize_df(df_test))
+y_hat = model(input_data, beta)
+
+# Calculate the RMSE on the test data.
+sqrt(mse(y_hat, y_test))
+
+```
+
+We got an RMSE ~ 10 for the above model. ![Linear Regression Model](images/linear-reg.png){#fig:linear-reg height=2.5in}
+From the Figure @fig:linear-reg, we can see that although a lot of points are closer to the 45 degree line, we can also see that there are a large number of points which deviate from the line quite a bit. This can suggest a few things
+1. The dependency of the independent variables cannot be modeled linearly and hence we may need a more complex model like a neural network.
+2. Our dataset comprises of only 8 variables that affect the concrete compressive strength. There may be many other factors that affect the strength which is clearly a limitation of the dataset. 
+
+
+## Decision Tree
 
 To begin, we tried using the decision tree method in Julia to create a predictive model of our data using a regression tree made out of our data since our dataset is non-linear. To start, we split up our cleaned data into independent variables (the concrete admixtures, XXX) and dependent variables (the concrete compressive strength, XX) that would be in the form of a matrix and vector respectfully so they then can be used to create our decision tree.
 
