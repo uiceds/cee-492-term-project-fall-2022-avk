@@ -1,7 +1,7 @@
 ---
 title: Predicting Compressive Strength of Concrete using Machine learning
 lang: en-US
-date-meta: '2022-11-20'
+date-meta: '2022-11-21'
 author-meta:
 - Andrew Bushnell
 - Kanchan Kulhalli
@@ -16,8 +16,8 @@ header-includes: |-
   <meta name="citation_title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="og:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="twitter:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
-  <meta name="dc.date" content="2022-11-20" />
-  <meta name="citation_publication_date" content="2022-11-20" />
+  <meta name="dc.date" content="2022-11-21" />
+  <meta name="citation_publication_date" content="2022-11-21" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/9872eb10718a99d4a6335ef3353a2aba94c76e89/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/9872eb10718a99d4a6335ef3353a2aba94c76e89/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/9872eb10718a99d4a6335ef3353a2aba94c76e89/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/4154134aeedd8100b597b864f1c3f1333ddc58bc/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/4154134aeedd8100b597b864f1c3f1333ddc58bc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/4154134aeedd8100b597b864f1c3f1333ddc58bc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,10 +61,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/9872eb10718a99d4a6335ef3353a2aba94c76e89/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/4154134aeedd8100b597b864f1c3f1333ddc58bc/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@9872eb1](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/9872eb10718a99d4a6335ef3353a2aba94c76e89)
-on November 20, 2022.
+from [uiceds/cee-492-term-project-fall-2022-avk@4154134](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/4154134aeedd8100b597b864f1c3f1333ddc58bc)
+on November 21, 2022.
 </em></small>
 -->
 
@@ -329,6 +329,20 @@ We then plotted this new decision tree the same way we did the first one and it 
 Lastly, to see how the original dependent variables vector and the new dependent variables vector after running it through the decision trees machine learning method we made the following scatter plot to show how the two relate and the ebst fit line fits approximately 75% of the points on the plot seen below
 
 ![Scatterplot of dependent variables and decision tree adjusted dependent variables](images/Scatterplot%20of%20Dependent%20and%20Decision%20Tree%20Adjusted%20Dependent%20Variables.jpg){#fig:plot-12 height=2.5in}
+
+Lastly, we can see how the gini-impurtity has changed after running our dependent variable vector through the decions tree and we see that they are very close to being the same value which means that our decision tree above are very similar which means our machine learning made an accurate prediction.
+
+```
+{
+gini_impurity(sw)
+gini_impurity(dependent)
+
+output =
+0.9865130723205006
+0.9986078141259189
+}
+```
+The decision tree method overall seemed like a viable option to create a draft predictive model for our data set and we intend to refine our trees to be used later on.
 
 ## References {.page_break_before}
 

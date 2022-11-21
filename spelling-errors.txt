@@ -5,12 +5,15 @@ compacity
 compressive
 CSV
 dataset
+decions
 DecisionTree
 ebst
 EvoTrees
 flexural
 Gadge
+gini
 imapct
+impurtity
 Kaggle
 Kanchan
 Kulhalli

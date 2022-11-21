@@ -105,3 +105,6 @@ content/01.abstract.md:208:accuracyy
 content/01.abstract.md:232:ebst
 content/01.abstract.md:234:Scatterplot
 content/01.abstract.md:234:Scatterplot
+content/01.abstract.md:236:decions
+content/01.abstract.md:236:gini
+content/01.abstract.md:236:impurtity
