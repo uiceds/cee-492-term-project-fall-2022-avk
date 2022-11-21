@@ -18,7 +18,6 @@ impurtity
 Kaggle
 Kanchan
 Kulhalli
-logisitic
 megapascals
 MLJ
 MLJModels
@@ -27,8 +26,8 @@ mulitple
 overfitted
 RMSE
 Scatterplot
-Superplasticizer
-Superplasticizers
+superplasticizer
+superplasticizers
 trendline
 uiuc
 vgadge

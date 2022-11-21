@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2996ecbd572be683ad8a42e60a106ddc9327ca8f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2996ecbd572be683ad8a42e60a106ddc9327ca8f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2996ecbd572be683ad8a42e60a106ddc9327ca8f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/346c87cb03116fb30079490f08cea569bb1493fa/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/346c87cb03116fb30079490f08cea569bb1493fa/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/346c87cb03116fb30079490f08cea569bb1493fa/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2996ecbd572be683ad8a42e60a106ddc9327ca8f/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/346c87cb03116fb30079490f08cea569bb1493fa/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@2996ecb](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/2996ecbd572be683ad8a42e60a106ddc9327ca8f)
+from [uiceds/cee-492-term-project-fall-2022-avk@346c87c](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/346c87cb03116fb30079490f08cea569bb1493fa)
 on November 21, 2022.
 </em></small>
 -->
@@ -235,7 +235,7 @@ In this section, we will explore mulitple methods for creating drafts for our pr
 
 
 ## Regression
-Our dataset consists of 8 independent variables and one dependent variable. We want to know how each of these independent variables affect the dependent variable i.e. concrete compressive strength. To begin with, we can check if these independent variables affect the concrete strength linearly by implementing a simple linear regression model.
+Our dataset consists of 8 independent variables and one dependent variable. We want to know how each of these independent variables affect the dependent variable i.e. concrete compressive strength. To begin with, we checked if these independent variables affect the concrete strength linearly by implementing a simple linear regression model.
 
 We first divided our data into two sets (i) training data set (ii) testing data set. The training data set consists of 750 rows and the testing dataset consists of the remaining 242 rows. So, we split our dataset into training and testing to about 75% and 25% roughly. We didn't split our data set into evaluation dataset since the number of hyperparameters to be tuned for this model were only a few. We set our learning rate to 0.1 and the number of steps to 1000. These hyperparameters are needed for finding the global minima for our cost function which is the mean squared error in our case. We did tune our hyperparameters a bit however we didn't see any noticeable improvement in the results. 
 
@@ -271,15 +271,16 @@ sqrt(mse(y_hat, y_test))
 
 ```
 
-![Linear Regression Model](images/linear-reg.png){#fig:linear-reg height=2.5in}
+![Linear Regression Model](images/linear-reg.png){#fig:linear-reg height=5in}
 
 
 We got an RMSE ~ 10 for the above model. From the Figure @fig:linear-reg, we can see that although a lot of points are closer to the 45 degree line, we can also see that there are a large number of points which deviate from the line quite a bit. This can suggest a few things
+
 * The model has overfitted on the training data and is performing poorly on the testing data.
 * The dependency of the independent variables cannot be modeled linearly and hence we may need a more complex model like a neural network.
 * Our dataset comprises of only 8 variables that affect the concrete compressive strength. There may be many other factors that affect the strength which is clearly a limitation of the dataset. 
 
-To follow this up, we implemented logisitic regression model and the multilayered regression model(neural network) to see if we can make any significant improvements to the model. However, we found out that the RMSE to be around 34. This was unexpected since we expected the non linear models to perform better but it turned out that they performed extremely poorly in comparison with the linear regression model. Hence, we decided not to plot them.
+To follow this up, we implemented logistic regression model and the multilayered regression model(neural network) to see if we can make any significant improvements. However, we found the RMSE to be around 34 for both the models. This was very surprising since we expected the non linear models to perform better. Hence, we decided not to plot them.
 
 ### Conclusions
 * To understand why our linear regression model performs badly, we checked if we overfitted the model on the training data. However, the RMSE on the training data and the testing data are almost the same and hence we haven't really overfitted the model.
