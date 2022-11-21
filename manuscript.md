@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/992e6ba64c9520cad0a8e51ebf5012f90c207184/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/992e6ba64c9520cad0a8e51ebf5012f90c207184/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/992e6ba64c9520cad0a8e51ebf5012f90c207184/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/cfe677bd63699f9ea04b200ae740cdbeb220ea46/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/cfe677bd63699f9ea04b200ae740cdbeb220ea46/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/cfe677bd63699f9ea04b200ae740cdbeb220ea46/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/992e6ba64c9520cad0a8e51ebf5012f90c207184/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/cfe677bd63699f9ea04b200ae740cdbeb220ea46/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@992e6ba](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/992e6ba64c9520cad0a8e51ebf5012f90c207184)
+from [uiceds/cee-492-term-project-fall-2022-avk@cfe677b](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/cfe677bd63699f9ea04b200ae740cdbeb220ea46)
 on November 21, 2022.
 </em></small>
 -->
@@ -278,9 +278,9 @@ We got an RMSE ~ 10 for the above model. From Figure @fig:linear-reg, we can see
 
 * The model has overfitted on the training data and is performing poorly on the testing data.
 * The dependency of the independent variables cannot be modeled linearly and hence we may need a more complex model like a neural network.
-* Our dataset comprises of only 8 variables that affect the concrete compressive strength. There may be many other factors that affect the strength which is clearly a limitation of the dataset. 
+* Our dataset comprises of only 8 variables that affect the concrete compressive strength. There may be many other factors that affect the strength which is clearly a limitation of the dataset. From [@{https://theconstructor.org/concrete/factors-affecting-strength-of-concrete/6220/}], we can see that the compressive strength of concrete is also dependent on temperature, humidity and curing among many other factors.
 
-To follow this up, we implemented logistic regression model and the multilayered regression model   (neural network) to see if we can make any significant improvements. However, we found the RMSE to be around 34 for both the models. This was very surprising since we expected the non-linear models to perform better. Hence, we decided not to plot them.
+To follow this up, we implemented logistic regression model and the multilayered regression model (neural network) to see if we can make any significant improvements. However, we found the RMSE to be around 34 for both the models. This was very surprising since we expected the non-linear models to perform better. Hence, we decided not to plot them. 
 
 ### Conclusions
 * To understand why our linear regression model performs badly, we checked if we overfitted the model on the training data. However, the RMSE on the training data and the testing data are almost the same and hence we haven't really overfitted the model.

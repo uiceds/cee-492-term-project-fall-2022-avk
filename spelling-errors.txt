@@ -2,9 +2,9 @@ accuracyy
 andrewb
 CEE
 compacity
-compressive
+Compressive
 CSV
-dataset
+Dataset
 DecisionTree
 EvoTrees
 flexural
