@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/4154134aeedd8100b597b864f1c3f1333ddc58bc/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/4154134aeedd8100b597b864f1c3f1333ddc58bc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/4154134aeedd8100b597b864f1c3f1333ddc58bc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/047c9532cece504f5244f74559011f59999f6e13/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/047c9532cece504f5244f74559011f59999f6e13/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/047c9532cece504f5244f74559011f59999f6e13/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/4154134aeedd8100b597b864f1c3f1333ddc58bc/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/047c9532cece504f5244f74559011f59999f6e13/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@4154134](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/4154134aeedd8100b597b864f1c3f1333ddc58bc)
+from [uiceds/cee-492-term-project-fall-2022-avk@047c953](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/047c9532cece504f5244f74559011f59999f6e13)
 on November 21, 2022.
 </em></small>
 -->
@@ -233,7 +233,7 @@ Based on what we have discussed with the TA, this is a feasible idea since our d
 
 In this section, we will explore mulitple methods for creating drafts for our predictive modeling analysis. After reviewing the potential examples that could be used and discussing in depth with the TA and Professor, we have realized that the methods that would be most ideal for our data set would be the Decision tree method and the regression method including the logic regression. To make sure that all our group members were on the same page, we made sure that our cleaned data was the same for every members so no errors would occur with differences in our data frames when testing our draft predictive models.
 
-# Decision Tree
+### Decision Tree
 
 To begin, we tried using the decision tree method in Julia to create a predictive model of our data using a regression tree made out of our data since our dataset is non-linear. To start, we split up our cleaned data into independent variables (the concrete admixtures, XXX) and dependent variables (the concrete compressive strength, XX) that would be in the form of a matrix and vector respectfully so they then can be used to create our decision tree.
 

@@ -4,7 +4,7 @@ CEE
 compacity
 compressive
 CSV
-dataset
+Dataset
 decions
 DecisionTree
 ebst
@@ -24,7 +24,7 @@ MPa
 mulitple
 Scatterplot
 setwe
-Superplasticizer
+superplasticizer
 Superplasticizers
 trendline
 uiuc
