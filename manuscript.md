@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/367f48abd66267cc935c1e19447789acb2a0bab4/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/367f48abd66267cc935c1e19447789acb2a0bab4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/367f48abd66267cc935c1e19447789acb2a0bab4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/933e9872bf58ed4e239164a77604da3ccf36255e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/933e9872bf58ed4e239164a77604da3ccf36255e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/933e9872bf58ed4e239164a77604da3ccf36255e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/367f48abd66267cc935c1e19447789acb2a0bab4/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/933e9872bf58ed4e239164a77604da3ccf36255e/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@367f48a](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/367f48abd66267cc935c1e19447789acb2a0bab4)
+from [uiceds/cee-492-term-project-fall-2022-avk@933e987](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/933e9872bf58ed4e239164a77604da3ccf36255e)
 on December 1, 2022.
 </em></small>
 -->
@@ -607,6 +607,8 @@ output =
 
 The decision tree method overall seemed like a viable option to create a draft predictive model for our data set and we intend to refine our trees to be used later on. What we can do to potentially make our decision tree method better is to find a way to prune the decision tree more effectively or find a way to split our data set better so that or accuracy is higher. We also could potentially refine our gini-impurity so that the data set has less inequality.
 ## Discussion
+
+After creating two predictive machine learning models of our data set, we concluded that our initial research question was able to be accomplished with relative accuracy.
 
 ## References {.page_break_before}
 
