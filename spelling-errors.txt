@@ -2,9 +2,9 @@ accuracyy
 andrewb
 CEE
 compacity
-Compressive
+compressive
 CSV
-Dataset
+dataset
 DecisionTree
 EvoTrees
 flexural
@@ -16,6 +16,7 @@ impurtity
 Kaggle
 Kanchan
 Kulhalli
+mee
 megapascals
 MLJ
 MLJModels
@@ -24,8 +25,8 @@ mulitple
 overfitted
 RMSE
 Scatterplot
-superplasticizer
-Superplasticizers
+Superplasticizer
+superplasticizers
 trendline
 uiuc
 vgadge
