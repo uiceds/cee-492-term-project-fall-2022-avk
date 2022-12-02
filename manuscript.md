@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8a4b302c23038257f27a0a7e870bd2f36231f75e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8a4b302c23038257f27a0a7e870bd2f36231f75e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8a4b302c23038257f27a0a7e870bd2f36231f75e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8e276d3643660adaf7cda7a60a0265fc12686862/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8e276d3643660adaf7cda7a60a0265fc12686862/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8e276d3643660adaf7cda7a60a0265fc12686862/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8a4b302c23038257f27a0a7e870bd2f36231f75e/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8e276d3643660adaf7cda7a60a0265fc12686862/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@8a4b302](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/8a4b302c23038257f27a0a7e870bd2f36231f75e)
+from [uiceds/cee-492-term-project-fall-2022-avk@8e276d3](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/8e276d3643660adaf7cda7a60a0265fc12686862)
 on December 2, 2022.
 </em></small>
 -->
@@ -257,7 +257,7 @@ sqrt(mse(y_hat, y_test))
 
 ![Linear Regression Model](images/linear-reg.png){#fig:linear-reg height=5in}
 
-We got an RMSE of ~ 10 for the above model. From Figure @fig:linear-reg, we can see that although many points are closer to the 45-degree line, we can also see a large number of points deviate from the line quite a bit. This can suggest a few things.
+We got an RMSE of ~ 10 for the testing data-set. Error for both the testing and training data-set is almost the same. From Figure @fig:linear-reg, we can see that although many points are closer to the 45-degree line, we can also see a large number of points deviate from the line quite a bit. This can suggest a few things.
 
 * The model has overfitted on the training data and is performing poorly on the testing data.
 * The dependency of the independent variables cannot be modelled linearly; hence, we may need a more complex model like a neural network.
