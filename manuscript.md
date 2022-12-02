@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2f071df2ab9aee74cab6bb41e26d971f491a8d0a/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2f071df2ab9aee74cab6bb41e26d971f491a8d0a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2f071df2ab9aee74cab6bb41e26d971f491a8d0a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1fa4b42373caa017d1754b70044e2f75c3439857/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1fa4b42373caa017d1754b70044e2f75c3439857/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1fa4b42373caa017d1754b70044e2f75c3439857/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2f071df2ab9aee74cab6bb41e26d971f491a8d0a/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1fa4b42373caa017d1754b70044e2f75c3439857/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@2f071df](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/2f071df2ab9aee74cab6bb41e26d971f491a8d0a)
+from [uiceds/cee-492-term-project-fall-2022-avk@1fa4b42](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/1fa4b42373caa017d1754b70044e2f75c3439857)
 on December 2, 2022.
 </em></small>
 -->
@@ -141,6 +141,72 @@ Now that we cleaned our dataset, we set out to ask some interesting questions by
 | 9 | :concrete_compressive_strength(MPa) | 2.33  | 35.119  | 33.73   | 82.6   |
 
 Table: Ranges and statistics of the columns in our dataset. {#tbl:table-1 height=2in}
+
+Water and Cement are the two most basic ingredients of concrete. The strength of the concrete mixture is heavily influenced by the proportions of these ingredients. We decided to take a look at how the water/cement ratio affects the strength of the concrete.
+
+### Water and Cement
+The Abram’s water-to-cement ratio (w/c) pronouncement of 1918 has been described as the most useful and signiﬁcant advancement in the history of concrete technology.The generally accepted Abrams rule is a formulation of the observation that an increase in the w/c decreases the strength [@{https://www.researchgate.net/publication/222447231_Modeling_of_Strength_of_High-Performance_Concrete_Using_Artificial_Neural_Networks_Cement_and_Concrete_research_2812_1797-1808}].
+
+We decided to check how the Abrams' law holds up for our dataset considering the fact that there are several other ingredients that affect the strength of the concrete. Figure @fig:plot-1 plots the water cement ratio versus the concrete compressive strength. 
+
+![Water-Cement Ratio vs Compressive strength of Concrete](images/WC.png){#fig:plot-1 height=2.5in}
+
+We can observe that the law holds quite good from a general perspective i.e., the compressive strength decreases with the increase in the w/c ratio but doesn't hold true on a case by case basis. This is understandable since there are several factors that also influence the strength.
+
+In the below sub sections, we try to analyze the effects of various other ingredients on the compressive strength of concrete.
+
+### Superplasticizer
+Superplasticizers are powerful water reducers that enable an increase in the ultimate stress of concrete by decreasing the w/c ratio, a decrease in the cement content while maintaining the same range of strength or workability, an increase in concrete compacity, and other effects [@{https://www.sciencedirect.com/science/article/pii/S0958946512001369}].
+
+An important component of most modern concrete mixes, water reducers improve the workability of wet concrete while decreasing the amount of water used in the mix. Superplasticizers decrease the water-cement ratio while providing such benefits as increased density and improved bond strength.
+
+![Superplasticizer vs Compressive strength of Concrete](images/spc.png){#fig:plot-2 height=2.5in}
+
+To study the effect of superplasticizer in isolation, we kept all the other columns constant and compared the varying superplasticizer with the concrete compressive strength. Figure @fig:plot-2 shows the line plots for different samples. It is not clear how the superplasticizer is affecting the strength. We looked through a number of articles and research papers and we found out that the effect of superplasticizers is more pronounced when the ratio of superplasticizer to cement is between 0.5% to 3% [@{http://www.buildingresearch.com.np/newfeatures.php}]. To verify this, we plotted Figure @fig:plot-3 with two samples, the first one has a superplasticizer/cement(s/c) ratio equal to 0.2% and the second one has s/c ratio equal to 2%.
+
+![Superplasticizer to Water ratio vs Compressive strength of Concrete](images/wspc.png){#fig:plot-3 height=2.5in}
+
+We can see that a decrease in the superplasticizer to water ratio results in decrease in the concrete compressive strength. This suggests a positive correlation between the superplasticizer and the concrete strength. However, for ratios greater than 3%, we did not find any kind of correlation between these two suggesting that the effect of superplasticizer depends on the s/c ratio.
+
+### Fly Ash
+
+In recent decades, fly ash has become an increasing common component used in concrete mixtures. Fly ash is used to increase the workability of plastic concretes along with increase the strength and durability of regular concretes [@doi:10.1016/j.proeng.2012.07.582]. Fly ash can also be used to replace a portion of the amount of the cement mixture needed. This in return reduces the cost while not decreasing the strength. 
+
+Using our data set, we first began by organizing the data set to only include unique values of fly ash since there were many rows that had no fly ash component in their concrete mixture. Then using this data set, we created a histogram to show the general trendline of the imapct that the fly ash component has on the compressive strength. We can see from Figure @fig:plot-4 that using fly ash does increase the strength of the concrete but peaks at approximately 20 kg per m^3 mixture and then decreases as more fly ash is used. This is mostly due to fly ash not being suitable to replace fully or the most of the cement used in the mixture and is used more as a binding unit that helps with the workability and durability to a certain degree.
+
+![Fly Ash vs Concrete Compressive Strength](images/flyash.jpg){#fig:plot-4 height=2.5in}
+
+### Coarse Aggregate and Fine aggregate
+Aggregates are inert granular materials such as sand, gravel, or crushed stone that, along with water and Portland cement, are an essential ingredient in concrete. Fine aggregates generally consist of natural sand or crushed stone with most particles passing through a 3/8-inch sieve. Coarse aggregates are any particles greater than 0.19 inch, but generally range between 3/8 and 1.5 inches in diameter [@{https://www.cement.org/cement-concrete/concrete-materials/aggregates}].
+
+![Coarse Aggregate vs Concrete Compressive Strength](images/ca.png){#fig:plot-5 height=2.5in}
+
+We can observe from Figure @fig:plot-5 that there is no positive correlation between the coarse aggregate and the concrete compressive strength. We couldn't really understand how to interpret the graph. Its possible that it's effects weren't pronounced in the samples that we have taken. We need a more refined model to understand the effects of this property.
+
+![Fine Aggregate vs Concrete Compressive Strength](images/fa.png){#fig:plot-6 height=2.5in}
+
+Figure @fig:plot-6 shows a positive correlation between the fine aggregate and the concrete compressive strength which is as expected. For both the graphs, we have kept all the columns constant except for the column that we are analyzing.
+
+### Age
+
+![Age vs Concrete Compressive Strength](images/age.jpg){#fig:plot-7 height=2.5in}
+
+Figure @fig:plot-7 shows a histogram plot of Age vs Concrete Compressive Strength where age is the number of days after the concrete has been placed, we see that as concrete age increases the compressive strength increases until it reaches a peak at approximately 28 days and then gradually decreases in strength as age increases due to wear and tear of the concrete material. From [@{https://www.sciencedirect.com/science/article/abs/pii/S0008884698001641?via%3Dihub}], we understood that the concrete requires a curing time where once the concrete is placed it needs time to cure which is where the water content in the concrete mixture evaporates, leading to the concrete to settle and harden. This in return leads to increase in the concrete compressive strength. Based on this information and looking at the data set, to have the concrete mixture  result in the strongest compressive strength, we want our age to be around the 28-day mark which is the ideal curing time.
+
+### Blast Furnace Slag
+
+Concretes containing slag as a partial replacement of cement (up to 40%) had higher compressive and flexural strengths casting and curing at +42°C than those of concretes made with Portland cement alone[@doi:10.1016/j.jare.2011.03.004].
+
+![Blast Furnace Slag vs Compressive strength of Concrete](images/bfs.png){#fig:plot-8 height=2.5in}
+
+However, Figure @fig:plot-8 shows a negative correlation where the compressive strength of the concrete is decreasing with the increase in the Blast furnace slag content. We couldn't really figure out how to interpret this graph and we believe that this similar to the case we explained for coarse aggregate.
+
+### Concrete Compressive Strength
+
+![Proportions of the components at minimum and maximum concrete compressive strengths](images/ccs_conclusion.png){#fig:plot-9 height=2.5in}
+
+The graph above explains how the proportions of the 8 components are affecting the concrete compressive strength. It clearly shows that the second bar graph has more quantity of superplasticizer and less quantity of water than the first bar graph. Also, the second bar graph has good aging time than the first one. Hence clearly the second plot has more concrete compressive strength than the first one.
+
 
 ## Predictive modeling
 

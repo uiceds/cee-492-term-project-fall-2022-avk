@@ -131,9 +131,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2f071df2ab9aee74cab6bb41e26d971f491a8d0a/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2f071df2ab9aee74cab6bb41e26d971f491a8d0a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2f071df2ab9aee74cab6bb41e26d971f491a8d0a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1fa4b42373caa017d1754b70044e2f75c3439857/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1fa4b42373caa017d1754b70044e2f75c3439857/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1fa4b42373caa017d1754b70044e2f75c3439857/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -149,9 +149,9 @@
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2f071df2ab9aee74cab6bb41e26d971f491a8d0a/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1fa4b42373caa017d1754b70044e2f75c3439857/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@2f071df](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/2f071df2ab9aee74cab6bb41e26d971f491a8d0a)
+from [uiceds/cee-492-term-project-fall-2022-avk@1fa4b42](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/1fa4b42373caa017d1754b70044e2f75c3439857)
 on December 2, 2022.
 </em></small>
 -->
@@ -292,6 +292,76 @@ Department of CEE, University of Illinois
 </tbody>
 </table>
 </div>
+<p>Water and Cement are the two most basic ingredients of concrete. The strength of the concrete mixture is heavily influenced by the proportions of these ingredients. We decided to take a look at how the water/cement ratio affects the strength of the concrete.</p>
+<h3 id="water-and-cement">Water and Cement</h3>
+<p>The Abram’s water-to-cement ratio (w/c) pronouncement of 1918 has been described as the most useful and signiﬁcant advancement in the history of concrete technology.The generally accepted Abrams rule is a formulation of the observation that an increase in the w/c decreases the strength <span class="citation" data-cites="W4Itv69p">[<a href="#ref-W4Itv69p" role="doc-biblioref">2</a>]</span>.</p>
+<p>We decided to check how the Abrams’ law holds up for our dataset considering the fact that there are several other ingredients that affect the strength of the concrete. Figure <a href="#fig:plot-1">1</a> plots the water cement ratio versus the concrete compressive strength.</p>
+<div id="fig:plot-1" class="fignos">
+<figure>
+<img src="images/WC.png" style="height:2.5in" alt="Figure 1: Water-Cement Ratio vs Compressive strength of Concrete" /><figcaption aria-hidden="true"><span>Figure 1:</span> Water-Cement Ratio vs Compressive strength of Concrete</figcaption>
+</figure>
+</div>
+<p>We can observe that the law holds quite good from a general perspective i.e., the compressive strength decreases with the increase in the w/c ratio but doesn’t hold true on a case by case basis. This is understandable since there are several factors that also influence the strength.</p>
+<p>In the below sub sections, we try to analyze the effects of various other ingredients on the compressive strength of concrete.</p>
+<h3 id="superplasticizer">Superplasticizer</h3>
+<p>Superplasticizers are powerful water reducers that enable an increase in the ultimate stress of concrete by decreasing the w/c ratio, a decrease in the cement content while maintaining the same range of strength or workability, an increase in concrete compacity, and other effects <span class="citation" data-cites="11H4Sj6jZ">[<a href="#ref-11H4Sj6jZ" role="doc-biblioref">3</a>]</span>.</p>
+<p>An important component of most modern concrete mixes, water reducers improve the workability of wet concrete while decreasing the amount of water used in the mix. Superplasticizers decrease the water-cement ratio while providing such benefits as increased density and improved bond strength.</p>
+<div id="fig:plot-2" class="fignos">
+<figure>
+<img src="images/spc.png" style="height:2.5in" alt="Figure 2: Superplasticizer vs Compressive strength of Concrete" /><figcaption aria-hidden="true"><span>Figure 2:</span> Superplasticizer vs Compressive strength of Concrete</figcaption>
+</figure>
+</div>
+<p>To study the effect of superplasticizer in isolation, we kept all the other columns constant and compared the varying superplasticizer with the concrete compressive strength. Figure <a href="#fig:plot-2">2</a> shows the line plots for different samples. It is not clear how the superplasticizer is affecting the strength. We looked through a number of articles and research papers and we found out that the effect of superplasticizers is more pronounced when the ratio of superplasticizer to cement is between 0.5% to 3% <span class="citation" data-cites="X8Ql80fQ">[<a href="#ref-X8Ql80fQ" role="doc-biblioref">4</a>]</span>. To verify this, we plotted Figure <a href="#fig:plot-3">3</a> with two samples, the first one has a superplasticizer/cement(s/c) ratio equal to 0.2% and the second one has s/c ratio equal to 2%.</p>
+<div id="fig:plot-3" class="fignos">
+<figure>
+<img src="images/wspc.png" style="height:2.5in" alt="Figure 3: Superplasticizer to Water ratio vs Compressive strength of Concrete" /><figcaption aria-hidden="true"><span>Figure 3:</span> Superplasticizer to Water ratio vs Compressive strength of Concrete</figcaption>
+</figure>
+</div>
+<p>We can see that a decrease in the superplasticizer to water ratio results in decrease in the concrete compressive strength. This suggests a positive correlation between the superplasticizer and the concrete strength. However, for ratios greater than 3%, we did not find any kind of correlation between these two suggesting that the effect of superplasticizer depends on the s/c ratio.</p>
+<h3 id="fly-ash">Fly Ash</h3>
+<p>In recent decades, fly ash has become an increasing common component used in concrete mixtures. Fly ash is used to increase the workability of plastic concretes along with increase the strength and durability of regular concretes <span class="citation" data-cites="13SD89QhE">[<a href="#ref-13SD89QhE" role="doc-biblioref">5</a>]</span>. Fly ash can also be used to replace a portion of the amount of the cement mixture needed. This in return reduces the cost while not decreasing the strength.</p>
+<p>Using our data set, we first began by organizing the data set to only include unique values of fly ash since there were many rows that had no fly ash component in their concrete mixture. Then using this data set, we created a histogram to show the general trendline of the imapct that the fly ash component has on the compressive strength. We can see from Figure <a href="#fig:plot-4">4</a> that using fly ash does increase the strength of the concrete but peaks at approximately 20 kg per m^3 mixture and then decreases as more fly ash is used. This is mostly due to fly ash not being suitable to replace fully or the most of the cement used in the mixture and is used more as a binding unit that helps with the workability and durability to a certain degree.</p>
+<div id="fig:plot-4" class="fignos">
+<figure>
+<img src="images/flyash.jpg" style="height:2.5in" alt="Figure 4: Fly Ash vs Concrete Compressive Strength" /><figcaption aria-hidden="true"><span>Figure 4:</span> Fly Ash vs Concrete Compressive Strength</figcaption>
+</figure>
+</div>
+<h3 id="coarse-aggregate-and-fine-aggregate">Coarse Aggregate and Fine aggregate</h3>
+<p>Aggregates are inert granular materials such as sand, gravel, or crushed stone that, along with water and Portland cement, are an essential ingredient in concrete. Fine aggregates generally consist of natural sand or crushed stone with most particles passing through a 3/8-inch sieve. Coarse aggregates are any particles greater than 0.19 inch, but generally range between 3/8 and 1.5 inches in diameter <span class="citation" data-cites="1092kmQjH">[<a href="#ref-1092kmQjH" role="doc-biblioref">6</a>]</span>.</p>
+<div id="fig:plot-5" class="fignos">
+<figure>
+<img src="images/ca.png" style="height:2.5in" alt="Figure 5: Coarse Aggregate vs Concrete Compressive Strength" /><figcaption aria-hidden="true"><span>Figure 5:</span> Coarse Aggregate vs Concrete Compressive Strength</figcaption>
+</figure>
+</div>
+<p>We can observe from Figure <a href="#fig:plot-5">5</a> that there is no positive correlation between the coarse aggregate and the concrete compressive strength. We couldn’t really understand how to interpret the graph. Its possible that it’s effects weren’t pronounced in the samples that we have taken. We need a more refined model to understand the effects of this property.</p>
+<div id="fig:plot-6" class="fignos">
+<figure>
+<img src="images/fa.png" style="height:2.5in" alt="Figure 6: Fine Aggregate vs Concrete Compressive Strength" /><figcaption aria-hidden="true"><span>Figure 6:</span> Fine Aggregate vs Concrete Compressive Strength</figcaption>
+</figure>
+</div>
+<p>Figure <a href="#fig:plot-6">6</a> shows a positive correlation between the fine aggregate and the concrete compressive strength which is as expected. For both the graphs, we have kept all the columns constant except for the column that we are analyzing.</p>
+<h3 id="age">Age</h3>
+<div id="fig:plot-7" class="fignos">
+<figure>
+<img src="images/age.jpg" style="height:2.5in" alt="Figure 7: Age vs Concrete Compressive Strength" /><figcaption aria-hidden="true"><span>Figure 7:</span> Age vs Concrete Compressive Strength</figcaption>
+</figure>
+</div>
+<p>Figure <a href="#fig:plot-7">7</a> shows a histogram plot of Age vs Concrete Compressive Strength where age is the number of days after the concrete has been placed, we see that as concrete age increases the compressive strength increases until it reaches a peak at approximately 28 days and then gradually decreases in strength as age increases due to wear and tear of the concrete material. From <span class="citation" data-cites="11ifDwhDV">[<a href="#ref-11ifDwhDV" role="doc-biblioref">7</a>]</span>, we understood that the concrete requires a curing time where once the concrete is placed it needs time to cure which is where the water content in the concrete mixture evaporates, leading to the concrete to settle and harden. This in return leads to increase in the concrete compressive strength. Based on this information and looking at the data set, to have the concrete mixture result in the strongest compressive strength, we want our age to be around the 28-day mark which is the ideal curing time.</p>
+<h3 id="blast-furnace-slag">Blast Furnace Slag</h3>
+<p>Concretes containing slag as a partial replacement of cement (up to 40%) had higher compressive and flexural strengths casting and curing at +42°C than those of concretes made with Portland cement alone<span class="citation" data-cites="ol9pNTtX">[<a href="#ref-ol9pNTtX" role="doc-biblioref">8</a>]</span>.</p>
+<div id="fig:plot-8" class="fignos">
+<figure>
+<img src="images/bfs.png" style="height:2.5in" alt="Figure 8: Blast Furnace Slag vs Compressive strength of Concrete" /><figcaption aria-hidden="true"><span>Figure 8:</span> Blast Furnace Slag vs Compressive strength of Concrete</figcaption>
+</figure>
+</div>
+<p>However, Figure <a href="#fig:plot-8">8</a> shows a negative correlation where the compressive strength of the concrete is decreasing with the increase in the Blast furnace slag content. We couldn’t really figure out how to interpret this graph and we believe that this similar to the case we explained for coarse aggregate.</p>
+<h3 id="concrete-compressive-strength">Concrete Compressive Strength</h3>
+<div id="fig:plot-9" class="fignos">
+<figure>
+<img src="images/ccs_conclusion.png" style="height:2.5in" alt="Figure 9: Proportions of the components at minimum and maximum concrete compressive strengths" /><figcaption aria-hidden="true"><span>Figure 9:</span> Proportions of the components at minimum and maximum concrete compressive strengths</figcaption>
+</figure>
+</div>
+<p>The graph above explains how the proportions of the 8 components are affecting the concrete compressive strength. It clearly shows that the second bar graph has more quantity of superplasticizer and less quantity of water than the first bar graph. Also, the second bar graph has good aging time than the first one. Hence clearly the second plot has more concrete compressive strength than the first one.</p>
 <h2 id="predictive-modeling">Predictive modeling</h2>
 <h3 id="regression">Regression</h3>
 <p>Our dataset consists of eight independent variables and one dependent variable. We want to know how each of these independent variables affect the dependent variable i.e. concrete compressive strength. To begin with, we checked if these independent variables affect the concrete strength linearly by implementing a simple linear regression model.</p>
@@ -325,14 +395,14 @@ Department of CEE, University of Illinois
 <span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="fu">mse</span>(y_hat<span class="op">,</span> y_test))</span></code></pre></div>
 <div id="fig:linear-reg" class="fignos">
 <figure>
-<img src="images/linear-reg.png" style="height:5in" alt="Figure 1: Linear Regression Model" /><figcaption aria-hidden="true"><span>Figure 1:</span> Linear Regression Model</figcaption>
+<img src="images/linear-reg.png" style="height:5in" alt="Figure 10: Linear Regression Model" /><figcaption aria-hidden="true"><span>Figure 10:</span> Linear Regression Model</figcaption>
 </figure>
 </div>
-<p>We got an RMSE ~ 10 for the above model. From Figure <a href="#fig:linear-reg">1</a>, we can see that although a lot of points are closer to the 45 degree line, we can also see that there are a large number of points which deviate from the line quite a bit. This can suggest a few things</p>
+<p>We got an RMSE ~ 10 for the above model. From Figure <a href="#fig:linear-reg">10</a>, we can see that although a lot of points are closer to the 45 degree line, we can also see that there are a large number of points which deviate from the line quite a bit. This can suggest a few things</p>
 <ul>
 <li>The model has overfitted on the training data and is performing poorly on the testing data.</li>
 <li>The dependency of the independent variables cannot be modeled linearly and hence we may need a more complex model like a neural network.</li>
-<li>Our dataset comprises of only 8 variables that affect the concrete compressive strength. There may be many other factors that affect the strength which is clearly a limitation of the dataset. From <span class="citation" data-cites="C8eJYFGg">[<a href="#ref-C8eJYFGg" role="doc-biblioref">2</a>]</span>, we can see that the compressive strength of concrete is also dependent on temperature, humidity and curing among many other factors.</li>
+<li>Our dataset comprises of only 8 variables that affect the concrete compressive strength. There may be many other factors that affect the strength which is clearly a limitation of the dataset. From <span class="citation" data-cites="C8eJYFGg">[<a href="#ref-C8eJYFGg" role="doc-biblioref">9</a>]</span>, we can see that the compressive strength of concrete is also dependent on temperature, humidity and curing among many other factors.</li>
 </ul>
 <p>To follow this up, we implemented logistic regression model and the multilayered regression model (neural network) to see if we can make any significant improvements. However, we found the RMSE to be around 34 for both the models. This was very surprising since we expected the non-linear models to perform better. Hence, we decided not to plot them.</p>
 <h3 id="regression-conclusions">Regression Conclusions</h3>
@@ -368,7 +438,7 @@ Department of CEE, University of Illinois
 <p>Using the code above we were able to successfully plot our initial decision tree as seen below.</p>
 <div id="fig:plot-10" class="fignos">
 <figure>
-<img src="images/Decision%20Tree%20with%20Independent%20and%20Dependent%20Variables%20.jpg" style="height:5in" alt="Figure 2: First Decision Tree With Independent and Dependent Variables Only" /><figcaption aria-hidden="true"><span>Figure 2:</span> First Decision Tree With Independent and Dependent Variables Only</figcaption>
+<img src="images/Decision%20Tree%20with%20Independent%20and%20Dependent%20Variables%20.jpg" style="height:5in" alt="Figure 11: First Decision Tree With Independent and Dependent Variables Only" /><figcaption aria-hidden="true"><span>Figure 11:</span> First Decision Tree With Independent and Dependent Variables Only</figcaption>
 </figure>
 </div>
 <p>We then used the following code which ran a cross validation of our inputs we are using based on the number of n-folds we had chose, which we chose 5 for our data set since using more than this did not change the accuracy and using less than this lowered the accuracy. All the other variables used in this function we set as the default values the function used since only changing the pruning purity affected the accuracy. However changing the value only lowered the accuracy since it could only be a value from 0 to 1 and having a value of 1 seemingly gave the highest accuracy.</p>
@@ -403,13 +473,13 @@ Department of CEE, University of Illinois
 <p>We then plotted this new decision tree the same way as what we did for the first one and it produced the following.</p>
 <div id="fig:plot-11" class="fignos">
 <figure>
-<img src="images/Decision%20Tree%20with%20Independent%20and%20New%20Dependent%20Variables%20Following%20Apply%20Tree%20Function%20.jpg" style="height:5in" alt="Figure 3: Second Decision Tree With Independent and New Dependent Variables Only" /><figcaption aria-hidden="true"><span>Figure 3:</span> Second Decision Tree With Independent and New Dependent Variables Only</figcaption>
+<img src="images/Decision%20Tree%20with%20Independent%20and%20New%20Dependent%20Variables%20Following%20Apply%20Tree%20Function%20.jpg" style="height:5in" alt="Figure 12: Second Decision Tree With Independent and New Dependent Variables Only" /><figcaption aria-hidden="true"><span>Figure 12:</span> Second Decision Tree With Independent and New Dependent Variables Only</figcaption>
 </figure>
 </div>
 <p>Lastly, to see how the original dependent variables vector and the new dependent variables vector compare after running it through the decision trees machine learning method we made the following scatter plot to show how the two relate and the we see that the best fit line fits approximately 75% of the points on the plot seen below</p>
 <div id="fig:plot-12" class="fignos">
 <figure>
-<img src="images/Scatterplot%20of%20Dependent%20and%20Decision%20Tree%20Adjusted%20Dependent%20Variables.jpg" style="height:5in" alt="Figure 4: Scatterplot of Dependent Variables and Decision Tree Adjusted Dependent Variables" /><figcaption aria-hidden="true"><span>Figure 4:</span> Scatterplot of Dependent Variables and Decision Tree Adjusted Dependent Variables</figcaption>
+<img src="images/Scatterplot%20of%20Dependent%20and%20Decision%20Tree%20Adjusted%20Dependent%20Variables.jpg" style="height:5in" alt="Figure 13: Scatterplot of Dependent Variables and Decision Tree Adjusted Dependent Variables" /><figcaption aria-hidden="true"><span>Figure 13:</span> Scatterplot of Dependent Variables and Decision Tree Adjusted Dependent Variables</figcaption>
 </figure>
 </div>
 <p>Lastly, we can see how the gini-impurtity has changed after running our dependent variable vector through the decision tree and we see that they are very close to being the same value which means that our decision trees above are very similar which means our machine learning made an accurate prediction.</p>
@@ -435,7 +505,7 @@ Department of CEE, University of Illinois
 <p>After creating two predictive machine learning models of our data set in our predictive modeling section, we concluded that our initial research question was able to be accomplished with relative accuracy. However, our initial idea of how our machine learning program would work was very different from what we had originally in mind. We thought that we would be able to insert a constraint, such as 20 MPa for the concrete compressive strength, and it would give us the admixture combination that came closes to this. However, since our data set set was only composed of a category of admixures, we were unable to get it to only return one value and instead it would return many rows of data. Another issue with our data set was that since it was a category, we were unable to get any other machine learning options we learned in class besides a simple non-linear regression and decision tree to work. Which led to us not being able to have our predictive model to result in great accuracy, above 95%, leading to our program to not be reliable if we were to use it in a real world scenario. The next steps that would could take is to find a better data set for this topic we chose or create our own data set that provided the exact impacts that each concrete component contributed to the concretes compressive strength. We then would be able to use this new data set we created and normalize, run through dense layers, and used neural network programming to create a much better predictive model that could then be applied in real world concrete management projects.</p>
 <div id="fig:plot-11" class="fignos">
 <figure>
-<img src="images/test.png" style="height:5in" alt="Figure 5: Second Decision Tree With Independent and New Dependent Variables Only" /><figcaption aria-hidden="true"><span>Figure 5:</span> Second Decision Tree With Independent and New Dependent Variables Only</figcaption>
+<img src="images/test.png" style="height:5in" alt="Figure 14: Second Decision Tree With Independent and New Dependent Variables Only" /><figcaption aria-hidden="true"><span>Figure 14:</span> Second Decision Tree With Independent and New Dependent Variables Only</figcaption>
 </figure>
 </div>
 <h2 class="page_break_before" id="references">References</h2>
@@ -444,8 +514,29 @@ Department of CEE, University of Illinois
 <div id="ref-1EIcIBT03" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Concrete Compressive Strength</strong> <a href="https://www.kaggle.com/datasets/sinamhd9/concrete-comprehensive-strength">https://www.kaggle.com/datasets/sinamhd9/concrete-comprehensive-strength</a></div>
 </div>
+<div id="ref-W4Itv69p" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><a href="https://www.researchgate.net/publication/222447231_Modeling_of_Strength_of_High-Performance_Concrete_Using_Artificial_Neural_Networks_Cement_and_Concrete_research_2812_1797-1808">https://www.researchgate.net/publication/222447231_Modeling_of_Strength_of_High-Performance_Concrete_Using_Artificial_Neural_Networks_Cement_and_Concrete_research_2812_1797-1808</a></div>
+</div>
+<div id="ref-11H4Sj6jZ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>The effect of superplasticizers on the mechanical performance of concrete made with fine recycled concrete aggregates</strong> <div class="csl-block">P Pereira, L Evangelista, J de Brito</div> <em>Cement and Concrete Composites</em> (2012-10-01) <a href="https://www.sciencedirect.com/science/article/pii/S0958946512001369">https://www.sciencedirect.com/science/article/pii/S0958946512001369</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.cemconcomp.2012.06.009">10.1016/j.cemconcomp.2012.06.009</a></div></div>
+</div>
+<div id="ref-X8Ql80fQ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Superplasticizers in Concrete</strong> <a href="http://www.buildingresearch.com.np/newfeatures.php">http://www.buildingresearch.com.np/newfeatures.php</a></div>
+</div>
+<div id="ref-13SD89QhE" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>The Study of the Properties of Fly Ash Based Concrete Composites with Various Chemical Admixtures</strong> <div class="csl-block">M Ondova, N Stevulova, A Estokova</div> <em>Procedia Engineering</em> (2012) <a href="https://doi.org/gq5qj3">https://doi.org/gq5qj3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.proeng.2012.07.582">10.1016/j.proeng.2012.07.582</a></div></div>
+</div>
+<div id="ref-1092kmQjH" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Aggregates</strong> <a href="https://www.cement.org/cement-concrete/concrete-materials/aggregates">https://www.cement.org/cement-concrete/concrete-materials/aggregates</a></div>
+</div>
+<div id="ref-11ifDwhDV" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Compressive strength development of concrete with different curing time and temperature</strong> <div class="csl-block">J-K Kim, Y-H Moon, S-H Eo</div> <em>Cement and Concrete Research</em> (1998-12-01) <a href="https://www.sciencedirect.com/science/article/pii/S0008884698001641">https://www.sciencedirect.com/science/article/pii/S0008884698001641</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/S0008-8846(98)00164-1">10.1016/s0008-8846(98)00164-1</a></div></div>
+</div>
+<div id="ref-ol9pNTtX" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Properties of concrete containing ground granulated blast furnace slag (GGBFS) at elevated temperatures</strong> <div class="csl-block">Rafat Siddique, Deepinder Kaur</div> <em>Journal of Advanced Research</em> (2012-01) <a href="https://doi.org/d2n4rj">https://doi.org/d2n4rj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.jare.2011.03.004">10.1016/j.jare.2011.03.004</a></div></div>
+</div>
 <div id="ref-C8eJYFGg" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Factors Affecting Strength of Concrete</strong> <div class="csl-block">The Constructor</div> (2013-04-17) <a href="https://theconstructor.org/concrete/factors-affecting-strength-of-concrete/6220/">https://theconstructor.org/concrete/factors-affecting-strength-of-concrete/6220/</a></div>
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>Factors Affecting Strength of Concrete</strong> <div class="csl-block">The Constructor</div> (2013-04-17) <a href="https://theconstructor.org/concrete/factors-affecting-strength-of-concrete/6220/">https://theconstructor.org/concrete/factors-affecting-strength-of-concrete/6220/</a></div>
 </div>
 </div>
 <!-- default theme -->
