@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c5541c2821d0083d7d19741b538e4165a42e23e5/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c5541c2821d0083d7d19741b538e4165a42e23e5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c5541c2821d0083d7d19741b538e4165a42e23e5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8a4b302c23038257f27a0a7e870bd2f36231f75e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8a4b302c23038257f27a0a7e870bd2f36231f75e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8a4b302c23038257f27a0a7e870bd2f36231f75e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c5541c2821d0083d7d19741b538e4165a42e23e5/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8a4b302c23038257f27a0a7e870bd2f36231f75e/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@c5541c2](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/c5541c2821d0083d7d19741b538e4165a42e23e5)
+from [uiceds/cee-492-term-project-fall-2022-avk@8a4b302](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/8a4b302c23038257f27a0a7e870bd2f36231f75e)
 on December 2, 2022.
 </em></small>
 -->
@@ -99,21 +99,22 @@ on December 2, 2022.
 
 ## Introduction
 
-The aim of our project was to create a machine learning model that would be able to predict which components and the combinations of these components in our data set that covers admixtures of real world concrete projects would work best based on the strength requirements of certain structures and be able to predict maximum allowable loads that can be achieved based on the mixtures. The general research question we were trying to answer was to find out if a machine learning program could predict the best admixture for a construction project to be the most cost efficient for the employers of the project. This is a key part in the construction management field since as a company you always want to mee the project requirements but also make the most profit. Previous work done in this area is creating machine learning programs to estimate the ideal cost for a project based on the materials/labor that is required but we wanted to just focus on concrete admixtures and go in depth in with creating a machine learning model for figuring out the ideal admixtures of different projects.
+Our project aim is to create a machine-learning model to predict which components and the combinations of these components in our data set can give the best possible concrete compressive strength. The general research question is whether a machine-learning model can predict the best admixture for a construction project. Finding the best combination of concrete components to achieve the highest concrete compressive strength is a vital part of the construction field since, as a company, one always wants to meet the project requirements and make the most profit. Work done by other researchers in this area concentrates mainly on creating machine learning programs to estimate the ideal cost for a project based on the materials/labour that are required. However, we want to focus on concrete admixtures and create a machine-learning model to determine the ideal admixtures of different projects.
 
 ## Exploratory analysis
 
-For our exploratory analysis, we aimed to explain the various components in our dataset and its effect on the concrete compressive strength.
+For our exploratory analysis, we aimed to explain our data set's various components and their effect on the concrete compressive strength.
 
-The data set we chose was composed of nine columns of data that state the following information: Fly Ash, Water, Superplasticizer, Coarse Aggregate, Age, and Concrete Compressive Strength. These columns have the following units of measurements: the first 7 columns have the units kg in m^3 mixture, 8th column in days and the 9th column in MPa megapascals. The data set[@{https://www.kaggle.com/datasets/sinamhd9/concrete-comprehensive-strength}] is in a CSV format and has a total of 1030 rows. We found a few discrepancies in the data set and hence we had to perform some data cleaning tasks before doing any exploratory analysis. The below section describes our data cleaning process in detail.
+The data set we chose comprises nine columns of independent components that state the following information: Fly Ash, Water, Superplasticizer, Coarse Aggregate, Age, and Concrete Compressive Strength. These columns have the following units of measurement: the first seven columns have the units kg in m^3 mixture, the eighth column in days and the ninth column in MPa megapascals. The data set[@{https://www.kaggle.com/data-sets/sinamhd9/concrete-comprehensive-strength}] is in a CSV format and has 1030 rows. We found a few discrepancies in the data set, so we had to perform some data-cleaning tasks before doing any exploratory analysis. The below section describes our data-cleaning process in detail.
 
 ### Data Cleaning
 
-The dataset that we selected from Kaggle comprised of rows that had rows that were repeated multiple times. To remove the redundancy, we used the `unique()` function to remove the duplicate rows. The number of rows reduced to 1005 after this operation.
+The data set that we selected from Kaggle comprised rows that repeated multiple times. To remove the redundancy, we used the `unique()` function to remove the duplicate rows. The number of rows was reduced to 1005 after this operation.
 
-The other issue we found out in our dataset was that the compressive strength was different despite all the factors affecting it i.e., all the 8 columns affecting it were the same. We combined those rows into a single row by taking a mean of the compressive strength. After this operation, the number of rows in our dataset reduced to 992.
+The other issue in our data set was that the compressive strength was different despite all the factors affecting it, i.e., all eight columns were the same. We combined those rows into a single row by taking a mean of the compressive strength. After this operation, the number of rows in our data set was reduced to 992.
 
-We also observed that one of the columns i.e., fine aggregate had an extra space in its name and we had to remove the extra space using the `rename()` method to make the column access easier.
+We also observed that one of the columns, i.e., fine aggregate had an extra space in its name, and we had to remove the extra space using the `rename()` method to make the column access easier.
+
 
 ```julia
 begin
@@ -125,7 +126,7 @@ df = combine(df_group, :concrete_compressive_strength => mean)
 rename!(df, :concrete_compressive_strength_mean => :concrete_compressive_strength)
 end
 ```
-Now that we cleaned our dataset, we set out to ask some interesting questions by studying each column and its effect on concrete compressive strength but before we did that, we generated Table @tbl:table-1 to get a general understanding of the columns in our dataset.
+Now that we cleaned our data set, we set out to ask some interesting questions by studying each column and its effect on concrete compressive strength. However, before that, we generated Table @tbl:table-1 to understand the columns in our data set.
 
 |   |               variable              |  min  |   mean  |  median | max    |
 |:-:|:-----------------------------------:|:-----:|:-------:|:-------:|--------|
@@ -142,79 +143,85 @@ Now that we cleaned our dataset, we set out to ask some interesting questions by
 
 Table: Ranges and statistics of the columns in our dataset. {#tbl:table-1 height=2in}
 
-Water and Cement are the two most basic ingredients of concrete. The strength of the concrete mixture is heavily influenced by the proportions of these ingredients. We decided to take a look at how the water/cement ratio affects the strength of the concrete.
+Water and Cement are the two most essential ingredients of concrete. The proportions of these ingredients heavily influence the strength of the concrete mixture. We decided to look at how the water/cement ratio affects the strength of the concrete.
 
 ### Water and Cement
-The Abram’s water-to-cement ratio (w/c) pronouncement of 1918 has been described as the most useful and signiﬁcant advancement in the history of concrete technology.The generally accepted Abrams rule is a formulation of the observation that an increase in the w/c decreases the strength [@{https://www.researchgate.net/publication/222447231_Modeling_of_Strength_of_High-Performance_Concrete_Using_Artificial_Neural_Networks_Cement_and_Concrete_research_2812_1797-1808}].
+Abram's water-to-cement ratio (w/c) pronouncement of 1918 is the most valuable and signiﬁcant advancement in the history of concrete technology. The generally accepted Abrams rule is a formulation of the observation that an increase in the w/c decreases the strength [@{https://www.researchgate.net/publication/222447231_Modeling_of_Strength_of_High-Performance_Concrete_Using_Artificial_Neural_Networks_Cement_and_Concrete_research_2812_1797-1808}].
 
-We decided to check how the Abrams' law holds up for our dataset considering the fact that there are several other ingredients that affect the strength of the concrete. Figure @fig:plot-1 plots the water cement ratio versus the concrete compressive strength. 
+We decided to check how Abrams' law holds up for our data set, considering that several other ingredients affect the strength of the concrete. Figure @fig:plot-1 plots the water-cement ratio versus the concrete compressive strength. 
 
 ![Water-Cement Ratio vs Compressive strength of Concrete](images/WC.png){#fig:plot-1 height=2.5in}
 
-We can observe that the law holds quite good from a general perspective i.e., the compressive strength decreases with the increase in the w/c ratio but doesn't hold true on a case by case basis. This is understandable since there are several factors that also influence the strength.
+The law holds quite well from a general perspective, i.e., the compressive strength decreases with the increase in the w/c ratio but does not hold on a case-by-case basis. This result is understandable since several factors also influence strength.
 
-In the below sub sections, we try to analyze the effects of various other ingredients on the compressive strength of concrete.
+In the below sub-sections, we analyze the effects of various other ingredients on the compressive strength of concrete.
 
 ### Superplasticizer
-Superplasticizers are powerful water reducers that enable an increase in the ultimate stress of concrete by decreasing the w/c ratio, a decrease in the cement content while maintaining the same range of strength or workability, an increase in concrete compacity, and other effects [@{https://www.sciencedirect.com/science/article/pii/S0958946512001369}].
+Superplasticizers are powerful water reducers that increase concrete strength by decreasing the w/c ratio [@{https://www.sciencedirect.com/science/article/pii/S0958946512001369}].
 
-An important component of most modern concrete mixes, water reducers improve the workability of wet concrete while decreasing the amount of water used in the mix. Superplasticizers decrease the water-cement ratio while providing such benefits as increased density and improved bond strength.
+An essential component of most modern concrete mixes, water reducers improve the workability of wet concrete while decreasing the amount of water used in the mix. Superplasticizers decrease the water-cement ratio while providing such benefits as increased density and improved bond strength.
 
 ![Superplasticizer vs Compressive strength of Concrete](images/spc.png){#fig:plot-2 height=2.5in}
 
-To study the effect of superplasticizer in isolation, we kept all the other columns constant and compared the varying superplasticizer with the concrete compressive strength. Figure @fig:plot-2 shows the line plots for different samples. It is not clear how the superplasticizer is affecting the strength. We looked through a number of articles and research papers and we found out that the effect of superplasticizers is more pronounced when the ratio of superplasticizer to cement is between 0.5% to 3% [@{http://www.buildingresearch.com.np/newfeatures.php}]. To verify this, we plotted Figure @fig:plot-3 with two samples, the first one has a superplasticizer/cement(s/c) ratio equal to 0.2% and the second one has s/c ratio equal to 2%.
+To study the effect of the superplasticizer in isolation, we kept all the other columns constant, i.e., by filtering out rows which were the same except for the values of Superplasticizer and Concrete compressive strengths. A comparison of the varying superplasticizer content with the concrete compressive strength is drawn. Figure @fig:plot-2 shows the line plots for different samples. It needs to be clear how the superplasticizer is affecting the strength. We looked through several articles and research papers and found out that the effect of superplasticizers is more pronounced when the ratio of superplasticizer-to-cement is between 0.5% to 3% [@{http://www buildingresearch.com.np/newfeatures.php}]. To verify this, we plotted Figure @fig:plot-3 with two samples, the first one has a superplasticizer/cement(s/c) ratio equal to 0.2%, and the second one has an s/c ratio equal to 2%.
 
 ![Superplasticizer to Water ratio vs Compressive strength of Concrete](images/wspc.png){#fig:plot-3 height=2.5in}
 
-We can see that a decrease in the superplasticizer to water ratio results in decrease in the concrete compressive strength. This suggests a positive correlation between the superplasticizer and the concrete strength. However, for ratios greater than 3%, we did not find any kind of correlation between these two suggesting that the effect of superplasticizer depends on the s/c ratio.
+We can see that a decrease in the superplasticizer-to-water ratio decreases the concrete compressive strength. This analysis suggests a positive correlation between the superplasticizer and the concrete strength. However, for ratios greater than 3%, we did not find any correlation between these two suggesting that the effect of superplasticizer depends on the s/c ratio.
 
 ### Fly Ash
 
-In recent decades, fly ash has become an increasing common component used in concrete mixtures. Fly ash is used to increase the workability of plastic concretes along with increase the strength and durability of regular concretes [@doi:10.1016/j.proeng.2012.07.582]. Fly ash can also be used to replace a portion of the amount of the cement mixture needed. This in return reduces the cost while not decreasing the strength. 
+Fly ash has become an increasingly common component in concrete mixtures in recent decades. Fly ash increases the workability of plastic concretes and the strength and durability of regular concretes [@doi:10.1016/j.proeng.2012.07.582]. Fly ash is also used to replace a portion of the cement mixture needed. In return, it reduces the cost while not decreasing the strength. 
 
-Using our data set, we first began by organizing the data set to only include unique values of fly ash since there were many rows that had no fly ash component in their concrete mixture. Then using this data set, we created a histogram to show the general trendline of the imapct that the fly ash component has on the compressive strength. We can see from Figure @fig:plot-4 that using fly ash does increase the strength of the concrete but peaks at approximately 20 kg per m^3 mixture and then decreases as more fly ash is used. This is mostly due to fly ash not being suitable to replace fully or the most of the cement used in the mixture and is used more as a binding unit that helps with the workability and durability to a certain degree.
+Using our data set, we began by organizing it only to include unique values of fly ash since many rows had no fly ash component in their concrete mixture. Then using this data set, we created a histogram to show the general trendline of the impact of the fly ash component on the compressive strength. We can see from Figure @fig:plot-4 that using fly ash does increase the strength of the concrete but peaks at approximately 20 kg per m^3 mixture, and a further increase in fly ash only decreases the strength of the concrete. This result is mainly due to fly ash not being suitable to replace fully or most of the Cement used in the mixture and is used more as a binding unit that helps with the workability and durability to a certain degree.
 
 ![Fly Ash vs Concrete Compressive Strength](images/flyash.jpg){#fig:plot-4 height=2.5in}
 
-### Coarse Aggregate and Fine aggregate
-Aggregates are inert granular materials such as sand, gravel, or crushed stone that, along with water and Portland cement, are an essential ingredient in concrete. Fine aggregates generally consist of natural sand or crushed stone with most particles passing through a 3/8-inch sieve. Coarse aggregates are any particles greater than 0.19 inch, but generally range between 3/8 and 1.5 inches in diameter [@{https://www.cement.org/cement-concrete/concrete-materials/aggregates}].
+### Coarse Aggregate and Fine Aggregate
+Aggregates are inert granular materials such as sand, gravel, or crushed stone that, along with water and Portland cement, are essential ingredients in concrete. Fine aggregates generally consist of natural sand or crushed stone, with most particles passing through a 3/8-inch sieve. Coarse aggregates are particles greater than 0.19 inches but generally range between 3/8 and 1.5 inches in diameter [@{https://www.cement.org/cement-concrete/concrete-materials/aggregates}].
 
 ![Coarse Aggregate vs Concrete Compressive Strength](images/ca.png){#fig:plot-5 height=2.5in}
 
-We can observe from Figure @fig:plot-5 that there is no positive correlation between the coarse aggregate and the concrete compressive strength. We couldn't really understand how to interpret the graph. Its possible that it's effects weren't pronounced in the samples that we have taken. We need a more refined model to understand the effects of this property.
+We can observe from Figure @fig:plot-5 that there is no positive correlation between the coarse aggregate and the concrete compressive strength. We needed help understanding how to interpret the graph. Its effects are not evident in the samples that we took. We need a more refined model to understand the effects of this property.
 
 ![Fine Aggregate vs Concrete Compressive Strength](images/fa.png){#fig:plot-6 height=2.5in}
 
-Figure @fig:plot-6 shows a positive correlation between the fine aggregate and the concrete compressive strength which is as expected. For both the graphs, we have kept all the columns constant except for the column that we are analyzing.
+Figure @fig:plot-6 shows a positive correlation between the fine aggregate and the concrete compressive strength, as expected. For both graphs, we have kept all the columns constant except for the column we are analyzing.
 
 ### Age
 
 ![Age vs Concrete Compressive Strength](images/age.jpg){#fig:plot-7 height=2.5in}
 
-Figure @fig:plot-7 shows a histogram plot of Age vs Concrete Compressive Strength where age is the number of days after the concrete has been placed, we see that as concrete age increases the compressive strength increases until it reaches a peak at approximately 28 days and then gradually decreases in strength as age increases due to wear and tear of the concrete material. From [@{https://www.sciencedirect.com/science/article/abs/pii/S0008884698001641?via%3Dihub}], we understood that the concrete requires a curing time where once the concrete is placed it needs time to cure which is where the water content in the concrete mixture evaporates, leading to the concrete to settle and harden. This in return leads to increase in the concrete compressive strength. Based on this information and looking at the data set, to have the concrete mixture  result in the strongest compressive strength, we want our age to be around the 28-day mark which is the ideal curing time.
+Figure @fig:plot-7 shows a histogram plot of Age vs Concrete Compressive Strength where age is the number of days after the concrete pouring. We see that as concrete age increases, the compressive strength increases until it reaches a peak at approximately 28 days and then gradually decreases in strength as age increases due to wear and tear of the concrete material. From [@{https://www.sciencedirect.com/science/article/abs/pii/S0008884698001641?via%3Dihub}], we understood that the concrete requires a curing time where once the concrete pouring is done, it needs time to cure, which is where the water content in the concrete mixture evaporates, leading to the concrete to settle and harden. In return leads to an increase in the concrete compressive strength. Based on this information, we want our age to be around the 28-day mark to achieve robust compressive strength, which is the ideal curing time.
 
 ### Blast Furnace Slag
 
-Concretes containing slag as a partial replacement of cement (up to 40%) had higher compressive and flexural strengths casting and curing at +42°C than those of concretes made with Portland cement alone[@doi:10.1016/j.jare.2011.03.004].
+Concretes containing slag as a partial replacement of Cement (up to 40%) had higher compressive and flexural strengths casting and curing at +42°C than concretes made with Portland cement alone[@doi:10.1016/j.jare.2011.03.004].
 
 ![Blast Furnace Slag vs Compressive strength of Concrete](images/bfs.png){#fig:plot-8 height=2.5in}
 
-However, Figure @fig:plot-8 shows a negative correlation where the compressive strength of the concrete is decreasing with the increase in the Blast furnace slag content. We couldn't really figure out how to interpret this graph and we believe that this similar to the case we explained for coarse aggregate.
+However, Figure @fig:plot-8 shows a negative correlation where the compressive strength of the concrete decreases with the increase in the Blast furnace slag content. We could not figure out how to interpret this graph, similar to the case we explained for coarse aggregate.
 
 ### Concrete Compressive Strength
 
 ![Proportions of the components at minimum and maximum concrete compressive strengths](images/ccs_conclusion.png){#fig:plot-9 height=2.5in}
 
-The graph above explains how the proportions of the 8 components are affecting the concrete compressive strength. It clearly shows that the second bar graph has more quantity of superplasticizer and less quantity of water than the first bar graph. Also, the second bar graph has good aging time than the first one. Hence clearly the second plot has more concrete compressive strength than the first one.
+The graph above explains how the eight components' proportions affect the concrete compressive strength. It clearly shows that the second bar graph has more superplasticizer quantity and less water quantity than the first bar graph. Also, the second bar graph has good ageing time than the first one. Hence, the second plot clearly has more concrete compressive strength than the first one.
 
+# Predictive Modeling
+Using our data set, we can create a machine learning model to predict which combinations of concrete mixtures would be ideal to meet a specific strength requirement based on different construction projects.
 
-## Predictive modeling
+We plan to use regression analysis as a first step towards creating a feasible model. We have eight independent variables (the eight columns described in detail in the previous section) affecting the single dependent variable, which is the concrete compressive strength. We plan to explore more advanced machine learning models depending on the model's results. We will create rough estimations of how much of each concrete component would need to be used to create the optimal combination for each project. This model would be advantageous in the construction industry, which would be able to use our machine learning models to evaluate which combination of concrete would best work to meet their project requirements while saving the construction company the most capital.
+
+# Preliminary Predictive Modeling
+
+This section will explore multiple methods of creating machine-learning models to predict concrete compressive strengths for different combinations of components. We developed a linear regression model, which would be our base model. We have further implemented the decision tree model, which significantly improves accuracy.
 
 ### Regression
 
-Our dataset consists of eight independent variables and one dependent variable. We want to know how each of these independent variables affect the dependent variable i.e. concrete compressive strength. To begin with, we checked if these independent variables affect the concrete strength linearly by implementing a simple linear regression model.
+Our dataset consists of eight independent variables and one dependent variable. We want to know how each of these independent variables affects the dependent variable, i.e. concrete compressive strength. To begin with, we checked if these independent variables affect the concrete strength linearly by implementing a simple linear regression model.
 
-We first divided our data into two sets (i) training data set (ii) testing data set. The training data set consists of 750 rows and the testing dataset consists of the remaining 242 rows. So, we split our dataset into training and testing to about 75% and 25% roughly. We didn't split our data set into evaluation dataset since the number of hyperparameters to be tuned for this model were only a few. We set our learning rate to 0.1 and the number of steps to 1000. These hyperparameters are needed for finding the global minima for our cost function which is the mean squared error in our case. We did tune our hyperparameters a bit. However, we didn't see any noticeable improvement in the results. 
+We first divided our data into two sets (i) training data set and (ii) testing data set. The training data set consists of 750 rows, and the testing dataset consists of 242. So, we split our dataset into training and testing to about 75% and 25% roughly. We did not split our data set into evaluation dataset since the number of hyperparameters to be tuned for this model were only a few. We set our learning rate to 0.1 and the number of steps to 1000. These hyperparameters are needed for finding the global minima for our cost function, which is the mean squared error in our case. We did tune our hyperparameters a bit. However, we were still waiting for a noticeable improvement in the results. 
 
 Here is a snippet of our model.
 
@@ -250,23 +257,23 @@ sqrt(mse(y_hat, y_test))
 
 ![Linear Regression Model](images/linear-reg.png){#fig:linear-reg height=5in}
 
-We got an RMSE ~ 10 for the above model. From Figure @fig:linear-reg, we can see that although a lot of points are closer to the 45 degree line, we can also see that there are a large number of points which deviate from the line quite a bit. This can suggest a few things
+We got an RMSE of ~ 10 for the above model. From Figure @fig:linear-reg, we can see that although many points are closer to the 45-degree line, we can also see a large number of points deviate from the line quite a bit. This can suggest a few things.
 
 * The model has overfitted on the training data and is performing poorly on the testing data.
-* The dependency of the independent variables cannot be modeled linearly and hence we may need a more complex model like a neural network.
-* Our dataset comprises of only 8 variables that affect the concrete compressive strength. There may be many other factors that affect the strength which is clearly a limitation of the dataset. From [@{https://theconstructor.org/concrete/factors-affecting-strength-of-concrete/6220/}], we can see that the compressive strength of concrete is also dependent on temperature, humidity and curing among many other factors.
+* The dependency of the independent variables cannot be modelled linearly; hence, we may need a more complex model like a neural network.
+* Our dataset comprises only eight variables that affect the concrete compressive strength. Many other factors may affect the strength, which is clearly a limitation of the dataset. From [@{https://theconstructor.org/concrete/factors-affecting-strength-of-concrete/6220/}], we can see that the compressive strength of the concrete also depends on temperature, humidity and curing, among many other factors.
 
-To follow this up, we implemented logistic regression model and the multilayered regression model (neural network) to see if we can make any significant improvements. However, we found the RMSE to be around 34 for both the models. This was very surprising since we expected the non-linear models to perform better. Hence, we decided not to plot them. 
+To follow this up, we implemented a logistic regression model and the multilayered regression model (neural network) to see if we could make any significant improvements. However, we found the RMSE to be around 34 for both models. This was very surprising since we expected the non-linear models to perform better. Hence, we decided not to plot them. 
 
 ### Regression Conclusions
 
-* To understand why our linear regression model performs badly, we checked if we overfitted the model on the training data. However, the RMSE on the training data and the testing data are almost the same and hence we haven't really overfitted the model.
-* We will continue to explore why our neural network models performed so poorly and hope we can find a convincing answer by the next deadline. One of the plausible reasons could be that we haven't done any regularization. Although, we realized that our model hasn't really overfitted but it would be a good idea to try this out for the future.
-* We could try and implement a stochastic gradient descent algorithm and verify if that improves our model.
+* To understand why our linear regression model performs poorly, we checked if we overfitted the model on the training data. However, the RMSE on the training and testing data are almost the same; hence we have kept the model manageable.
+* We will continue to explore why our neural network models performed so poorly and hope we can find a convincing answer by the next deadline. One of the plausible reasons could be that we still need to do regularization. Although we realized that our model had not been overfitted, it would be a good idea to try this out in the future.
+* We could implement a stochastic gradient descent algorithm and verify if that improves our model.
 
 ### Decision Tree
 
-Following our regression model, we tried using the decision tree method in Julia to create a predictive model of our data using a regression tree made out of our data since our dataset is considered to be non-linear. To start, we split up our cleaned data into independent variables (the concrete admixtures, XXX) and dependent variables (the concrete compressive strength, XX) that would be in the form of a matrix and vector respectfully so they then can be used to create our decision tree.
+Following our regression model, we tried using the decision tree method in Julia to create a predictive model of our data using a regression tree made out of our data since our dataset is considered non-linear. To start, we split up our cleaned data into independent variables (the concrete admixtures, XXX) and dependent variables (the concrete compressive strength, XX) that would be in the form of a matrix and vector, respectfully, so they can then be used to create our decision tree.
 
 ```julia
   independent = Matrix(XXX),
@@ -277,7 +284,7 @@ We then would build our initial tree using our independent and dependent variabl
 ```julia
 init_tree = build_tree(dependent, independent)
 ```
-After our initial tree was created, we then tried using the print_tree function to visualize what our initial tree looked like in terms of values as seen below. However, this returned only the tree in numerical form so it was hard to visualize. 
+After our initial tree was created, we tried using the print_tree function to visualize what our initial tree looked like in terms of values, as seen below. However, this returned only the tree in numerical form, making it hard to visualize. 
 
 ```julia
 print_tree(init_tree)
@@ -301,11 +308,11 @@ config = EvoTreeRegressor(
 mmm = fit_evotree(config; x_train, y_train)
 Unaltered = Plots.plot(mmm,2, size=(1800,1800))
 ```
-Using the code above we were able to successfully plot our initial decision tree as seen below.
+Using the code above, we were able to plot our initial decision tree, as seen below, successfully.
 
 ![First Decision Tree With Independent and Dependent Variables Only](images/Decision%20Tree%20with%20Independent%20and%20Dependent%20Variables%20.jpg){#fig:plot-10 height=5in}
 
-We then used the following code which ran a cross validation of our inputs we are using based on the number of n-folds we had chose, which we chose 5 for our data set since using more than this did not change the accuracy and using less than this lowered the accuracy. All the other variables used in this function we set as the default values the function used since only changing the pruning purity affected the accuracy. However changing the value only lowered the accuracy since it could only be a value from 0 to 1 and having a value of 1 seemingly gave the highest accuracy.
+We then used the following code, which ran a cross-validation of the inputs we were using based on the number of n-folds we had chosen. We chose 5 for our data set since using more than this did not change the accuracy, and using less than this lowered the accuracy. All the other variables used in this function we set as the default values the function used since only changing the pruning purity affected the accuracy. However, changing the value only lowered the accuracy since it could only be a value from 0 to 1 and having a value of 1 seemingly gave the highest accuracy.
 
 ```julia
 n_folds = 5
@@ -322,7 +329,7 @@ Mean Coeff of Determination: 0.7863928687545627
  0.8112046184837071
  0.7511667468611821
 ```
-We see that the average accuracy of our initial decision tree is 78.6%. To increase the accuracy, we then ran our independent and dependent variables through another build tree function but now using the default sub_features that we used in our "accuracyy" function from earlier. We then take this new decision tree and run it through the "apply_tree" function to create a new vector of our dependent variables. Which we then can use to compare to our initial dependent variables vector. Then we can check the accuracy of this with our new dependent variable vector compared to our original and we see that we now have an average accuracy of 90.9%
+We see that the average accuracy of our initial decision tree is 78.6%. To increase the accuracy, we ran our independent and dependent variables through another build tree function but now use the default sub_features we used in our "accuracy" function from earlier. We then take this new decision tree and run it through the "apply_tree" function to create a new vector of our dependent variables. Which we then can use to compare to our initial dependent variables vector. Then we can check the accuracy of this with our new dependent variable vector compared to our original, and we see that we now have an average accuracy of 90.9%
 
 ```julia
 new_init_tree = build_tree(dependent, independent, n_subfeatures, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; rng = seed)
@@ -340,15 +347,15 @@ Mean Coeff of Determination: 0.9094893339292118
  0.9591954741485458
  0.9035974876327418
 ```
-We then plotted this new decision tree the same way as what we did for the first one and it produced the following.
+We then plotted this new decision tree the same way as we did for the first one, producing the following.
 
 ![Second Decision Tree With Independent and New Dependent Variables Only](images/Decision%20Tree%20with%20Independent%20and%20New%20Dependent%20Variables%20Following%20Apply%20Tree%20Function%20.jpg){#fig:plot-11 height=5in}
 
-Lastly, to see how the original dependent variables vector and the new dependent variables vector compare after running it through the decision trees machine learning method we made the following scatter plot to show how the two relate and the we see that the best fit line fits approximately 75% of the points on the plot seen below
+Lastly, to see how the original dependent variables vector and the new dependent variables vector compare after running it through the decision trees machine learning method, we made the following scatter plot to show how the two relate and we see that the best fit line fits approximately 75% of the points on the plot seen below.
 
 ![Scatterplot of Dependent Variables and Decision Tree Adjusted Dependent Variables](images/Scatterplot%20of%20Dependent%20and%20Decision%20Tree%20Adjusted%20Dependent%20Variables.jpg){#fig:plot-12 height=5in}
 
-Lastly, we can see how the gini-impurtity has changed after running our dependent variable vector through the decision tree and we see that they are very close to being the same value which means that our decision trees above are very similar which means our machine learning made an accurate prediction.
+Lastly, we can see how the Gini-impurity has changed after running our dependent variable vector through the decision tree. We see they are very close to being the same value, which means that our decision trees above are very similar. Our machine learning made an accurate prediction.
 
 ```julia
 
@@ -370,13 +377,11 @@ output =
 ```
 ### Decision Tree Conclusions
 
-The decision tree method overall seemed like a viable option to create a draft predictive model for our data set and we intend to refine our trees to be used later on. What we can do to potentially make our decision tree method better is to find a way to prune the decision tree more effectively or find a way to split our data set better so that or accuracy is higher. We also could potentially refine our gini-impurity so that the data set has less inequality.
+The decision tree method overall was a viable option to create a draft predictive model for our data set, and we intend to refine our trees to be used later on. We can improve our decision tree method by finding a way to prune the decision tree more effectively or to split our data set better so that our accuracy is higher. We could also refine our Gini-impurity so that the data set has less inequality.
 
 ## Discussion 
 
-After creating two predictive machine learning models of our data set in our predictive modeling section, we concluded that our initial research question was able to be accomplished with relative accuracy. However, our initial idea of how our machine learning program would work was very different from what we had originally in mind. We thought that we would be able to insert a constraint, such as 20 MPa for the concrete compressive strength, and it would give us the admixture combination that came closes to this. However, since our data set was only composed of a category of admixtures, we were unable to get it to only return one value and instead it would return many rows of data. Another issue with our data set was that since it was a category, we were unable to get any other machine learning options we learned in class besides a simple non-linear regression and decision tree to work. Which led to us not being able to have our predictive model to result in great accuracy, above 95%, leading to our program to not be reliable if we were to use it in a real world scenario. The next step that we could take is to find a better data set for this topic we chose or create our own data set that provided the exact impacts that each concrete component contributed to the concretes compressive strength. We then would be able to use this new data set we created and normalize, run through dense layers, and used neural network programming to create a much better predictive model that could then be applied in real world concrete management projects.
-
-
+After creating two machine learning models of our data set in our predictive modelling section, we concluded that our initial research question could be accomplished with relative accuracy. However, our initial idea of how our machine learning program would work was very different from what we had initially in mind. We decided to insert a constraint, such as 20 MPa, for the concrete compressive strength, which would give us the admixture combination that came close to this. However, since our data set was only composed of a category of admixtures, we could not get it only to return one value instead it would return many rows of data. Another area for improvement with our data set was that since it was a category, we could only get any other machine learning options we learned in class besides a simple non-linear regression and decision tree to work, which led to us not being able to have our predictive model to result in great accuracy, above 95%, leading to our program to not be reliable if we were to use it in a real world scenario. The next step that we could take is to find a better data set for this topic we chose or create our own data set that provided the exact impacts that each concrete component contributed to the concrete's compressive strength. We could then use this new data set we created and normalize, run through dense layers, and use neural network programming to create a much better predictive model that could be applied in real-world, concrete management projects.
 
 
 
