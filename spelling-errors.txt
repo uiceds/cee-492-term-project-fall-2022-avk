@@ -2,7 +2,7 @@ accuracyy
 admixures
 andrewb
 CEE
-compressive
+Compressive
 CSV
 dataset
 DecisionTree
@@ -22,7 +22,7 @@ MPa
 overfitted
 RMSE
 Scatterplot
-Superplasticizer
+superplasticizer
 uiuc
 vgadge
 Vikram
