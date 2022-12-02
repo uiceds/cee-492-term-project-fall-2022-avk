@@ -7,7 +7,7 @@
   <meta name="author" content="Andrew Bushnell" />
   <meta name="author" content="Kanchan Kulhalli" />
   <meta name="author" content="Vikram Gadge" />
-  <meta name="dcterms.date" content="2022-12-01" />
+  <meta name="dcterms.date" content="2022-12-02" />
   <title>Predicting Compressive Strength of Concrete using Machine learning</title>
   <style>
     code{white-space: pre-wrap;}
@@ -111,8 +111,8 @@
   <meta name="citation_title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="og:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="twitter:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
-  <meta name="dc.date" content="2022-12-01" />
-  <meta name="citation_publication_date" content="2022-12-01" />
+  <meta name="dc.date" content="2022-12-02" />
+  <meta name="citation_publication_date" content="2022-12-02" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -131,9 +131,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/95f6ba1febe5bfd6bf94cbb7ba01639db2c24348/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/95f6ba1febe5bfd6bf94cbb7ba01639db2c24348/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/95f6ba1febe5bfd6bf94cbb7ba01639db2c24348/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2f071df2ab9aee74cab6bb41e26d971f491a8d0a/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2f071df2ab9aee74cab6bb41e26d971f491a8d0a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2f071df2ab9aee74cab6bb41e26d971f491a8d0a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -149,10 +149,10 @@
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/95f6ba1febe5bfd6bf94cbb7ba01639db2c24348/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/2f071df2ab9aee74cab6bb41e26d971f491a8d0a/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@95f6ba1](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/95f6ba1febe5bfd6bf94cbb7ba01639db2c24348)
-on December 1, 2022.
+from [uiceds/cee-492-term-project-fall-2022-avk@2f071df](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/2f071df2ab9aee74cab6bb41e26d971f491a8d0a)
+on December 2, 2022.
 </em></small>
 -->
 <h2 id="authors">Authors</h2>
@@ -433,6 +433,11 @@ Department of CEE, University of Illinois
 <p>The decision tree method overall seemed like a viable option to create a draft predictive model for our data set and we intend to refine our trees to be used later on. What we can do to potentially make our decision tree method better is to find a way to prune the decision tree more effectively or find a way to split our data set better so that or accuracy is higher. We also could potentially refine our gini-impurity so that the data set has less inequality.</p>
 <h2 id="discussion">Discussion</h2>
 <p>After creating two predictive machine learning models of our data set in our predictive modeling section, we concluded that our initial research question was able to be accomplished with relative accuracy. However, our initial idea of how our machine learning program would work was very different from what we had originally in mind. We thought that we would be able to insert a constraint, such as 20 MPa for the concrete compressive strength, and it would give us the admixture combination that came closes to this. However, since our data set set was only composed of a category of admixures, we were unable to get it to only return one value and instead it would return many rows of data. Another issue with our data set was that since it was a category, we were unable to get any other machine learning options we learned in class besides a simple non-linear regression and decision tree to work. Which led to us not being able to have our predictive model to result in great accuracy, above 95%, leading to our program to not be reliable if we were to use it in a real world scenario. The next steps that would could take is to find a better data set for this topic we chose or create our own data set that provided the exact impacts that each concrete component contributed to the concretes compressive strength. We then would be able to use this new data set we created and normalize, run through dense layers, and used neural network programming to create a much better predictive model that could then be applied in real world concrete management projects.</p>
+<div id="fig:plot-11" class="fignos">
+<figure>
+<img src="images/test.png" style="height:5in" alt="Figure 5: Second Decision Tree With Independent and New Dependent Variables Only" /><figcaption aria-hidden="true"><span>Figure 5:</span> Second Decision Tree With Independent and New Dependent Variables Only</figcaption>
+</figure>
+</div>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
