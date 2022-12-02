@@ -1,5 +1,4 @@
 accuracyy
-admixures
 andrewb
 CEE
 compacity
@@ -26,7 +25,7 @@ overfitted
 RMSE
 Scatterplot
 superplasticizer
-Superplasticizers
+superplasticizers
 trendline
 uiuc
 vgadge

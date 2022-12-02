@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1fa4b42373caa017d1754b70044e2f75c3439857/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1fa4b42373caa017d1754b70044e2f75c3439857/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1fa4b42373caa017d1754b70044e2f75c3439857/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c5541c2821d0083d7d19741b538e4165a42e23e5/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c5541c2821d0083d7d19741b538e4165a42e23e5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c5541c2821d0083d7d19741b538e4165a42e23e5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/1fa4b42373caa017d1754b70044e2f75c3439857/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c5541c2821d0083d7d19741b538e4165a42e23e5/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@1fa4b42](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/1fa4b42373caa017d1754b70044e2f75c3439857)
+from [uiceds/cee-492-term-project-fall-2022-avk@c5541c2](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/c5541c2821d0083d7d19741b538e4165a42e23e5)
 on December 2, 2022.
 </em></small>
 -->
@@ -374,11 +374,11 @@ The decision tree method overall seemed like a viable option to create a draft p
 
 ## Discussion 
 
-After creating two predictive machine learning models of our data set in our predictive modeling section, we concluded that our initial research question was able to be accomplished with relative accuracy. However, our initial idea of how our machine learning program would work was very different from what we had originally in mind. We thought that we would be able to insert a constraint, such as 20 MPa for the concrete compressive strength, and it would give us the admixture combination that came closes to this. However, since our data set set was only composed of a category of admixures, we were unable to get it to only return one value and instead it would return many rows of data. Another issue with our data set was that since it was a category, we were unable to get any other machine learning options we learned in class besides a simple non-linear regression and decision tree to work. Which led to us not being able to have our predictive model to result in great accuracy, above 95%, leading to our program to not be reliable if we were to use it in a real world scenario. The next steps that would could take is to find a better data set for this topic we chose or create our own data set that provided the exact impacts that each concrete component contributed to the concretes compressive strength. We then would be able to use this new data set we created and normalize, run through dense layers, and used neural network programming to create a much better predictive model that could then be applied in real world concrete management projects.
+After creating two predictive machine learning models of our data set in our predictive modeling section, we concluded that our initial research question was able to be accomplished with relative accuracy. However, our initial idea of how our machine learning program would work was very different from what we had originally in mind. We thought that we would be able to insert a constraint, such as 20 MPa for the concrete compressive strength, and it would give us the admixture combination that came closes to this. However, since our data set was only composed of a category of admixtures, we were unable to get it to only return one value and instead it would return many rows of data. Another issue with our data set was that since it was a category, we were unable to get any other machine learning options we learned in class besides a simple non-linear regression and decision tree to work. Which led to us not being able to have our predictive model to result in great accuracy, above 95%, leading to our program to not be reliable if we were to use it in a real world scenario. The next step that we could take is to find a better data set for this topic we chose or create our own data set that provided the exact impacts that each concrete component contributed to the concretes compressive strength. We then would be able to use this new data set we created and normalize, run through dense layers, and used neural network programming to create a much better predictive model that could then be applied in real world concrete management projects.
 
 
 
-![Second Decision Tree With Independent and New Dependent Variables Only](images/test.png){#fig:plot-11 height=5in}
+
 
 
 
