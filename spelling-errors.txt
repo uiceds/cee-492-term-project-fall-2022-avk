@@ -24,7 +24,7 @@ overfitted
 RMSE
 Scatterplot
 superplasticizer
-superplasticizers
+Superplasticizers
 trendline
 uiuc
 vgadge
