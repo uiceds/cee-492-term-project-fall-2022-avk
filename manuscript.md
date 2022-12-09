@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c36ac0ddfb2aa8dc3e3207dc5a3b4b9b7cb22a3f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c36ac0ddfb2aa8dc3e3207dc5a3b4b9b7cb22a3f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c36ac0ddfb2aa8dc3e3207dc5a3b4b9b7cb22a3f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/194128ca2b36a463c751931b07999c7b319aaa5c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/194128ca2b36a463c751931b07999c7b319aaa5c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/194128ca2b36a463c751931b07999c7b319aaa5c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c36ac0ddfb2aa8dc3e3207dc5a3b4b9b7cb22a3f/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/194128ca2b36a463c751931b07999c7b319aaa5c/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@c36ac0d](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/c36ac0ddfb2aa8dc3e3207dc5a3b4b9b7cb22a3f)
+from [uiceds/cee-492-term-project-fall-2022-avk@194128c](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/194128ca2b36a463c751931b07999c7b319aaa5c)
 on December 9, 2022.
 </em></small>
 -->
@@ -383,7 +383,8 @@ The decision tree method overall was a viable option to create a draft predictiv
 
 After creating two machine learning models of our data set in our predictive modelling section, we concluded that our initial research question could be accomplished with relative accuracy. However, our initial idea of how our machine learning program would work was very different from what we had initially in mind. We decided to insert a constraint, such as 20 MPa, for the concrete compressive strength, which would give us the admixture combination that came close to this. However, since our data set was only composed of a category of admixtures, we needed help to get it to return one value. Instead, it would return many rows of data. The next step we could take is to find a better dataset for this topic we chose or create our dataset that provided the exact impacts that each concrete component contributed to the concrete's compressive strength. We could then use this new data set we created and normalize, run through dense layers, and use neural network programming to create a much better predictive model that could be applied in real-world, concrete management projects.
 
-
+![Scatterplot of Dependent Variables and Decision Tree Adjusted Dependent Variables](images/1%20(8).jpg){#fig:plot-12 height=5in}
+![Scatterplot of Dependent Variables and Decision Tree Adjusted Dependent Variables](images/2%20(7).jpg.jpg){#fig:plot-12 height=5in}
 
 ## References {.page_break_before}
 
