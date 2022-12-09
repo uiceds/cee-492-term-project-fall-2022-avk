@@ -23,7 +23,7 @@ MPa
 overfitted
 RMSE
 Scatterplot
-superplasticizer
+Superplasticizer
 Superplasticizers
 trendline
 uiuc
