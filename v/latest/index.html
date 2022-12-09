@@ -7,7 +7,7 @@
   <meta name="author" content="Andrew Bushnell" />
   <meta name="author" content="Kanchan Kulhalli" />
   <meta name="author" content="Vikram Gadge" />
-  <meta name="dcterms.date" content="2022-12-02" />
+  <meta name="dcterms.date" content="2022-12-09" />
   <title>Predicting Compressive Strength of Concrete using Machine learning</title>
   <style>
     code{white-space: pre-wrap;}
@@ -111,8 +111,8 @@
   <meta name="citation_title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="og:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="twitter:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
-  <meta name="dc.date" content="2022-12-02" />
-  <meta name="citation_publication_date" content="2022-12-02" />
+  <meta name="dc.date" content="2022-12-09" />
+  <meta name="citation_publication_date" content="2022-12-09" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -131,9 +131,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8e276d3643660adaf7cda7a60a0265fc12686862/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8e276d3643660adaf7cda7a60a0265fc12686862/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8e276d3643660adaf7cda7a60a0265fc12686862/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c36ac0ddfb2aa8dc3e3207dc5a3b4b9b7cb22a3f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c36ac0ddfb2aa8dc3e3207dc5a3b4b9b7cb22a3f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c36ac0ddfb2aa8dc3e3207dc5a3b4b9b7cb22a3f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -149,10 +149,10 @@
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/8e276d3643660adaf7cda7a60a0265fc12686862/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/c36ac0ddfb2aa8dc3e3207dc5a3b4b9b7cb22a3f/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@8e276d3](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/8e276d3643660adaf7cda7a60a0265fc12686862)
-on December 2, 2022.
+from [uiceds/cee-492-term-project-fall-2022-avk@c36ac0d](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/c36ac0ddfb2aa8dc3e3207dc5a3b4b9b7cb22a3f)
+on December 9, 2022.
 </em></small>
 -->
 <h2 id="authors">Authors</h2>
@@ -319,7 +319,7 @@ Department of CEE, University of Illinois
 </div>
 <p>We can see that a decrease in the superplasticizer-to-water ratio decreases the concrete compressive strength. This analysis suggests a positive correlation between the superplasticizer and the concrete strength. However, for ratios greater than 3%, we did not find any correlation between these two suggesting that the effect of superplasticizer depends on the s/c ratio.</p>
 <h3 id="fly-ash">Fly Ash</h3>
-<p>Fly ash has become an increasingly common component in concrete mixtures in recent decades. Fly ash increases the workability of plastic concretes and the strength and durability of regular concretes <span class="citation" data-cites="13SD89QhE">[<a href="#ref-13SD89QhE" role="doc-biblioref">4</a>]</span>. Fly ash is also used to replace a portion of the cement mixture needed. In return, it reduces the cost while not decreasing the strength.</p>
+<p>Fly ash has become increasingly common in concrete mixtures in recent decades. Fly ash increases the workability of plastic concretes and the strength and durability of regular concretes <span class="citation" data-cites="13SD89QhE">[<a href="#ref-13SD89QhE" role="doc-biblioref">4</a>]</span>. Fly ash is used to replace a portion of the cement mixture needed. In return, it reduces the cost while not decreasing the strength.</p>
 <p>Using our data set, we began by organizing it only to include unique values of fly ash since many rows had no fly ash component in their concrete mixture. Then using this data set, we created a histogram to show the general trendline of the impact of the fly ash component on the compressive strength. We can see from Figure <a href="#fig:plot-4">4</a> that using fly ash does increase the strength of the concrete but peaks at approximately 20 kg per m^3 mixture, and a further increase in fly ash only decreases the strength of the concrete. This result is mainly due to fly ash not being suitable to replace fully or most of the Cement used in the mixture and is used more as a binding unit that helps with the workability and durability to a certain degree.</p>
 <div id="fig:plot-4" class="fignos">
 <figure>
@@ -361,10 +361,10 @@ Department of CEE, University of Illinois
 <img src="images/ccs_conclusion.png" style="height:2.5in" alt="Figure 9: Proportions of the components at minimum and maximum concrete compressive strengths" /><figcaption aria-hidden="true"><span>Figure 9:</span> Proportions of the components at minimum and maximum concrete compressive strengths</figcaption>
 </figure>
 </div>
-<p>The graph above explains how the eight components’ proportions affect the concrete compressive strength. It clearly shows that the second bar graph has more superplasticizer quantity and less water quantity than the first bar graph. Also, the second bar graph has good ageing time than the first one. Hence, the second plot clearly has more concrete compressive strength than the first one.</p>
+<p>The graph above explains how the eight components’ proportions affect the concrete compressive strength. It clearly shows that the second bar graph has more superplasticizer quantity and less water quantity than the first bar graph. Also, the second bar graph has good ageing time than the first one. Hence, the second plot has more concrete compressive strength than the first one.</p>
 <h1 id="predictive-modeling">Predictive Modeling</h1>
 <p>Using our data set, we can create a machine learning model to predict which combinations of concrete mixtures would be ideal to meet a specific strength requirement based on different construction projects.</p>
-<p>We plan to use regression analysis as a first step towards creating a feasible model. We have eight independent variables (the eight columns described in detail in the previous section) affecting the single dependent variable, which is the concrete compressive strength. We plan to explore more advanced machine learning models depending on the model’s results. We will create rough estimations of how much of each concrete component would need to be used to create the optimal combination for each project. This model would be advantageous in the construction industry, which would be able to use our machine learning models to evaluate which combination of concrete would best work to meet their project requirements while saving the construction company the most capital.</p>
+<p>We plan to use regression analysis as a first step towards creating a feasible model. We have eight independent variables (the eight columns described in the previous section) affecting the single dependent variable: the concrete compressive strength. We plan to explore more advanced machine learning models depending on the model’s results. We will create rough estimations of how much of each concrete component would need to be used to create the optimal combination for each project. This model would be advantageous in the construction industry, which would be able to use our machine learning models to evaluate which combination of concrete would best work to meet their project requirements while saving the construction company the most capital.</p>
 <h1 id="preliminary-predictive-modeling">Preliminary Predictive Modeling</h1>
 <p>This section will explore multiple methods of creating machine-learning models to predict concrete compressive strengths for different combinations of components. We developed a linear regression model, which would be our base model. We have further implemented the decision tree model, which significantly improves accuracy.</p>
 <h3 id="regression">Regression</h3>
@@ -402,13 +402,13 @@ Department of CEE, University of Illinois
 <img src="images/linear-reg.png" style="height:5in" alt="Figure 10: Linear Regression Model" /><figcaption aria-hidden="true"><span>Figure 10:</span> Linear Regression Model</figcaption>
 </figure>
 </div>
-<p>We got an RMSE of ~ 10 for the testing data-set. Error for both the testing and training data-set is almost the same. From Figure <a href="#fig:linear-reg">10</a>, we can see that although many points are closer to the 45-degree line, we can also see a large number of points deviate from the line quite a bit. This can suggest a few things.</p>
+<p>We got an RMSE of ~ 10 for the testing dataset. The error for both the testing and training dataset is almost the same. From Figure <a href="#fig:linear-reg">10</a>, we can see that although many points are closer to the 45-degree line, we can also see a large number of points deviate from the line quite a bit. This trend can suggest a few things.</p>
 <ul>
 <li>The model has overfitted on the training data and is performing poorly on the testing data.</li>
 <li>The dependency of the independent variables cannot be modelled linearly; hence, we may need a more complex model like a neural network.</li>
-<li>Our dataset comprises only eight variables that affect the concrete compressive strength. Many other factors may affect the strength, which is clearly a limitation of the dataset. From <span class="citation" data-cites="C8eJYFGg">[<a href="#ref-C8eJYFGg" role="doc-biblioref">8</a>]</span>, we can see that the compressive strength of the concrete also depends on temperature, humidity and curing, among many other factors.</li>
+<li>Our dataset comprises only eight variables that affect the concrete compressive strength. Many other factors may affect the strength, which is a limitation of the dataset. From <span class="citation" data-cites="C8eJYFGg">[<a href="#ref-C8eJYFGg" role="doc-biblioref">8</a>]</span>, we can see that the compressive strength of the concrete also depends on temperature, humidity and curing, among many other factors.</li>
 </ul>
-<p>To follow this up, we implemented a logistic regression model and the multilayered regression model (neural network) to see if we could make any significant improvements. However, we found the RMSE to be around 34 for both models. This was very surprising since we expected the non-linear models to perform better. Hence, we decided not to plot them.</p>
+<p>To follow this up, we implemented a logistic regression model and the multilayered regression model (neural network) to see if we could make any significant improvements. However, we found an RMSE of around 34 for both models’ testing data. This result was surprising since we expected the non-linear models to perform better. Hence, we decided not to plot them.</p>
 <h3 id="regression-conclusions">Regression Conclusions</h3>
 <ul>
 <li>To understand why our linear regression model performs poorly, we checked if we overfitted the model on the training data. However, the RMSE on the training and testing data are almost the same; hence we have kept the model manageable.</li>
@@ -416,14 +416,14 @@ Department of CEE, University of Illinois
 <li>We could implement a stochastic gradient descent algorithm and verify if that improves our model.</li>
 </ul>
 <h3 id="decision-tree">Decision Tree</h3>
-<p>Following our regression model, we tried using the decision tree method in Julia to create a predictive model of our data using a regression tree made out of our data since our dataset is considered non-linear. To start, we split up our cleaned data into independent variables (the concrete admixtures, XXX) and dependent variables (the concrete compressive strength, XX) that would be in the form of a matrix and vector, respectfully, so they can then be used to create our decision tree.</p>
+<p>Following our regression model, we tried using the decision tree method in Julia to create a predictive model of our data using a regression tree made out of our data since our dataset is considered non-linear. To start, we split our cleaned data into independent variables (the concrete admixtures, XXX) and dependent variables (the concrete compressive strength, XX). This data would be in the form of a matrix and vector, so they can then be used to create our decision tree.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>  independent <span class="op">=</span> <span class="fu">Matrix</span>(XXX)<span class="op">,</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  dependent <span class="op">=</span> <span class="fu">vec</span>(<span class="fu">Matrix</span>(XX))</span></code></pre></div>
 <p>We then would build our initial tree using our independent and dependent variables using the following code available in the DecisionTree package from Julia.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>init_tree <span class="op">=</span> <span class="fu">build_tree</span>(dependent<span class="op">,</span> independent)</span></code></pre></div>
 <p>After our initial tree was created, we tried using the print_tree function to visualize what our initial tree looked like in terms of values, as seen below. However, this returned only the tree in numerical form, making it hard to visualize.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print_tree</span>(init_tree)</span></code></pre></div>
-<p>This led to us needing to research online how to plot the decision tree we made and ended up using the “EvoTrees”, “MLJ”, and “MLJModels” packages in Julia that led to us to being able to produce the following plot our initial decision tree that used our unaltered independent and dependent variables from our dataset.</p>
+<p>We researched online how to plot the decision tree and used the “EvoTrees”, “MLJ”, and “MLJModels” packages in Julia. That led to us being able to produce the following plot, our initial decision tree that used our unaltered independent and dependent variables from our dataset.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>config <span class="op">=</span> <span class="fu">EvoTreeRegressor</span>(</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    loss<span class="op">=:</span>linear<span class="op">,</span> </span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    nrounds<span class="op">=</span><span class="fl">100</span><span class="op">,</span> </span>
@@ -459,7 +459,7 @@ Department of CEE, University of Illinois
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a> <span class="fl">0.7354379123502578</span></span>
 <span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a> <span class="fl">0.8112046184837071</span></span>
 <span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a> <span class="fl">0.7511667468611821</span></span></code></pre></div>
-<p>We see that the average accuracy of our initial decision tree is 78.6%. To increase the accuracy, we ran our independent and dependent variables through another build tree function but now use the default sub_features we used in our “accuracy” function from earlier. We then take this new decision tree and run it through the “apply_tree” function to create a new vector of our dependent variables. Which we then can use to compare to our initial dependent variables vector. Then we can check the accuracy of this with our new dependent variable vector compared to our original, and we see that we now have an average accuracy of 90.9%</p>
+<p>The average accuracy of our initial decision tree’s testing data is 78.6%. To increase the accuracy, we ran our independent and dependent variables through another build tree function but now use the default sub_features we used in our “accuracy” function from earlier. We then take this new decision tree and run it through the “apply_tree” function to create a new vector of our dependent variables. Which we then can use to compare to our initial dependent variables vector. Then we can check this accuracy with our new dependent variable vector compared to our original, and we see that we now have an average accuracy of 90.9% over the testing data.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>new_init_tree <span class="op">=</span> <span class="fu">build_tree</span>(dependent<span class="op">,</span> independent<span class="op">,</span> n_subfeatures<span class="op">,</span> max_depth<span class="op">,</span> min_samples_leaf<span class="op">,</span> min_samples_split<span class="op">,</span> min_purity_increase<span class="op">;</span> rng <span class="op">=</span> seed)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>new_dependent_vector <span class="op">=</span> <span class="fu">apply_tree</span>(mnn<span class="op">,</span> independent)</span>
@@ -474,19 +474,19 @@ Department of CEE, University of Illinois
 <span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a> <span class="fl">0.8489222674442972</span></span>
 <span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a> <span class="fl">0.9591954741485458</span></span>
 <span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a> <span class="fl">0.9035974876327418</span></span></code></pre></div>
-<p>We then plotted this new decision tree the same way as we did for the first one, producing the following.</p>
+<p>We then plotted this new decision tree the same way we did for the first one, producing the following.</p>
 <div id="fig:plot-11" class="fignos">
 <figure>
 <img src="images/Decision%20Tree%20with%20Independent%20and%20New%20Dependent%20Variables%20Following%20Apply%20Tree%20Function%20.jpg" style="height:5in" alt="Figure 12: Second Decision Tree With Independent and New Dependent Variables Only" /><figcaption aria-hidden="true"><span>Figure 12:</span> Second Decision Tree With Independent and New Dependent Variables Only</figcaption>
 </figure>
 </div>
-<p>Lastly, to see how the original dependent variables vector and the new dependent variables vector compare after running it through the decision trees machine learning method, we made the following scatter plot to show how the two relate and we see that the best fit line fits approximately 75% of the points on the plot seen below.</p>
+<p>After running it through the decision trees algorithm, we made the following scatter plot to see how the original dependent variables vector and the new dependent variables vector compare. The best-fit line fits approximately 75% of the points on the plot seen below.</p>
 <div id="fig:plot-12" class="fignos">
 <figure>
 <img src="images/Scatterplot%20of%20Dependent%20and%20Decision%20Tree%20Adjusted%20Dependent%20Variables.jpg" style="height:5in" alt="Figure 13: Scatterplot of Dependent Variables and Decision Tree Adjusted Dependent Variables" /><figcaption aria-hidden="true"><span>Figure 13:</span> Scatterplot of Dependent Variables and Decision Tree Adjusted Dependent Variables</figcaption>
 </figure>
 </div>
-<p>Lastly, we can see how the Gini-impurity has changed after running our dependent variable vector through the decision tree. We see they are very close to being the same value, which means that our decision trees above are very similar. Our machine learning made an accurate prediction.</p>
+<p>Lastly, we can see how the Gini impurity has changed after running our dependent variable vector through the decision tree. They are close to the same value, which means that our decision trees above are very similar. Our machine learning made an accurate prediction.</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">gini_impurity</span>(y<span class="op">::</span><span class="dt">AbstractVector)</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    ig <span class="op">=</span> <span class="fl">1.0</span></span>
@@ -504,9 +504,9 @@ Department of CEE, University of Illinois
 <span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="fl">0.9865130723205006</span></span>
 <span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="fl">0.9986078141259189</span></span></code></pre></div>
 <h3 id="decision-tree-conclusions">Decision Tree Conclusions</h3>
-<p>The decision tree method overall was a viable option to create a draft predictive model for our data set, and we intend to refine our trees to be used later on. We can improve our decision tree method by finding a way to prune the decision tree more effectively or to split our data set better so that our accuracy is higher. We could also refine our Gini-impurity so that the data set has less inequality.</p>
+<p>The decision tree method overall was a viable option to create a draft predictive model for our data set, and we intend to refine our trees to be used later on. We can improve our decision tree method by finding a way to prune the decision tree more effectively or to split our dataset better to achieve higher accuracy. We could also refine our Gini impurity so that the data set has less inequality.</p>
 <h2 id="discussion">Discussion</h2>
-<p>After creating two machine learning models of our data set in our predictive modelling section, we concluded that our initial research question could be accomplished with relative accuracy. However, our initial idea of how our machine learning program would work was very different from what we had initially in mind. We decided to insert a constraint, such as 20 MPa, for the concrete compressive strength, which would give us the admixture combination that came close to this. However, since our data set was only composed of a category of admixtures, we could not get it only to return one value instead it would return many rows of data. Another area for improvement with our data set was that since it was a category, we could only get any other machine learning options we learned in class besides a simple non-linear regression and decision tree to work, which led to us not being able to have our predictive model to result in great accuracy, above 95%, leading to our program to not be reliable if we were to use it in a real world scenario. The next step that we could take is to find a better data set for this topic we chose or create our own data set that provided the exact impacts that each concrete component contributed to the concrete’s compressive strength. We could then use this new data set we created and normalize, run through dense layers, and use neural network programming to create a much better predictive model that could be applied in real-world, concrete management projects.</p>
+<p>After creating two machine learning models of our data set in our predictive modelling section, we concluded that our initial research question could be accomplished with relative accuracy. However, our initial idea of how our machine learning program would work was very different from what we had initially in mind. We decided to insert a constraint, such as 20 MPa, for the concrete compressive strength, which would give us the admixture combination that came close to this. However, since our data set was only composed of a category of admixtures, we needed help to get it to return one value. Instead, it would return many rows of data. The next step we could take is to find a better dataset for this topic we chose or create our dataset that provided the exact impacts that each concrete component contributed to the concrete’s compressive strength. We could then use this new data set we created and normalize, run through dense layers, and use neural network programming to create a much better predictive model that could be applied in real-world, concrete management projects.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
