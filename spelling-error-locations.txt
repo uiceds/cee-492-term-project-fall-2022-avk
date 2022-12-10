@@ -111,5 +111,3 @@ content/01.abstract.md:287:dataset
 content/01.abstract.md:287:dataset
 content/01.abstract.md:287:modelling
 content/01.abstract.md:287:MPa
-content/01.abstract.md:289:Scatterplot
-content/01.abstract.md:290:Scatterplot

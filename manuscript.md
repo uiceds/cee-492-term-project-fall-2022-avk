@@ -1,7 +1,7 @@
 ---
 title: Predicting Compressive Strength of Concrete using Machine learning
 lang: en-US
-date-meta: '2022-12-09'
+date-meta: '2022-12-10'
 author-meta:
 - Andrew Bushnell
 - Kanchan Kulhalli
@@ -16,8 +16,8 @@ header-includes: |-
   <meta name="citation_title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="og:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
   <meta property="twitter:title" content="Predicting Compressive Strength of Concrete using Machine learning" />
-  <meta name="dc.date" content="2022-12-09" />
-  <meta name="citation_publication_date" content="2022-12-09" />
+  <meta name="dc.date" content="2022-12-10" />
+  <meta name="citation_publication_date" content="2022-12-10" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/12c8db31e7b3a5600fa2d02cfeed0189727052cd/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/12c8db31e7b3a5600fa2d02cfeed0189727052cd/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/12c8db31e7b3a5600fa2d02cfeed0189727052cd/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f1b6d7b3547bfb69ddd8dc7d60c75078763ceae2/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f1b6d7b3547bfb69ddd8dc7d60c75078763ceae2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f1b6d7b3547bfb69ddd8dc7d60c75078763ceae2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,10 +61,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/12c8db31e7b3a5600fa2d02cfeed0189727052cd/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f1b6d7b3547bfb69ddd8dc7d60c75078763ceae2/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@12c8db3](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/12c8db31e7b3a5600fa2d02cfeed0189727052cd)
-on December 9, 2022.
+from [uiceds/cee-492-term-project-fall-2022-avk@f1b6d7b](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/f1b6d7b3547bfb69ddd8dc7d60c75078763ceae2)
+on December 10, 2022.
 </em></small>
 -->
 
@@ -310,7 +310,7 @@ Unaltered = Plots.plot(mmm,2, size=(1800,1800))
 ```
 Using the code above, we were able to plot our initial decision tree, as seen below, successfully.
 
-![First Decision Tree With Independent and Dependent Variables Only](images/Decision%20Tree%20with%20Independent%20and%20Dependent%20Variables%20.jpg){#fig:plot-10 height=5in}
+![First Decision Tree With Independent and Dependent Variables Only](images/1%20(8).jpg){#fig:plot-10 height=5in}
 
 We then used the following code, which ran a cross-validation of the inputs we were using based on the number of n-folds we had chosen. We chose 5 for our data set since using more than this did not change the accuracy, and using less than this lowered the accuracy. All the other variables used in this function we set as the default values the function used since only changing the pruning purity affected the accuracy. However, changing the value only lowered the accuracy since it could only be a value from 0 to 1 and having a value of 1 seemingly gave the highest accuracy.
 
@@ -349,7 +349,7 @@ Mean Coeff of Determination: 0.9094893339292118
 ```
 We then plotted this new decision tree the same way we did for the first one, producing the following.
 
-![Second Decision Tree With Independent and New Dependent Variables Only](images/Decision%20Tree%20with%20Independent%20and%20New%20Dependent%20Variables%20Following%20Apply%20Tree%20Function%20.jpg){#fig:plot-11 height=5in}
+![Second Decision Tree With Independent and New Dependent Variables Only](images/2%20(7).jpg){#fig:plot-11 height=5in}
 
 After running it through the decision trees algorithm, we made the following scatter plot to see how the original dependent variables vector and the new dependent variables vector compare. The best-fit line fits approximately 75% of the points on the plot seen below.
 
@@ -381,10 +381,10 @@ The decision tree method overall was a viable option to create a draft predictiv
 
 ## Discussion 
 
-After creating two machine learning models of our data set in our predictive modelling section, we concluded that our initial research question could be accomplished with relative accuracy. However, our initial idea of how our machine learning program would work was very different from what we had initially in mind. We decided to insert a constraint, such as 20 MPa, for the concrete compressive strength, which would give us the admixture combination that came close to this. However, since our data set was only composed of a category of admixtures, we needed help to get it to return one value. Instead, it would return many rows of data. The next step we could take is to find a better dataset for this topic we chose or create our dataset that provided the exact impacts that each concrete component contributed to the concrete's compressive strength. We could then use this new data set we created and normalize, run through dense layers, and use neural network programming to create a much better predictive model that could be applied in real-world, concrete management projects.
+After creating two machine learning models of our data set in our predictive modelling section, we concluded that our initial research question could be accomplished with relative accuracy. However, our initial idea of how our machine learning program would work was very different from what we had initially in mind. We decided to insert a constraint, such as 20 MPa which is the ideal minimum strength for the majority of concrete related roadway projects, for the concrete compressive strength, which would give us the admixture combination that came close to this. However, since our data set was only composed of a category of admixtures, we needed help to get it to return one value. Instead, it would return many rows of data. The next step we could take is to find a better dataset for this topic we chose or create our dataset that provided the exact impacts that each concrete component contributed to the concrete's compressive strength. We could then use this new data set we created and normalize, run through dense layers, and use neural network programming to create a much better predictive model that could be applied in real-world, concrete management projects.
 
-![Scatterplot of Dependent Variables and Decision Tree Adjusted Dependent Variables](images/1%20(8).jpg){#fig:plot-12 height=5in}
-![Scatterplot of Dependent Variables and Decision Tree Adjusted Dependent Variables](images/2%20(7).jpg.jpg){#fig:plot-12 height=5in}
+
+
 
 ## References {.page_break_before}
 
