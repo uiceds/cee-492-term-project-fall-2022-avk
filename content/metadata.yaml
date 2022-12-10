@@ -1,26 +1,24 @@
 ---
-title: "Manuscript Title"
-keywords:
-  - markdown
-  - publishing
-  - manubot
+title: "Predicting Compressive Strength of Concrete using Machine learning"
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+  - github: andrewb7777
+    name: Andrew Bushnell
+    ID: AB
+    email: andrewb7@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+      - Department of CEE, University of Illinois
+  - github: Kanchan-uiuc
+    name: Kanchan Kulhalli
+    ID: 673920600
+    email: kk76@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Department of CEE, University of Illinois
+  - github: vgadge2
+    name: Vikram Gadge
+    ID: VG
+    email: vgadge2@illinois.edu
+    affiliations:
+      - Department of CEE, University of Illinois
+
+

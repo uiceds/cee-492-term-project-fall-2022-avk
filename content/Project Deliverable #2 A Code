@@ -1,0 +1,344 @@
+begin
+    using CSV
+    using DataFrames
+    using PlutoUI
+    using Plots
+    using RDatasets
+    using Measures
+    using StatsPlots
+    using Statistics
+    using Distributions
+    using LinearAlgebra
+    using Random
+    # using PlotlyJS
+    using Tables
+    using Zygote
+    using ProgressLogging
+    using DecisionTree
+    using EvoTrees
+    using MLJ
+    using MLJModels
+end
+# df = CSV.read("C:/Users/STP/Desktop/ConcreteProjectData2.csv", DataFrame)
+# #describe(df)
+# Cement = df[:,1] 
+# BlastFurnaceSlag = df[:,2]
+# FlyAsh = df[:,3]
+# Water = df[:,4]
+# Superplasticizer = df[:,5]
+# CoarseAggregate = df[:,6]
+# FineAggregate = df[:,7]
+# Days = df[:,8]
+# ConcreteCompressiveStrength = df[:,9]
+# Sample = df[:,10]
+#plot(Age,CementCompressiveStrength)
+#plot(Cement,CementCompressiveStrength)
+#describe(df)
+#print(df)
+#FA = select(df, [Cement (component 1)(kg in a m^3 mixture):, :Sample])
+#SvD = select(df, :Days,:Sample)
+#CCSvS = select(df,:ConcreteCompressiveStrength,:Sample)
+#plot(SvD,CCSvS)
+#println(Do)
+#sort(df,[:Days])
+#plot(df.Days,df.ConcreteCompressiveStrength)
+#x = df.Days
+#y = df.ConcreteCompressiveStrength
+#str = [@sprintf("%.2f", yi) for yi in y]
+#histogram(df.Days,df.ConcreteCompressiveStrength, xaxis = "Days", yaxis = "Compressive Strength (MPa)", title = "Compressive Strength vs Age", legend=false, xlims = (0,100), ylims = (0,150))
+#plot!(y, st=:scatter,marker_shape=:none,primary=false,series_annotations=x)
+#annotate!(x,y, str, :bottom)
+#histogram(df.Cement,df.ConcreteCompressiveStrength,xaxis = "Cement (kg)", yaxis = "Compressive Strength (MPa)", title = "Compressive Strength vs Cement mixture")
+#println(replace!(df.FlyAsh, 0 =>1))
+#print(df)
+#xFS = unique(df, [:FlyAsh])
+#xFS = replace!(df.FlyAsh, 0 =>1)FlyAsh, df.ConcreteCompressiveStrength)
+#histogram(xFS.FlyAsh,xFS.ConcreteCompressiveStrength,xaxis = "FlyAsh (kg)", yaxis = "Compressive Strength (MPa)", title = "Compressive Strength vs Fly Ash", legend=false, xlims = (0,100), ylims = (0,70))
+# function init_centroid(x::Matrix{T},k::Int) where T<:AbstractFloat
+#     n = size(x,1)
+#     i = sample(1:n, k, replace=false)
+#     x[i, :]
+# end
+# function calc_distance(x_obs::Vector{T}, centroids::Matrix{T}) where T<:AbstractFloat
+#     k = size(centroids,1)
+#     distances = zeros(k)
+#     for i in 1:k
+#         distances[i] = norm(x_obs .- centroids[i, :]) ^2
+#     end
+#     distances
+# end
+# function calc_groups(x::Matrix{T}, centroids::Matrix{T}) where T<:AbstractFloat
+#     n = size(x,1)
+#     groups = zeros(Int,n)
+#     for o in 1:n
+#         d = calc_distance(x[o,:], centroids)
+#         groups[o] = argmin(d)
+#     end
+#     groups
+# end
+# function update_centroids!(centroid::Matrix{T},x::Matrix{T},groups::Vector{Int}) where T<:AbstractFloat
+#     k = size(centroid,1)
+#     for g in 1:k
+#         ingroup = (groups .==g)
+#         groupobs = x[ingroup,:]
+#         groupmean = mean(groupobs, dims=1)
+#         centroid[g,:] = groupmean
+#     end
+# end
+# function kmeans(x::Matrix{T}, k::Int, nsteps::Int) where T<:AbstractFloat
+#     centroid = init_centroid(x,k)
+#     groups = calc_groups(x,centroid)
+#     for i in 1:nsteps
+#         groups = calc_groups(x,centroid)
+#         update_centroids!(centroid, x, groups)
+#     end
+#     return calc_groups(x, centroid), update_centroids!(centroid, x, groups)
+# end
+
+# X = Matrix(df)
+# init1 = init_centroid(X,10)
+# print(init1)
+# Z = zeros(10,1)
+# ZZ = replace(Z,0=>20)
+# ZZZ = vec(ZZ)
+# println(ZZ)
+# distances1 = calc_distance(ZZZ,init1)
+# groups1 = calc_groups(X,init1)
+# update1 = update_centroids!(init1,X,groups1)
+# kmeans1 = kmeans(X,10,10000)
+
+#describe(df)
+# Cement = df[:,1] 
+# BlastFurnaceSlag = df[:,2]
+# FlyAsh = df[:,3]
+# Water = df[:,4]
+# Superplasticizer = df[:,5]
+# CoarseAggregate = df[:,6]
+# FineAggregate = df[:,7]
+# Days = df[:,8]
+# ConcreteCompressiveStrength = df[:,9]
+# Sample = df[:,10]
+
+df = CSV.read("C:/Users/STP/Desktop/ConcreteProjectData2.csv", DataFrame)
+begin
+    df1 = CSV.read("C:/Users/STP/Desktop/ConcreteProjectData2.csv", DataFrame)
+    df3 = unique(df1)
+    # rename!(df3, :"FineAggregate " => :FineAggregate)
+    df_int = groupby(df3, [:Cement, :BlastFurnaceSlag, :FlyAsh, :Water, :Superplasticizer, :CoarseAggregate, :FineAggregate, :Days])
+    dff = combine(df_int, :ConcreteCompressiveStrength => mean)
+    rename!(dff, :ConcreteCompressiveStrength_mean => :ConcreteCompressiveStrength)
+    end
+
+
+
+# function pad(x::AbstractMatrix{T}, n::Int)::AbstractMatrix{T} where T<:AbstractFloat
+# 	vcat(zeros(T,n,size(x,2)),x,zeros(T,n,size(x,2)))
+# end
+
+# let
+# 	x = rand(5,5)
+# 	p1 = heatmap(x, xticks=:none, yticks=:none, title="Original")
+# 	p2 = heatmap(pad(x, 2), xticks=:none, yticks=:none, title="Padded")
+# 	plot(p1, p2)
+# end
+
+# function conv_1d(x::AbstractMatrix{T}, filter::AbstractVector{T}, bias::T)::AbstractMatrix{T} where T<:Real
+# 	n = length(filter) ÷ 2
+# 	x2 = pad(x,n)
+# 	[sum(x2[i-n:i+n,j] .* filter) for i in (1+n):size(x2,1)-n, j in 1:size(x2,2)] .+ bias
+# end
+
+# function maxpool_1d(x::AbstractMatrix{<:Real}, poolsize::Int)
+# 	n = poolsize ÷ 2
+# 	x2 = pad(x,n)
+# 	[maximum(x2[i-n:i+n,j]) for i in (1+n):size(x2,1)-n, j in 1:size(x2,2)]
+# end
+
+# function relu(x)
+# 	max(zero(x),x)
+# end
+
+# function dense(x::Matrix{T}, w::Matrix{T}, b::Vector{T}) where T<:AbstractFloat
+# 	w*x .+ b
+# end
+
+# function softmax(x::AbstractMatrix{T})::AbstractMatrix{T} where T<:AbstractFloat
+#     s = sum(exp.(x), dims=1)
+#     exp.(x) ./s
+# end
+
+# let
+# 	y = [0, 1, 2, 3, 5, 6, 9]
+# 	y_onehot = y' .== (0:9)
+# 	y' .==(0:9)
+# end
+
+# collect(0:9)
+
+
+# function cross_entropy_loss(ŷ::Matrix{T},y::Vector{Int})::T where T<:AbstractFloat
+#     -sum((y' .== (0:9)) .* log2.(ŷ))/length(y)
+# end
+
+# # function model(x::AbstractMatrix, p::AbstractVector)::AbstractMatrix
+# #     conv1, cb1, conv2, cb2, w1, b1 = p
+
+# #     o1 = maxpool_1d(relu.(conv_1d(x,conv1,cb1[1])),2)
+# #     o2 = maxpool_1d(relu.(conv_1d(o1,conv2,cb2[1])),2)
+# #     o3 = dense(reshape(o2, :, size(x,2)), w1, b1)
+# #     softmax(o3)
+# # end
+
+# begin
+# 	inputsize = size(x,1)
+# 	nlabels = 10
+# 	conv1 = rand(Float32, 5) .- 0.5f0 # Initial weights for 1st conv layer
+# 	cb1 = [0.0f0] #  Initial bias for 1st conv layer
+# 	conv2 = rand(Float32, 3) .- 0.5f0 # Initial weightes for 2nd conv layer
+# 	cb2 = [0.0f0] # Initial bias for 2nd conv layer
+	
+# 	w1 = rand(Float32, nlabels, inputsize) .- 0.5f0 # Initial weights for dense layer
+# 	b1 = ones(Float32, nlabels) * 0.1f0 # Initial bias for dense layer
+	
+# 	p = [conv1, cb1, conv2, cb2, w1, b1]
+	
+# 	batchsize = 10
+# 	nsteps = 100000
+# 	η = 1.0e-3
+# end;
+
+# sum(model(x, p), dims=1)
+
+# catpred(ŷ) = [x[1] for x in argmax(ŷ,dims=1)] .- 1
+
+# accuracy(ŷ, y) = mean(catpred(ŷ) .== y')
+
+# begin
+# 	function err(p) 
+# 		sample = rand(1:size(x, 2), batchsize)
+# 		cross_entropy_loss(model(x[:, sample], p), y[sample])
+# 	end
+# 	accuracy_hist = []
+# 	loss_hist = []
+	
+# 	@progress for i in 1:nsteps
+# 		g = err'(p)
+# 		p .-= η .* g
+# 		if i%1000 == 0
+# 			a = accuracy(model(x, p), y)
+# 			l = cross_entropy_loss(model(x, p), y)
+# 			@info "step=$(i); loss=$(round(l, digits=2)); acc=$(round(a, digits=2))"
+# 			push!(accuracy_hist, a)
+# 			push!(loss_hist, l)
+# 		end
+# 	end
+# end
+
+# accuracy(model(x, p), y)
+
+# let
+# 	p1 = plot([i*1000 for i ∈ 1:length(loss_hist)], loss_hist, 
+# 			title="Loss", label=:none, xlabel="Training step")
+# 	p2 = plot([i*1000 for i ∈ 1:length(accuracy_hist)], accuracy_hist, 
+# 			title="Accuracy", label=:none)
+# 	plot(p1, p2, size=(700, 350))
+# end
+
+# catpred(model(x[:, 1:30], p))[:]
+
+# y[1:30]
+
+describe(dff)
+dff
+Z = zeros(992,1)
+ZZ = replace(Z,0=>20)
+ZZZ = vec(ZZ)
+X = Matrix(dff)
+XX = select(dff,:ConcreteCompressiveStrength)
+XXX = select(dff,:Cement, :BlastFurnaceSlag, :FlyAsh, :Water, :Superplasticizer, :CoarseAggregate, :FineAggregate, :Days)
+# padX = pad(X,2)
+# convX = conv_1d(X,ZZZ,2.0)
+# maxX = maxpool_1d(X,2)
+# SoftX = softmax(X)
+# CrossX = cross_entropy_loss(X,ZZZ)
+# ModelX = model(X,ZZZ)
+# n, m = 10^3, 5
+independent = Matrix(XXX)
+# weights = rand(-2:2, m)
+dependent = vec(Matrix(XX))
+
+# train regression tree
+init_tree = build_tree(dependent, independent)
+dfff = Matrix(dff)
+# apply learned model
+apply_tree(init_tree,dfff)
+# run 3-fold cross validation, returns array of coefficients of determination (R^2)
+n_folds = 5
+r2 = nfoldCV_tree(dependent, independent, n_folds)
+
+n_subfeatures = 0; max_depth = -1; min_samples_leaf = 10
+min_samples_split = 2; min_purity_increase = 0.0; pruning_purity = 1.0 ; seed=3
+
+new_init_tree = build_tree(dependent, independent, n_subfeatures, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; rng = seed)
+println(init_tree)
+print_tree(init_tree)
+
+print_tree(mnn)
+r2 =  nfoldCV_tree(dependent, independent, n_folds, pruning_purity, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; verbose = true, rng = seed)
+accuracyy= nfoldCV_tree(dependent, independent, n_folds, pruning_purity, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; verbose = true, rng = seed) 
+println(accuracyy)
+print_tree(mnn)
+new_dependent_vector = apply_tree(mnn,independent)
+dependent
+sww = apply_tree(init_tree,dfff)
+function accuracy(yhat::AbstractVector,y::AbstractVector)
+    mean(yhat .== y)
+end
+function gini_impurity(y::AbstractVector)
+    ig = 1.0
+    println(y)
+    u = unique(y)
+    for c in u 
+        p = mean(c .== y)^2
+        ig -= p
+    end
+    ig
+end
+gini_impurity(sw)
+gini_impurity(dependent)
+function weighted_gini(x::Vector{Float64}, cut::Float64,y::AbstractVector)
+    idx = x .>= cut
+    fcut = sum(idx)./length(y)
+
+    ig1 = gini_impurity(y[idx])
+    ig2 = gini_impurity(y[.!(idx)])
+    ig1 * fcut + ig2 * (1-fcut)
+end
+function min_impurity(x::Vector{Float64}, y::Vector{Bool})
+    argmin([weighted_gini(x,i,y) for i in unique(x)])
+end
+accuracy(sw,dependent)
+#accuracyy= nfoldCV_tree(dependent, independent, n_folds, pruning_purity, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; verbose = true, rng = seed) 
+Plots.scatter(sw,sww)
+Plots.plot(mnn,3)
+config = EvoTreeRegressor(
+    loss=:linear, 
+    nrounds=100, 
+    nbins=100,
+    lambda=0.5, 
+    gamma=0.1, 
+    eta=0.1,
+    max_depth=6, 
+    min_weight=1.0,
+    rowsample=0.5, 
+    colsample=1.0)
+    x_train = independent
+    y_train = dependent
+mmm = fit_evotree(config; x_train, y_train)
+Unaltered = Plots.plot(mmm,2, size=(2000,2000))
+savefig(unaltered)
+# mmmm = fit_evotree(config; x_train, y_train)
+# Plots.plot(mmmm,2, size=(1500,1500))
+#Plots.heatmap(unique(independent),dependent)
+Plots.scatter(sw, dependent, xlabel= "# Samples", ylabel= "Strength (MPa)", label="Dependent and Decision Tree Adjusted Dependent Variables", smooth=true)
+accuracyyy= nfoldCV_tree(new_dependent_vector, independent, n_folds, pruning_purity, max_depth, min_samples_leaf, min_samples_split, min_purity_increase; verbose = true, rng = seed) 
