@@ -36,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f1b6d7b3547bfb69ddd8dc7d60c75078763ceae2/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f1b6d7b3547bfb69ddd8dc7d60c75078763ceae2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f1b6d7b3547bfb69ddd8dc7d60c75078763ceae2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/410b1ae56d88d50d362ec2f5afc9945cc187a550/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/410b1ae56d88d50d362ec2f5afc9945cc187a550/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/410b1ae56d88d50d362ec2f5afc9945cc187a550/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -61,9 +61,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/f1b6d7b3547bfb69ddd8dc7d60c75078763ceae2/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-avk/v/410b1ae56d88d50d362ec2f5afc9945cc187a550/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-avk@f1b6d7b](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/f1b6d7b3547bfb69ddd8dc7d60c75078763ceae2)
+from [uiceds/cee-492-term-project-fall-2022-avk@410b1ae](https://github.com/uiceds/cee-492-term-project-fall-2022-avk/tree/410b1ae56d88d50d362ec2f5afc9945cc187a550)
 on December 10, 2022.
 </em></small>
 -->
@@ -259,11 +259,12 @@ sqrt(mse(y_hat, y_test))
 
 We got an RMSE of ~ 10 for the testing dataset. The error for both the testing and training dataset is almost the same. From Figure @fig:linear-reg, we can see that although many points are closer to the 45-degree line, we can also see a large number of points deviate from the line quite a bit. This trend can suggest a few things.
 
+* Most of the predicted values are above 20 MPa because it is the ideal minimum strength required for most of the construction projects.
 * The model has overfitted on the training data and is performing poorly on the testing data.
 * The dependency of the independent variables cannot be modelled linearly; hence, we may need a more complex model like a neural network.
 * Our dataset comprises only eight variables that affect the concrete compressive strength. Many other factors may affect the strength, which is a limitation of the dataset. From [@{https://theconstructor.org/concrete/factors-affecting-strength-of-concrete/6220/}], we can see that the compressive strength of the concrete also depends on temperature, humidity and curing, among many other factors.
 
-To follow this up, we implemented a logistic regression model and the multilayered regression model (neural network) to see if we could make any significant improvements. However, we found an RMSE of around 34 for both models' testing data. This result was surprising since we expected the non-linear models to perform better. Hence, we decided not to plot them. 
+To follow this up, we implemented a logistic regression model and the multilayered regression model (neural network) to see if we could make any significant improvements. However, we found an RMSE of around 34 for both models' training and testing data. This result was surprising since we expected the non-linear models to perform better. Hence, we decided not to plot them. 
 
 ### Regression Conclusions
 

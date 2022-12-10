@@ -1,7 +1,7 @@
 ageing
 andrewb
 CEE
-Compressive
+compressive
 CSV
 dataset
 DecisionTree
@@ -24,7 +24,7 @@ overfitted
 RMSE
 Scatterplot
 superplasticizer
-superplasticizers
+Superplasticizers
 trendline
 uiuc
 vgadge
