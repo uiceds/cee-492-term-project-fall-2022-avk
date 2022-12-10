@@ -335,7 +335,7 @@ config = EvoTreeRegressor(
     x_train = independent
     y_train = dependent
 mmm = fit_evotree(config; x_train, y_train)
-Unaltered = Plots.plot(mmm,2, size=(800,800))
+Unaltered = Plots.plot(mmm,2, size=(2000,2000))
 savefig(unaltered)
 # mmmm = fit_evotree(config; x_train, y_train)
 # Plots.plot(mmmm,2, size=(1500,1500))
